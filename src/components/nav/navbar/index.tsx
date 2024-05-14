@@ -18,12 +18,12 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             <ul className='hidden md:flex gap-x-6 text-white'>
               <li>
                 <Link href='/about'>
-                  <p>About Us</p>
+                  <p>About the Book</p>
                 </Link>
               </li>
               <li>
                 <Link href='/map'>
-                  <p>Cathcart Map</p>
+                  <p>Cathcart Map of SF Chinatown</p>
                 </Link>
               </li>
               <li>

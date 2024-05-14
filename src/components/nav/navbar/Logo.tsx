@@ -36,7 +36,7 @@ const Logo = () => {
   return (
     <>
       <div>
-        <h3>Logo</h3>
+        <h3>Becoming American</h3>
       </div>
     </>
   );
