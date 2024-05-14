@@ -34,12 +34,12 @@ const Sidebar = ({
         <ul className='sidebar-nav text-center leading-relaxed text-xl'>
           <li>
             <Link href='/about' onClick={toggle}>
-              <p>About Us</p>
+              <p>About the Book</p>
             </Link>
           </li>
           <li>
-            <Link href='/map' onClick={toggle}>
-              <p>Cathcart Map</p>
+            <Link href='/services' onClick={toggle}>
+              <p>Cathcart Map of SF Chinatown</p>
             </Link>
           </li>
           <li>

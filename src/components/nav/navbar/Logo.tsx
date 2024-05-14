@@ -35,8 +35,21 @@ const Logo = () => {
 
   return (
     <>
-      <div>
-        <h3>Becoming American</h3>
+      <Link href='/' style={{ display: showButton ? 'none' : 'block' }}>
+        <Image
+          src='/images/logo.png'
+          alt='Logo'
+          width={width < 1024 ? '150' : '250'}
+          height={width < 1024 ? '45' : '74'}
+          className='relative'
+        />
+      </Link>
+      <div
+        style={{
+          display: showButton ? 'block' : 'none',
+        }}
+      >
+        <Button />
       </div>
     </>
   );
