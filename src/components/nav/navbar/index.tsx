@@ -3,7 +3,12 @@ import Link from 'next/link';
 import Logo from './Logo';
 import Button from './Button';
 
-const Navbar = () => {
+// Define an interface for the props expected by Navbar
+interface NavbarProps {
+  toggle: () => void; // Adding toggle as a function prop
+}
+
+const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   return (
     <>
       <div className='w-full h-20 bg-emerald-800 sticky top-0'>
