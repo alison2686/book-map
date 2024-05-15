@@ -6,7 +6,7 @@ import Button from './Button';
 const Navbar = ({ toggle }: { toggle: () => void }) => {
   return (
     <>
-      <div className='w-full h-20 bg-emerald-800 sticky top-0'>
+      <div className='w-full h-20 bg-peach sticky top-0 shadow-lg border-b-4 border-yellow-400'>
         <div className='container mx-auto px-4 h-full'>
           <div className='flex justify-between items-center h-full'>
             <Logo />
@@ -20,27 +20,35 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 width='40'
                 height='40'
                 viewBox='0 0 24 24'
+                fill='none'
+                stroke='yellow'
+                strokeWidth='2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
               >
-                <path
-                  fill='#fff'
-                  d='M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z'
-                />
+                <path d='M3 12h18M3 6h18M3 18h18' />
               </svg>
             </button>
-            <ul className='hidden md:flex gap-x-6 text-white '>
+            <ul className='hidden md:flex gap-x-6 text-white font-comic text-lg'>
               <li>
                 <Link href='/about'>
-                  <p>About the Book</p>
+                  <p className='hover:text-yellow-300 cursor-pointer'>
+                    About the Book
+                  </p>
                 </Link>
               </li>
               <li>
                 <Link href='/map'>
-                  <p>Cathcart Map of SF Chinatown</p>
+                  <p className='hover:text-yellow-300 cursor-pointer'>
+                    Cathcart Map of SF Chinatown
+                  </p>
                 </Link>
               </li>
               <li>
                 <Link href='/contacts'>
-                  <p>Contact Us</p>
+                  <p className='hover:text-yellow-300 cursor-pointer'>
+                    Contact Us
+                  </p>
                 </Link>
               </li>
             </ul>
