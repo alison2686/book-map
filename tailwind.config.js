@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         seafoam: '#2980B9',
         peach: '#CB4335',
+        sky: '#5DADE2',
       },
     },
   },

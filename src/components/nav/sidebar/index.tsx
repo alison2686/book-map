@@ -37,11 +37,7 @@ const Sidebar = ({
               <p>About the Book</p>
             </Link>
           </li>
-          <li>
-            <Link href='/services' onClick={toggle}>
-              <p>Cathcart Map of SF Chinatown</p>
-            </Link>
-          </li>
+
           <li>
             <Link href='/contacts' onClick={toggle}>
               <p>Contact Us</p>

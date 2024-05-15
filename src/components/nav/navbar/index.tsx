@@ -38,13 +38,6 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 </Link>
               </li>
               <li>
-                <Link href='/map'>
-                  <p className='hover:text-yellow-300 cursor-pointer'>
-                    Cathcart Map of SF Chinatown
-                  </p>
-                </Link>
-              </li>
-              <li>
                 <Link href='/contacts'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Contact Us
