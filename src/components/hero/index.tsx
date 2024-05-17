@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className='container mx-auto px-4'>
-      <div className='w-full h-screen bg-[url("/comic-background.jpg")] bg-cover bg-center flex flex-col justify-center items-center text-white bg-seafoam'>
+      <div className='w-full h-screen flex flex-col justify-center items-center text-white bg-seafoam'>
         <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg'>
           Becoming American: A 600 Year Odyssey
         </h1>
