@@ -18,14 +18,13 @@ const CathcartMap = () => {
 
   return (
     <>
-      <div className='container mx-auto px-4'>
-        <div className='w-full h-screen flex justify-center items-center bg-sky'>
+      <div className='w-full h-screen flex justify-center items-center bg-sky'>
+        <div className='border-4 border-black'>
           <Image
             src='/images/map.jpeg'
             alt='Cathcart Map'
-            width={width < 1024 ? '300' : '800'}
-            height={width < 1024 ? '400' : '800'}
-            // className='relative'
+            width={width < 1024 ? 300 : 800}
+            height={width < 1024 ? 400 : 800}
           />
         </div>
       </div>
