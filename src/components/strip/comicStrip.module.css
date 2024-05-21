@@ -1,0 +1,10 @@
+/* styles/comic.css */
+.comic-panel {
+  background: white;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
