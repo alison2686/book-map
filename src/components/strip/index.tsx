@@ -62,7 +62,7 @@ const ComicPage = () => {
           alt='Little Pete'
           width={900}
           height={800}
-          objectFit='cover'
+          style={{ objectFit: 'cover' }}
         />
       </div>
     </div>

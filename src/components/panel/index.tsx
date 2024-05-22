@@ -3,16 +3,30 @@ import Image from 'next/image';
 
 function ComicPanel() {
   return (
-    <div className='max-w-sm rounded overflow-hidden shadow-lg m-2 bg-seafoam'>
-      <Image
-        src='/images/chinese-new-year.png'
-        alt='Comic Panel'
-        width={300}
-        height={300}
-        layout='responsive'
-      />
-      <div className='px-6 py-4'>
-        <p className='text-base text-gray-700'>Hello</p>
+    <div className='container mx-auto'>
+      <div className='flex items-center justify-center min-h-screen p-4'>
+        <div className='border-8 border-black max-w-6xl bg-comic-background bg-cover w-full h-screen flex items-center justify-center'>
+          <div className='grid grid-cols-3 grid-rows-2 gap-4 w-3/4 h-3/4 mt-auto mb-10'>
+            {/* Top row: 3 square panels */}
+            <div className='bg-gray-200 border-2 border-black flex items-center justify-center'>
+              Panel 1
+            </div>
+            <div className='bg-gray-200 border-2 border-black flex items-center justify-center'>
+              Panel 2
+            </div>
+            <div className='bg-gray-200 border-2 border-black flex items-center justify-center'>
+              Panel 3
+            </div>
+
+            {/* Bottom row: 2 rectangular panels */}
+            <div className='col-span-2 bg-gray-200 border-2 border-black flex items-center justify-center'>
+              Panel 4
+            </div>
+            <div className='bg-gray-200 border-2 border-black flex items-center justify-center'>
+              Panel 5
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

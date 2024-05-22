@@ -14,17 +14,8 @@ module.exports = {
         sky: '#5DADE2', // A light blue
         comic: '#fde047', // A bright yellow, good for backgrounds or highlights
       },
-      boxShadow: {
-        comic: '5px 5px 0px 0px #000000', // Heavy, black shadow for a 3D comic effect
-      },
-      borderWidth: {
-        6: '6px', // Adding a thicker border option for more distinct panel borders
-      },
-      borderColor: {
-        'comic-black': '#1a202c', // Deep, comic-style black for borders
-      },
-      boxShadow: {
-        'outline-heavy': '0 0 0 10px #1a202c', // Heavy black outline for emphasis
+      backgroundImage: {
+        'comic-background': "url('/images/yellow-comic.png')",
       },
     },
   },
