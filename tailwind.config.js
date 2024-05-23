@@ -5,9 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        comic: ['Bangers', 'cursive'], // Ensure the Bangers font is loaded in your project
-      },
       colors: {
         seafoam: '#2980B9', // A vivid blue
         peach: '#CB4335', // A deep red

@@ -1,10 +1,15 @@
 import Navigation from '@/components/nav';
 import Footer from '@/components/footer';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Bangers } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+
+const bangers = Bangers({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: '600 Year Odyssey',
@@ -18,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={bangers.className}>
         <Navigation />
         {children}
         <Footer />
