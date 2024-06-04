@@ -16,5 +16,24 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.comic-panel': {
+          'col-span': '2',
+          'row-span': '4',
+          'background-color': 'white',
+          'border-width': '2px',
+          'border-color': 'black',
+          'box-shadow': 'var(--shadow-2xl)',
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+          'border-radius': '0.175rem',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 };
