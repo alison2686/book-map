@@ -6,7 +6,7 @@ import Button from './Button';
 const Navbar = ({ toggle }: { toggle: () => void }) => {
   return (
     <>
-      <div className='w-full h-20 bg-peach sticky top-0 shadow-lg border-b-4 border-yellow-400'>
+      <div className='w-full h-20 bg-peach sticky top-0 shadow-lg border-b-4 border-border'>
         <div className='container mx-auto px-4 h-full'>
           <div className='flex justify-between items-center h-full'>
             <Logo />
@@ -33,7 +33,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
               <li>
                 <Link href='/about'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
-                    About the Book
+                    About the Author
                   </p>
                 </Link>
               </li>

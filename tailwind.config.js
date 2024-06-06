@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        seafoam: '#2980B9', // A vivid blue
-        peach: '#CB4335', // A deep red
+        seafoam: '#305784', // A vivid blue
+        peach: '#EB6B4F', // A deep red
         sky: '#5DADE2', // A light blue
         comic: '#fde047', // A bright yellow, good for backgrounds or highlights
+        border: '#ED9556',
       },
       backgroundImage: {
         'comic-background': "url('/images/yellow-comic.png')",
@@ -25,7 +26,6 @@ module.exports = {
           'background-color': 'white',
           'border-width': '2px',
           'border-color': 'black',
-          'box-shadow': 'var(--shadow-2xl)',
           display: 'flex',
           'align-items': 'center',
           'justify-content': 'center',
