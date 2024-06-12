@@ -23,10 +23,10 @@ export default function Hero() {
             {/* Image column */}
             <div className='flex justify-end items-center'>
               <Image
-                src='/images/book-cover.png'
+                src='/images/bridge.png'
                 alt='Becoming American cover'
-                width={width < 1024 ? 100 : 350}
-                height={width < 1024 ? 100 : 450}
+                width={width < 1024 ? 100 : 450}
+                height={width < 1024 ? 100 : 550}
               />
             </div>
             {/* Text column */}

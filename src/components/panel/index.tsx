@@ -5,7 +5,7 @@ function ComicPanel() {
   return (
     <div className='container mx-auto p-4 '>
       <div className='flex items-center justify-center'>
-        <div className='border-4 border-black bg-comic-background bg-cover w-2/3 h-screen flex items-center justify-center'>
+        <div className='border-4 border-black bg-comic-background bg-cover w-full h-screen flex items-center justify-center'>
           <div className='grid grid-cols-6 grid-rows-10 gap-4 w-full h-full p-6'>
             <h1 className='text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
               Panel Title

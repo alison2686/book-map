@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}', // Make sure this path covers all your files using Tailwind classes
@@ -6,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        seafoam: '#305784', // A vivid blue
-        peach: '#EB6B4F', // A deep red
+        seafoam: '#305784', // hero bg
+        peach: '#EBAD0E', // navbar
         sky: '#5DADE2', // A light blue
         comic: '#fde047', // A bright yellow, good for backgrounds or highlights
-        border: '#ED9556',
+        border: '#272222', // navbar bottom border
       },
       backgroundImage: {
         'comic-background': "url('/images/yellow-comic.png')",
