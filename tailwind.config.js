@@ -23,8 +23,6 @@ module.exports = {
     function ({ addUtilities }) {
       const newUtilities = {
         '.comic-panel': {
-          'col-span': '2',
-          'row-span': '4',
           'background-color': 'white',
           'border-width': '2px',
           'border-color': 'black',
