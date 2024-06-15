@@ -1,4 +1,4 @@
-// components/ComicPanel.js
+// components/ComicPanel.tsx
 
 import Image from 'next/image';
 import { FC } from 'react';
@@ -12,6 +12,8 @@ interface ComicPanelProps {
   alt2: string;
   img3: string;
   alt3: string;
+  img4: string;
+  alt4: string;
   text1: string;
   text2: string;
   text3: string;
@@ -27,13 +29,15 @@ const ComicPanel: FC<ComicPanelProps> = ({
   alt2,
   img3,
   alt3,
+  img4,
+  alt4,
   text1,
   text2,
   text3,
   text4,
 }) => {
   return (
-    <div className='container mx-auto p-4 '>
+    <div className='container mx-auto p-4'>
       <div className='flex items-center justify-center'>
         <div className='border-4 border-black bg-comic-background bg-cover w-full h-screen flex items-center justify-center'>
           <div className='grid grid-cols-6 grid-rows-10 gap-4 w-full h-full p-6'>
@@ -75,7 +79,6 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 height={500}
                 className='w-full h-full object-cover'
               />
-
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                 <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
                   {text2}
@@ -86,8 +89,19 @@ const ComicPanel: FC<ComicPanelProps> = ({
             <div className='col-span-3 row-span-4 comic-panel transform translate-y-2 p-10'>
               {text3}
             </div>
-            <div className='col-span-3 row-span-4 comic-panel p-10'>
-              {text4}
+            <div className='col-span-3 row-span-4 comic-panel relative'>
+              <Image
+                src={img4}
+                alt={alt4}
+                width={500}
+                height={500}
+                className='w-full h-full object-contain'
+              />
+              <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+                <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
+                  {text4}
+                </div>
+              </div>
             </div>
           </div>
         </div>
