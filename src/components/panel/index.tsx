@@ -18,6 +18,7 @@ interface ComicPanelProps {
   text2: string;
   text3: string;
   text4: string;
+  text5: string;
 }
 
 const ComicPanel: FC<ComicPanelProps> = ({
@@ -35,11 +36,12 @@ const ComicPanel: FC<ComicPanelProps> = ({
   text2,
   text3,
   text4,
+  text5,
 }) => {
   return (
     <div className='container mx-auto p-4'>
       <div className='flex items-center justify-center'>
-        <div className='border-4 border-black bg-comic-background bg-cover w-full h-screen flex items-center justify-center'>
+        <div className='border-4 border-black bg-comic-background bg-cover w-10/12 h-screen flex items-center justify-center'>
           <div className='grid grid-cols-6 grid-rows-10 gap-4 w-full h-full p-6'>
             <h1 className='text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
               {title}
@@ -48,19 +50,10 @@ const ComicPanel: FC<ComicPanelProps> = ({
               {subtitle}
             </div>
             {/* Top row: 3 square panels */}
-            <div className='col-span-2 row-span-4 comic-panel'>
+            <div className='col-span-2 row-span-4 comic-panel relative'>
               <Image
                 src={img1}
                 alt={alt1}
-                width={500}
-                height={500}
-                className='w-full h-full object-cover'
-              />
-            </div>
-            <div className='col-span-2 row-span-4 comic-panel relative'>
-              <Image
-                src={img2}
-                alt={alt2}
                 width={500}
                 height={500}
                 className='w-full h-full object-cover'
@@ -73,21 +66,35 @@ const ComicPanel: FC<ComicPanelProps> = ({
             </div>
             <div className='col-span-2 row-span-4 comic-panel relative'>
               <Image
+                src={img2}
+                alt={alt2}
+                width={500}
+                height={500}
+                className='w-full h-full object-cover'
+              />
+              <div className='absolute w-full h-full flex items-center justify-center'>
+                <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
+                  {text2}
+                </div>
+              </div>
+            </div>
+            <div className='col-span-2 row-span-4 comic-panel relative'>
+              <Image
                 src={img3}
                 alt={alt3}
                 width={500}
                 height={500}
                 className='w-full h-full object-cover'
               />
-              <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+              <div className='absolute w-full h-full flex items-center justify-center'>
                 <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
-                  {text2}
+                  {text3}
                 </div>
               </div>
             </div>
             {/* Bottom row: 2 rectangular panels */}
             <div className='col-span-3 row-span-4 comic-panel transform translate-y-2 p-10'>
-              {text3}
+              {text4}
             </div>
             <div className='col-span-3 row-span-4 comic-panel relative'>
               <Image
@@ -99,7 +106,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                 <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
-                  {text4}
+                  {text5}
                 </div>
               </div>
             </div>
