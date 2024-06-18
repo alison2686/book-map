@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSkull } from '@fortawesome/free-solid-svg-icons';
+import { faSkull, faSailboat } from '@fortawesome/free-solid-svg-icons';
 
 const CathcartMap = () => {
   // Update the size of CathcartMap when the size of the screen changes
@@ -37,8 +37,14 @@ const CathcartMap = () => {
             {/* Placing the icon on the image */}
             <FontAwesomeIcon
               icon={faSkull}
-              className='absolute top-1/4 left-1/4 text-white'
-              size='2x'
+              className='absolute text-blue-500'
+              style={{ top: '40%', left: '75%', fontSize: '2rem' }}
+              onClick={() => alert('Icon Clicked')}
+            />
+            <FontAwesomeIcon
+              icon={faSailboat}
+              className='absolute text-red-700'
+              style={{ top: '25%', left: '5%', fontSize: '2rem' }}
               onClick={() => alert('Icon Clicked')}
             />
           </div>
