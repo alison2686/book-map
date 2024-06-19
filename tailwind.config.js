@@ -34,13 +34,15 @@ module.exports = {
         '.map-icon': {
           position: 'absolute',
           color: 'black',
+          opacity: '0.7',
           transition: 'transform 0.2s ease-in-out',
           cursor: 'pointer',
-          border: '4px solid #ef4444', // Tailwind red-500
+          border: '4px solid #F23B2B', // Tailwind red-500
           'border-radius': '9999px', // Fully rounded
           padding: '0.25rem', // Tailwind p-1 equivalent
           '&:hover': {
             transform: 'scale(1.25)',
+            opacity: '1',
           },
         },
       };

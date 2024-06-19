@@ -11,6 +11,8 @@ import {
   faJoint,
   faShirt,
   faHotel,
+  faSignHanging,
+  faPersonDress,
 } from '@fortawesome/free-solid-svg-icons';
 
 const CathcartMap = () => {
@@ -90,6 +92,18 @@ const CathcartMap = () => {
               icon={faHotel}
               className='map-icon'
               style={{ top: '72%', left: '65%', fontSize: '2rem' }}
+              onClick={() => alert('Icon Clicked')}
+            />
+            <FontAwesomeIcon
+              icon={faSignHanging}
+              className='map-icon'
+              style={{ top: '2%', left: '75%', fontSize: '2rem' }}
+              onClick={() => alert('Icon Clicked')}
+            />
+            <FontAwesomeIcon
+              icon={faPersonDress}
+              className='map-icon'
+              style={{ top: '20%', left: '25%', fontSize: '2rem' }}
               onClick={() => alert('Icon Clicked')}
             />
           </div>
