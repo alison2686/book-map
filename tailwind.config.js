@@ -31,6 +31,18 @@ module.exports = {
           'justify-content': 'center',
           'border-radius': '0.175rem',
         },
+        '.map-icon': {
+          position: 'absolute',
+          color: 'black',
+          transition: 'transform 0.2s ease-in-out',
+          cursor: 'pointer',
+          border: '4px solid #ef4444', // Tailwind red-500
+          'border-radius': '9999px', // Fully rounded
+          padding: '0.25rem', // Tailwind p-1 equivalent
+          '&:hover': {
+            transform: 'scale(1.25)',
+          },
+        },
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);
