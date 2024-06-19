@@ -11,13 +11,21 @@ import {
   faJoint,
   faShirt,
   faHotel,
-  faSignHanging,
-  faPersonDress,
 } from '@fortawesome/free-solid-svg-icons';
 
 const CathcartMap = () => {
-  // Update the size of CathcartMap when the size of the screen changes
   const [width, setWidth] = useState(0);
+  const [popup, setPopup] = useState<{
+    visible: boolean;
+    content: string;
+    top: number;
+    left: number;
+  }>({
+    visible: false,
+    content: '',
+    top: 0,
+    left: 0,
+  });
 
   const updateWidth = () => {
     const newWidth = window.innerWidth;
@@ -27,9 +35,23 @@ const CathcartMap = () => {
   useEffect(() => {
     window.addEventListener('resize', updateWidth);
     updateWidth();
-    // Clean up the event listener on component unmount
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
+
+  const handleIconClick = (
+    content: string,
+    event: React.MouseEvent<SVGSVGElement>
+  ) => {
+    const { top, left, height, width } =
+      event.currentTarget.getBoundingClientRect();
+    // Adjust the popup position to be slightly below the icon
+    setPopup({
+      visible: true,
+      content,
+      top: top - 150,
+      left: left - 300,
+    });
+  };
 
   return (
     <div className='container mx-auto px-4'>
@@ -45,67 +67,66 @@ const CathcartMap = () => {
               width={width < 1024 ? 300 : 800}
               height={width < 1024 ? 400 : 800}
             />
-            {/* Placing the icon on the image */}
             <FontAwesomeIcon
               icon={faSkull}
               className='map-icon'
               style={{ top: '40%', left: '75%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
+              onClick={(e) => handleIconClick('Little Pete Must Die', e)}
             />
             <FontAwesomeIcon
               icon={faSailboat}
               className='map-icon'
               style={{ top: '85%', left: '71%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
+              onClick={(e) => handleIconClick('RLS', e)}
             />
             <FontAwesomeIcon
               icon={faSquarePhone}
               className='map-icon'
               style={{ top: '76%', left: '77%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
+              onClick={(e) => handleIconClick('Telephone Exchange', e)}
             />
             <FontAwesomeIcon
               icon={faShrimp}
               className='map-icon'
               style={{ top: '20%', left: '1%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
+              onClick={(e) => handleIconClick('They Mystery of China Beach', e)}
             />
             <FontAwesomeIcon
               icon={faVihara}
               className='map-icon'
               style={{ top: '72%', left: '59%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
+              onClick={(e) => handleIconClick('Shing Chong', e)}
             />
             <FontAwesomeIcon
               icon={faJoint}
               className='map-icon'
               style={{ top: '93%', left: '50%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
+              onClick={(e) => handleIconClick('Cigars', e)}
             />
             <FontAwesomeIcon
               icon={faShirt}
               className='map-icon'
               style={{ top: '62%', left: '75%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
+              onClick={(e) => handleIconClick('Chinese Laundry', e)}
             />
             <FontAwesomeIcon
               icon={faHotel}
               className='map-icon'
               style={{ top: '72%', left: '65%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
+              onClick={(e) => handleIconClick('Suey Ying Tong Building', e)}
             />
-            <FontAwesomeIcon
-              icon={faSignHanging}
-              className='map-icon'
-              style={{ top: '2%', left: '75%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
-            />
-            <FontAwesomeIcon
-              icon={faPersonDress}
-              className='map-icon'
-              style={{ top: '20%', left: '25%', fontSize: '2rem' }}
-              onClick={() => alert('Icon Clicked')}
-            />
+            {popup.visible && (
+              <div
+                className='absolute bg-white text-black border border-black p-2 rounded shadow-lg'
+                style={{
+                  top: `${popup.top}px`,
+                  left: `${popup.left}px`,
+                  zIndex: 10,
+                }}
+              >
+                {popup.content}
+              </div>
+            )}
           </div>
         </div>
       </div>
