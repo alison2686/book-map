@@ -42,21 +42,25 @@ const CathcartMap = () => {
     content: string,
     event: React.MouseEvent<SVGSVGElement>
   ) => {
-    const { top, left, height, width } =
-      event.currentTarget.getBoundingClientRect();
-    // Adjust the popup position to be slightly below the icon
+    const iconRect = event.currentTarget.getBoundingClientRect();
+    const containerRect = event.currentTarget
+      .closest('.relative-container')!
+      .getBoundingClientRect();
+
+    const popupTop = iconRect.top - containerRect.top + iconRect.height - 150; // Position below the icon
+    const popupLeft = iconRect.left - containerRect.left + iconRect.width - 300; // Center the popup
+
     setPopup({
       visible: true,
       content,
-      top: top - 150,
-      left: left - 300,
+      top: popupTop,
+      left: popupLeft,
     });
   };
-
   return (
     <div className='container mx-auto px-4'>
-      <div className='w-full min-h-screen flex justify-center items-center bg-sky overflow-hidden'>
-        <div className='flex flex-col justify-center items-center text-center w-full'>
+      <div className='relative-container w-full h-screen flex justify-center items-center bg-sky overflow-hidden relative'>
+        <div className='flex flex-col justify-center items-center text-center w-full relative'>
           <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg'>
             Cathcart Map <br /> of San Francisco’s Chinatown
           </h1>
@@ -83,13 +87,13 @@ const CathcartMap = () => {
               icon={faSquarePhone}
               className='map-icon'
               style={{ top: '76%', left: '77%', fontSize: '2rem' }}
-              onClick={(e) => handleIconClick('Telephone Exchange', e)}
+              onClick={(e) => handleIconClick('Chinese Telephone Exchange', e)}
             />
             <FontAwesomeIcon
               icon={faShrimp}
               className='map-icon'
               style={{ top: '20%', left: '1%', fontSize: '2rem' }}
-              onClick={(e) => handleIconClick('They Mystery of China Beach', e)}
+              onClick={(e) => handleIconClick('The Mhystery of China Beach', e)}
             />
             <FontAwesomeIcon
               icon={faVihara}
@@ -100,20 +104,20 @@ const CathcartMap = () => {
             <FontAwesomeIcon
               icon={faJoint}
               className='map-icon'
-              style={{ top: '93%', left: '50%', fontSize: '2rem' }}
-              onClick={(e) => handleIconClick('Cigars', e)}
+              style={{ top: '90%', left: '50%', fontSize: '2rem' }}
+              onClick={(e) => handleIconClick('Cigar', e)}
             />
             <FontAwesomeIcon
               icon={faShirt}
               className='map-icon'
               style={{ top: '62%', left: '75%', fontSize: '2rem' }}
-              onClick={(e) => handleIconClick('Chinese Laundry', e)}
+              onClick={(e) => handleIconClick('First Chinese Laundry', e)}
             />
             <FontAwesomeIcon
               icon={faHotel}
               className='map-icon'
               style={{ top: '72%', left: '65%', fontSize: '2rem' }}
-              onClick={(e) => handleIconClick('Suey Ying Tong Building', e)}
+              onClick={(e) => handleIconClick('Suey ying Tong Building', e)}
             />
             {popup.visible && (
               <div
@@ -122,6 +126,7 @@ const CathcartMap = () => {
                   top: `${popup.top}px`,
                   left: `${popup.left}px`,
                   zIndex: 10,
+                  transform: 'translate(-50%, 0)', // Center horizontally
                 }}
               >
                 {popup.content}
