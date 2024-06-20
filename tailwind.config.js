@@ -37,9 +37,10 @@ module.exports = {
           opacity: '0.7',
           transition: 'transform 0.2s ease-in-out',
           cursor: 'pointer',
-          border: '4px solid #F23B2B', // Tailwind red-500
+          border: '3px solid #17202A ', // Tailwind red-500
           'border-radius': '9999px', // Fully rounded
-          padding: '0.25rem', // Tailwind p-1 equivalent
+          padding: '0.5rem', // Tailwind p-1 equivalent
+          backgroundColor: '#FFFFFF',
           '&:hover': {
             transform: 'scale(1.25)',
             opacity: '1',
