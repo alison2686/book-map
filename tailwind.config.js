@@ -23,13 +23,13 @@ module.exports = {
     function ({ addUtilities }) {
       const newUtilities = {
         '.comic-panel': {
-          'background-color': 'white',
-          'border-width': '2px',
-          'border-color': 'black',
+          backgroundColor: 'white',
+          borderWidth: '2px',
+          borderColor: 'black',
           display: 'flex',
-          'align-items': 'center',
-          'justify-content': 'center',
-          'border-radius': '0.175rem',
+          alignItems: 'center',
+          justifyContent: 'center',
+          borderRadius: '0.175rem',
         },
         '.map-icon': {
           position: 'absolute',
@@ -38,7 +38,7 @@ module.exports = {
           transition: 'transform 0.2s ease-in-out',
           cursor: 'pointer',
           border: '3px solid #17202A ', // Tailwind red-500
-          'border-radius': '9999px', // Fully rounded
+          borderRadius: '9999px', // Fully rounded
           padding: '0.5rem', // Tailwind p-1 equivalent
           backgroundColor: '#FFFFFF',
           '&:hover': {
@@ -52,12 +52,12 @@ module.exports = {
           left: '0', // Move left from the right edge
           width: '100%',
           display: 'flex',
-          'align-items': 'center',
-          'justify-content': 'center',
+          alignItems: 'center',
+          justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          'background-color': 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
-          'border-radius': '0.5rem',
+          borderRadius: '0.5rem',
         },
         '.text-overlay-btm-left-sm': {
           position: 'absolute',
@@ -65,12 +65,12 @@ module.exports = {
           left: '0.5rem', // Move left from the right edge
           width: '25%',
           display: 'flex',
-          'align-items': 'center',
-          'justify-content': 'center',
+          alignItems: 'center',
+          justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          'background-color': 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
-          'border-radius': '0.75rem',
+          borderRadius: '0.75rem',
         },
         '.text-overlay-btm-left-lg': {
           position: 'absolute',
@@ -78,12 +78,12 @@ module.exports = {
           left: '0.5rem', // Move left from the right edge
           width: '50%',
           display: 'flex',
-          'align-items': 'center',
-          'justify-content': 'center',
+          alignItems: 'center',
+          justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          'background-color': 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
-          'border-radius': '0.75rem',
+          borderRadius: '0.75rem',
         },
         '.text-overlay-top-right': {
           position: 'absolute',
@@ -91,12 +91,25 @@ module.exports = {
           right: '0.75rem', // Move left from the right edge
           width: '55%',
           display: 'flex',
-          'align-items': 'center',
-          'justify-content': 'center',
+          alignItems: 'center',
+          justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          'background-color': 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
-          'border-radius': '0.75rem',
+          borderRadius: '0.75rem',
+        },
+        '.text-overlay-top': {
+          position: 'absolute',
+          top: '0', // Move down from the top edge
+          left: '0', // Move left from the right edge
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '0.75rem', // Tailwind p-4 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          color: '#FFFFFF', // Tailwind text-white equivalent
+          borderRadius: '0.75rem',
         },
       };
 

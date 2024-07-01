@@ -22,6 +22,8 @@ interface ComicPanelProps {
   overlay1: string;
   overlay2: string;
   overlay3: string;
+  overlay4: string;
+  overlay5: string;
 }
 
 const ComicPanel: FC<ComicPanelProps> = ({
@@ -43,6 +45,8 @@ const ComicPanel: FC<ComicPanelProps> = ({
   overlay1,
   overlay2,
   overlay3,
+  overlay4,
+  overlay5,
 }) => {
   return (
     <div className='container mx-auto p-4'>
@@ -94,7 +98,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
             </div>
             {/* Bottom row: 2 rectangular panels */}
             <div className='col-span-3 row-span-4 comic-panel transform translate-y-2 p-10'>
-              {text4}
+              <div className={overlay4}>{text4}</div>
             </div>
             <div className='col-span-3 row-span-4 comic-panel relative'>
               <Image
@@ -105,9 +109,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 className='w-full h-full object-contain'
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
-                <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
-                  {text5}
-                </div>
+                <div className={overlay5}>{text5}</div>
               </div>
             </div>
           </div>

@@ -26,7 +26,9 @@ export const PanelData = [
       'Albert Bew Chan (Lucretias grandfather) said that he was the ten year old messanger boy who deliverd the killers message via their Chinatown telephone switchboard to Tombstone that Little Pete had been killed.',
     overlay1: 'text-overlay-btm-left-sm',
     overlay2: 'text-overlay-full',
-    overlay3: 'text-overlay-btm-left-lg',
+    overlay3: 'text-overlay-top',
+    overlay4: 'text-overlay-full',
+    overlay5: 'text-overlay-full',
   },
   {
     id: 'panel2',
@@ -47,13 +49,16 @@ export const PanelData = [
     text1:
       'Even though the inscription on the China Beach monument states, “fishing is one of the area’s most important industries and traditions,” one would be hard-pressed to find evidence that Chinese fishermen participated.',
     text2:
-      'The State Legislature first enacted a law in 1880 prohibiting ‘Aliens‘ from fishing in the Bay and beyond. Eventually, all fishing rights for Chinese fishermen were barred, starting at the Ferry building on the east side of the city and going out to the Pacific Ocean. This of course would have included China Beach.',
-    text3:
       'Chinese fishermen were banned from fishing these areas. Special license required for Chinese American fishermen.',
+    text3:
+      'Fishing rights for Chinese fishermen were barred, starting at the Ferry building on the east side of the city and going out to the Pacific Ocean, including China Beach.',
     text4:
-      'Fishing for shrimp and other shellfish like abalone was allowed because they were not part of the white people’s diet. As a result, numerous “China Camps” were allowed to exist.',
-    text5:
-      'But grassy fishing areas where the crustaceans could be found were not so desirable. In San Francisco, that area was towards the Southeast area of town, now known as Hunter’s Point or the north bay area. There is a China Camp still in existence in Marin county.',
+      'Fishing for shrimp and other shellfish like abalone was allowed because they were not part of the white people’s diet. ',
+    text5: 'As a result, numerous “China Camps” were allowed to exist.',
     overlay1: 'text-overlay-full',
+    overlay2: 'text-overlay-full',
+    overlay3: 'text-overlay-top',
+    overlay4: 'text-overlay-full',
+    overlay5: 'text-overlay-full',
   },
 ];
