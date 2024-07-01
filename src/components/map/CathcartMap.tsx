@@ -11,6 +11,7 @@ import {
   faJoint,
   faShirt,
   faHotel,
+  faHouseUser,
 } from '@fortawesome/free-solid-svg-icons';
 
 const CathcartMap = () => {
@@ -47,8 +48,8 @@ const CathcartMap = () => {
       .closest('.relative-container')!
       .getBoundingClientRect();
 
-    const popupTop = iconRect.top - containerRect.top + iconRect.height - 150; // Position below the icon
-    const popupLeft = iconRect.left - containerRect.left + iconRect.width - 300; // Center the popup
+    const popupTop = iconRect.top - containerRect.top + iconRect.height - 180;
+    const popupLeft = iconRect.left - containerRect.left + iconRect.width - 290;
 
     setPopup({
       visible: true,
@@ -81,7 +82,7 @@ const CathcartMap = () => {
               icon={faSailboat}
               className='map-icon'
               style={{ top: '85%', left: '71%', fontSize: '2rem' }}
-              onClick={(e) => handleIconClick('RLS', e)}
+              onClick={(e) => handleIconClick('Robert Louis Stevenson', e)}
             />
             <FontAwesomeIcon
               icon={faSquarePhone}
@@ -118,6 +119,12 @@ const CathcartMap = () => {
               className='map-icon'
               style={{ top: '72%', left: '65%', fontSize: '2rem' }}
               onClick={(e) => handleIconClick('Suey ying Tong Building', e)}
+            />
+            <FontAwesomeIcon
+              icon={faHouseUser}
+              className='map-icon'
+              style={{ top: '22%', left: '35%', fontSize: '2rem' }}
+              onClick={(e) => handleIconClick('The Donaldina Cameron House', e)}
             />
             {popup.visible && (
               <div

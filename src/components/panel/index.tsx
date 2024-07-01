@@ -19,6 +19,9 @@ interface ComicPanelProps {
   text3: string;
   text4: string;
   text5: string;
+  overlay1: string;
+  overlay2: string;
+  overlay3: string;
 }
 
 const ComicPanel: FC<ComicPanelProps> = ({
@@ -37,6 +40,9 @@ const ComicPanel: FC<ComicPanelProps> = ({
   text3,
   text4,
   text5,
+  overlay1,
+  overlay2,
+  overlay3,
 }) => {
   return (
     <div className='container mx-auto p-4'>
@@ -59,9 +65,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 className='w-full h-full object-cover'
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
-                <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
-                  {text1}
-                </div>
+                <div className={overlay1}>{text1}</div>
               </div>
             </div>
             <div className='col-span-2 row-span-4 comic-panel relative'>
@@ -73,9 +77,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 className='w-full h-full object-cover'
               />
               <div className='absolute w-full h-full flex items-center justify-center'>
-                <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
-                  {text2}
-                </div>
+                <div className={overlay2}>{text2}</div>
               </div>
             </div>
             <div className='col-span-2 row-span-4 comic-panel relative'>
@@ -87,9 +89,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 className='w-full h-full object-cover'
               />
               <div className='absolute w-full h-full flex items-center justify-center'>
-                <div className='absolute bottom-0 left-0 text-white text-center p-4 bg-black bg-opacity-70'>
-                  {text3}
-                </div>
+                <div className={overlay3}>{text3}</div>
               </div>
             </div>
             {/* Bottom row: 2 rectangular panels */}

@@ -46,6 +46,58 @@ module.exports = {
             opacity: '1',
           },
         },
+        '.text-overlay-full': {
+          position: 'absolute',
+          bottom: '0', // Move down from the top edge
+          left: '0', // Move left from the right edge
+          width: '100%',
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+          padding: '0.75rem', // Tailwind p-4 equivalent
+          'background-color': 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          color: '#FFFFFF', // Tailwind text-white equivalent
+          'border-radius': '0.5rem',
+        },
+        '.text-overlay-btm-left-sm': {
+          position: 'absolute',
+          bottom: '0.5rem', // Move down from the top edge
+          left: '0.5rem', // Move left from the right edge
+          width: '25%',
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+          padding: '0.75rem', // Tailwind p-4 equivalent
+          'background-color': 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          color: '#FFFFFF', // Tailwind text-white equivalent
+          'border-radius': '0.75rem',
+        },
+        '.text-overlay-btm-left-lg': {
+          position: 'absolute',
+          bottom: '0.5rem', // Move down from the top edge
+          left: '0.5rem', // Move left from the right edge
+          width: '50%',
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+          padding: '0.75rem', // Tailwind p-4 equivalent
+          'background-color': 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          color: '#FFFFFF', // Tailwind text-white equivalent
+          'border-radius': '0.75rem',
+        },
+        '.text-overlay-top-right': {
+          position: 'absolute',
+          top: '0.5rem', // Move down from the top edge
+          right: '0.75rem', // Move left from the right edge
+          width: '55%',
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+          padding: '0.75rem', // Tailwind p-4 equivalent
+          'background-color': 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          color: '#FFFFFF', // Tailwind text-white equivalent
+          'border-radius': '0.75rem',
+        },
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);
