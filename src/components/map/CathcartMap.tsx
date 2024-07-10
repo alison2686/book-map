@@ -62,7 +62,7 @@ const CathcartMap = () => {
     <div className='container mx-auto px-4'>
       <div className='relative-container w-full h-screen flex justify-center items-center bg-sky overflow-hidden relative'>
         <div className='flex flex-col justify-center items-center text-center w-full relative'>
-          <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg'>
+          <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-6'>
             Cathcart Map <br /> of San Francisco’s Chinatown
           </h1>
           <div className='relative border-4 border-black'>

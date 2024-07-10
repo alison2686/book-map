@@ -53,8 +53,9 @@ export const PanelData = [
     text3:
       'Fishing rights for Chinese fishermen were barred, starting at the Ferry building on the east side of the city and going out to the Pacific Ocean, including China Beach.',
     text4:
-      'Fishing for shrimp and other shellfish like abalone was allowed because they were not part of the white people’s diet. ',
-    text5: 'As a result, numerous “China Camps” were allowed to exist.',
+      'The momument at China Beach inccorectly states that Chinese fishermen fished the area.',
+    text5:
+      'Even though the inscription on the China Beach monument states, “fishing is one of the area’s most important industries and traditions,” one would be hard-pressed to find evidence that Chinese fishermen participated.',
     overlay1: 'text-overlay-full',
     overlay2: 'text-overlay-full',
     overlay3: 'text-overlay-top',
