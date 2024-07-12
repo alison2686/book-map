@@ -1,46 +1,46 @@
 export const PopupData = [
   {
-    id: 'popup1',
+    id: 'skull',
     title: 'Little Pete Must Die',
     subtitle: 'Learn more..',
   },
   {
-    id: 'popup2',
+    id: 'sailboat',
     title: 'Robert Louis Stevenson',
     subtitle: 'Learn more..',
   },
   {
-    id: 'popup3',
+    id: 'phone',
     title: 'Chinese Telephone Exchange',
     subtitle: 'Learn more..',
   },
   {
-    id: 'popup4',
+    id: 'beach',
     title: 'They Mystery of China Beach',
     subtitle: 'Learn more..',
   },
   {
-    id: 'popup5',
+    id: 'shingchong',
     title: 'Shing Chong',
     subtitle: 'Learn more..',
   },
   {
-    id: 'popup6',
+    id: 'cigar',
     title: 'Cigar',
     subtitle: 'Learn more..',
   },
   {
-    id: 'popup7',
-    drytitle: 'First Chinese Laundry',
+    id: 'laundry',
+    title: 'First Chinese Laundry',
     subtitle: 'Learn more..',
   },
   {
-    id: 'popup8',
+    id: 'tong',
     title: 'Suey Ying Tong Building',
     subtitle: 'Learn more..',
   },
   {
-    id: 'popup9',
+    id: 'cameron',
     title: 'The Donaldina Cameron House',
     subtitle: 'Learn more..',
   },

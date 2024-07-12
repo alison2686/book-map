@@ -13,18 +13,26 @@ import {
   faHotel,
   faHouseUser,
 } from '@fortawesome/free-solid-svg-icons';
+import PopupCard from '../popup'; // Adjust the import path if necessary
+import { PopupData } from '../popup/data'; // Adjust the import path if necessary
 
+interface PopupCardProps {
+  title: string;
+  subtitle: string;
+}
+
+interface PopupState {
+  visible: boolean;
+  content: PopupCardProps | null;
+  top: number;
+  left: number;
+}
 
 const CathcartMap = () => {
   const [width, setWidth] = useState(0);
-  const [popup, setPopup] = useState<{
-    visible: boolean;
-    content: string;
-    top: number;
-    left: number;
-  }>({
+  const [popup, setPopup] = useState<PopupState>({
     visible: false,
-    content: '',
+    content: null,
     top: 0,
     left: 0,
   });
@@ -41,9 +49,12 @@ const CathcartMap = () => {
   }, []);
 
   const handleIconClick = (
-    content: string,
+    id: string,
     event: React.MouseEvent<SVGSVGElement>
   ) => {
+    const dataItem = PopupData.find((item) => item.id === id);
+    if (!dataItem) return;
+
     const iconRect = event.currentTarget.getBoundingClientRect();
     const containerRect = event.currentTarget
       .closest('.relative-container')!
@@ -54,7 +65,7 @@ const CathcartMap = () => {
 
     setPopup({
       visible: true,
-      content,
+      content: { title: dataItem.title, subtitle: dataItem.subtitle },
       top: popupTop,
       left: popupLeft,
     });
@@ -82,7 +93,7 @@ const CathcartMap = () => {
                 icon={faSkull}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) => handleIconClick('Little Pete Must Die', e)}
+                onClick={(e) => handleIconClick('skull', e)}
               />
             </div>
             <div
@@ -93,7 +104,7 @@ const CathcartMap = () => {
                 icon={faSailboat}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) => handleIconClick('Robert Louis Stevenson', e)}
+                onClick={(e) => handleIconClick('sailboat', e)}
               />
             </div>
             <div
@@ -104,9 +115,7 @@ const CathcartMap = () => {
                 icon={faSquarePhone}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) =>
-                  handleIconClick('Chinese Telephone Exchange', e)
-                }
+                onClick={(e) => handleIconClick('phone', e)}
               />
             </div>
             <div
@@ -117,9 +126,7 @@ const CathcartMap = () => {
                 icon={faShrimp}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) =>
-                  handleIconClick('The Mystery of China Beach', e)
-                }
+                onClick={(e) => handleIconClick('beach', e)}
               />
             </div>
             <div
@@ -130,7 +137,7 @@ const CathcartMap = () => {
                 icon={faVihara}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) => handleIconClick('Shing Chong', e)}
+                onClick={(e) => handleIconClick('shingchong', e)}
               />
             </div>
             <div
@@ -141,7 +148,7 @@ const CathcartMap = () => {
                 icon={faJoint}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) => handleIconClick('Cigar', e)}
+                onClick={(e) => handleIconClick('cigar', e)}
               />
             </div>
             <div
@@ -152,7 +159,7 @@ const CathcartMap = () => {
                 icon={faShirt}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) => handleIconClick('First Chinese Laundry', e)}
+                onClick={(e) => handleIconClick('laundry', e)}
               />
             </div>
             <div
@@ -163,7 +170,7 @@ const CathcartMap = () => {
                 icon={faHotel}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) => handleIconClick('Suey ying Tong Building', e)}
+                onClick={(e) => handleIconClick('tong', e)}
               />
             </div>
             <div
@@ -174,20 +181,18 @@ const CathcartMap = () => {
                 icon={faHouseUser}
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
-                onClick={(e) =>
-                  handleIconClick('The Donaldina Cameron House', e)
-                }
+                onClick={(e) => handleIconClick('cameron', e)}
               />
             </div>
-            {popup.visible && (
+            {popup.visible && popup.content && (
               <div
-                className='absolute bg-white text-black border border-black p-2 rounded shadow-lg'
+                className='absolute'
                 style={{
                   top: `${popup.top}px`,
                   left: `${popup.left}px`,
                 }}
               >
-                {popup.content}
+                <PopupCard {...popup.content} />
               </div>
             )}
           </div>
