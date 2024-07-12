@@ -14,6 +14,7 @@ import {
   faHouseUser,
 } from '@fortawesome/free-solid-svg-icons';
 
+
 const CathcartMap = () => {
   const [width, setWidth] = useState(0);
   const [popup, setPopup] = useState<{
@@ -117,7 +118,7 @@ const CathcartMap = () => {
                 className='map-icon'
                 style={{ fontSize: '2rem' }}
                 onClick={(e) =>
-                  handleIconClick('The Mystery of China Beach!!', e)
+                  handleIconClick('The Mystery of China Beach', e)
                 }
               />
             </div>
