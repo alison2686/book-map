@@ -60,8 +60,8 @@ const CathcartMap = () => {
       .closest('.relative-container')!
       .getBoundingClientRect();
 
-    const popupTop = iconRect.top - containerRect.top + iconRect.height / 2; // Adjust top position to align better
-    const popupLeft = iconRect.left - containerRect.left + iconRect.width + 10; // Adding 10px for some spacing
+    const popupTop = iconRect.top - containerRect.top + iconRect.height / 2;
+    const popupLeft = iconRect.left - containerRect.left + iconRect.width + 10;
 
     setPopup({
       visible: true,

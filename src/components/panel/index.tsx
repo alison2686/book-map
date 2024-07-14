@@ -49,7 +49,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
   overlay5,
 }) => {
   return (
-    <div className='container mx-auto p-4'>
+    <div className='compic-panel container mx-auto p-4'>
       <div className='flex items-center justify-center'>
         <div className='border-4 border-black bg-comic-background bg-cover w-10/12 h-screen flex items-center justify-center'>
           <div className='grid grid-cols-6 grid-rows-10 gap-4 w-full h-full p-6'>
