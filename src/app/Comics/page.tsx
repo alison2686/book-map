@@ -5,8 +5,8 @@ import ComicPanel from '../../components/panel';
 function Comic() {
   return (
     <div>
-      {PanelData.map((panel, index) => {
-        return <ComicPanel key={index} {...panel} />;
+      {PanelData.map((panel, panelId) => {
+        return <ComicPanel key={panelId} {...panel} />;
       })}
     </div>
   );
