@@ -61,8 +61,8 @@ module.exports = {
         },
         '.text-overlay-btm-left-sm': {
           position: 'absolute',
-          bottom: '0.5rem', // Move down from the top edge
-          left: '0.5rem', // Move left from the right edge
+          bottom: '0.5rem',
+          left: '0.5rem',
           width: '25%',
           display: 'flex',
           alignItems: 'center',
@@ -74,8 +74,8 @@ module.exports = {
         },
         '.text-overlay-btm-left-lg': {
           position: 'absolute',
-          bottom: '0.5rem', // Move down from the top edge
-          left: '0.5rem', // Move left from the right edge
+          bottom: '0.5rem',
+          left: '0.5rem',
           width: '50%',
           display: 'flex',
           alignItems: 'center',
@@ -87,8 +87,8 @@ module.exports = {
         },
         '.text-overlay-top-right': {
           position: 'absolute',
-          top: '0.5rem', // Move down from the top edge
-          right: '0.75rem', // Move left from the right edge
+          top: '0.5rem',
+          right: '0.75rem',
           width: '55%',
           display: 'flex',
           alignItems: 'center',
@@ -100,8 +100,8 @@ module.exports = {
         },
         '.text-overlay-top': {
           position: 'absolute',
-          top: '0', // Move down from the top edge
-          left: '0', // Move left from the right edge
+          top: '0',
+          left: '0',
           width: '100%',
           display: 'flex',
           alignItems: 'center',
@@ -110,6 +110,13 @@ module.exports = {
           backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.75rem',
+        },
+        '.relative-container': {
+          position: 'relative',
+          overflow: 'visible',
+        },
+        '.icon-container': {
+          position: 'absolute',
         },
       };
 

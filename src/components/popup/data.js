@@ -2,7 +2,8 @@ export const PopupData = [
   {
     id: 'skull',
     title: 'Little Pete Must Die',
-    subtitle: 'The assassination of Fong Ching, aka Little Pete.',
+    subtitle:
+      'The assassination of Fong Ching, aka Little Pete. asdnklasfnklasfnlasfbjkfasbjkasfbjkasfbjklasfjkbafsjkblasflbhjkklghjabfsgjklhasfjlhksaf',
   },
   {
     id: 'sailboat',

@@ -13,8 +13,8 @@ import {
   faHotel,
   faHouseUser,
 } from '@fortawesome/free-solid-svg-icons';
-import PopupCard from '../popup'; // Adjust the import path if necessary
-import { PopupData } from '../popup/data'; // Adjust the import path if necessary
+import PopupCard from '../popup';
+import { PopupData } from '../popup/data';
 
 interface PopupCardProps {
   title: string;
@@ -72,23 +72,20 @@ const CathcartMap = () => {
   };
 
   return (
-    <div className='container mx-auto px-4'>
-      <div className='relative-container w-full h-screen flex justify-center items-center bg-sky overflow-hidden relative'>
-        <div className='flex flex-col justify-center items-center text-center w-full relative'>
+    <div className='container mx-auto px-4 overflow-visible'>
+      <div className='w-full h-screen flex justify-center items-center bg-sky'>
+        <div className='flex flex-col justify-center items-center text-center w-full'>
           <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-6'>
             Cathcart Map <br /> of San Francisco’s Chinatown
           </h1>
-          <div className='relative border-4 border-black relative-container'>
+          <div className='border-4 border-black relative-container overflow-visible'>
             <Image
               src='/images/map.jpeg'
               alt='Cathcart Map'
               width={width < 1024 ? 300 : 800}
               height={width < 1024 ? 400 : 800}
             />
-            <div
-              className='icon-container absolute'
-              style={{ top: '40%', left: '75%' }}
-            >
+            <div className='icon-container' style={{ top: '40%', left: '75%' }}>
               <FontAwesomeIcon
                 icon={faSkull}
                 className='map-icon'
@@ -96,10 +93,7 @@ const CathcartMap = () => {
                 onClick={(e) => handleIconClick('skull', e)}
               />
             </div>
-            <div
-              className='icon-container absolute'
-              style={{ top: '85%', left: '71%' }}
-            >
+            <div className='icon-container' style={{ top: '85%', left: '71%' }}>
               <FontAwesomeIcon
                 icon={faSailboat}
                 className='map-icon'
@@ -107,10 +101,7 @@ const CathcartMap = () => {
                 onClick={(e) => handleIconClick('sailboat', e)}
               />
             </div>
-            <div
-              className='icon-container absolute'
-              style={{ top: '76%', left: '77%' }}
-            >
+            <div className='icon-container' style={{ top: '76%', left: '77%' }}>
               <FontAwesomeIcon
                 icon={faSquarePhone}
                 className='map-icon'
@@ -118,10 +109,7 @@ const CathcartMap = () => {
                 onClick={(e) => handleIconClick('phone', e)}
               />
             </div>
-            <div
-              className='icon-container absolute'
-              style={{ top: '20%', left: '1%' }}
-            >
+            <div className='icon-container' style={{ top: '20%', left: '1%' }}>
               <FontAwesomeIcon
                 icon={faShrimp}
                 className='map-icon'
@@ -129,10 +117,7 @@ const CathcartMap = () => {
                 onClick={(e) => handleIconClick('beach', e)}
               />
             </div>
-            <div
-              className='icon-container absolute'
-              style={{ top: '72%', left: '59%' }}
-            >
+            <div className='icon-container' style={{ top: '72%', left: '59%' }}>
               <FontAwesomeIcon
                 icon={faVihara}
                 className='map-icon'
@@ -140,10 +125,7 @@ const CathcartMap = () => {
                 onClick={(e) => handleIconClick('shingchong', e)}
               />
             </div>
-            <div
-              className='icon-container absolute'
-              style={{ top: '90%', left: '50%' }}
-            >
+            <div className='icon-container' style={{ top: '90%', left: '50%' }}>
               <FontAwesomeIcon
                 icon={faJoint}
                 className='map-icon'
@@ -151,10 +133,7 @@ const CathcartMap = () => {
                 onClick={(e) => handleIconClick('cigar', e)}
               />
             </div>
-            <div
-              className='icon-container absolute'
-              style={{ top: '62%', left: '75%' }}
-            >
+            <div className='icon-container' style={{ top: '62%', left: '75%' }}>
               <FontAwesomeIcon
                 icon={faShirt}
                 className='map-icon'
@@ -162,10 +141,7 @@ const CathcartMap = () => {
                 onClick={(e) => handleIconClick('laundry', e)}
               />
             </div>
-            <div
-              className='icon-container absolute'
-              style={{ top: '72%', left: '65%' }}
-            >
+            <div className='icon-container' style={{ top: '72%', left: '65%' }}>
               <FontAwesomeIcon
                 icon={faHotel}
                 className='map-icon'
@@ -173,10 +149,7 @@ const CathcartMap = () => {
                 onClick={(e) => handleIconClick('tong', e)}
               />
             </div>
-            <div
-              className='icon-container absolute'
-              style={{ top: '22%', left: '35%' }}
-            >
+            <div className='icon-container' style={{ top: '22%', left: '35%' }}>
               <FontAwesomeIcon
                 icon={faHouseUser}
                 className='map-icon'
@@ -186,10 +159,11 @@ const CathcartMap = () => {
             </div>
             {popup.visible && popup.content && (
               <div
-                className='absolute'
+                className='absolute z-50'
                 style={{
                   top: `${popup.top}px`,
                   left: `${popup.left}px`,
+                  transform: 'translate(-50%, -50%)',
                 }}
               >
                 <PopupCard {...popup.content} />
