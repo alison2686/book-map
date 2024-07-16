@@ -4,11 +4,15 @@ import ComicPanel from '../panel';
 
 function Comic() {
   return (
-    <div>
-      {PanelData.map((panel, index) => {
-        return <ComicPanel key={index} {...panel} />;
-      })}
-    </div>
+    <>
+      <div>
+        <div>
+          {PanelData.map((panel, index) => {
+            return <ComicPanel key={index} {...panel} />;
+          })}
+        </div>
+      </div>
+    </>
   );
 }
 
