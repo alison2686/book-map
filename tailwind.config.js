@@ -118,6 +118,10 @@ module.exports = {
         '.icon-container': {
           position: 'absolute',
         },
+        // '.card': {
+        //   maxWidth: '24rem',
+        //   border: '1px solid #E5E7EB',
+        // },
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);

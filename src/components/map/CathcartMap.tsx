@@ -61,7 +61,7 @@ const CathcartMap = () => {
       .getBoundingClientRect();
 
     const popupTop = iconRect.top - containerRect.top + iconRect.height / 2;
-    const popupLeft = iconRect.left - containerRect.left + iconRect.width + 10;
+    const popupLeft = iconRect.left - containerRect.left + iconRect.width + 50;
 
     setPopup({
       visible: true,
