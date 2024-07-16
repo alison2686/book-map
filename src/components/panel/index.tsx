@@ -15,6 +15,8 @@ interface ComicPanelProps {
   alt3: string;
   img4: string;
   alt4: string;
+  img5: string;
+  alt5: string;
   text1: string;
   text2: string;
   text3: string;
@@ -38,6 +40,8 @@ const ComicPanel: FC<ComicPanelProps> = ({
   alt3,
   img4,
   alt4,
+  img5,
+  alt5,
   text1,
   text2,
   text3,
@@ -52,7 +56,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
   return (
     <div className='compic-panel container mx-auto p-4'>
       <div className='flex items-center justify-center'>
-        <div className='border-4 border-black bg-comic-background bg-cover w-10/12 h-screen flex items-center justify-center'>
+        <div className='border-4 border-black bg-comic-background bg-cover w-full h-screen flex items-center justify-center'>
           <BackButton />
           <div className='grid grid-cols-6 grid-rows-10 gap-4 w-full h-full p-6'>
             <h1 className='text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
@@ -99,13 +103,22 @@ const ComicPanel: FC<ComicPanelProps> = ({
               </div>
             </div>
             {/* Bottom row: 2 rectangular panels */}
-            <div className='col-span-3 row-span-4 comic-panel transform translate-y-2 p-10'>
-              <div className={overlay4}>{text4}</div>
-            </div>
             <div className='col-span-3 row-span-4 comic-panel relative'>
               <Image
                 src={img4}
                 alt={alt4}
+                width={500}
+                height={500}
+                className='w-full h-full object-contain'
+              />
+              <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+                <div className={overlay4}>{text4}</div>
+              </div>
+            </div>
+            <div className='col-span-3 row-span-4 comic-panel relative'>
+              <Image
+                src={img5}
+                alt={alt5}
                 width={500}
                 height={500}
                 className='w-full h-full object-contain'

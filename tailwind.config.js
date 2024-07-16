@@ -55,7 +55,7 @@ module.exports = {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.5rem',
         },
@@ -68,7 +68,7 @@ module.exports = {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.75rem',
         },
@@ -81,20 +81,20 @@ module.exports = {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.75rem',
         },
         '.text-overlay-top-right': {
           position: 'absolute',
-          top: '6rem',
+          top: 'rem',
           right: '0.75rem',
           width: '35%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.75rem',
         },
@@ -107,7 +107,7 @@ module.exports = {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.75rem',
         },

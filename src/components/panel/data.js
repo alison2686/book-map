@@ -13,8 +13,10 @@ export const PanelData = [
     imgClassName: 'w-full h-full object-cover',
     img3: '/images/newspaper.png',
     alt3: 'Newspaper',
-    img4: '/images/telephone-company1.png',
-    alt4: 'Telephone Company',
+    img4: '/images/cny.png',
+    alt4: 'Chinese New Year',
+    img5: '/images/telephone-company1.png',
+    alt5: 'Telephone Company',
     text1: 'Fong Ching, aka Little Pete.',
     text2:
       'His gangland style murder in a barbershop chair is one of the most infamous crime stories in Chinatown history.',
