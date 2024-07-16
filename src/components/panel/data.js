@@ -13,7 +13,7 @@ export const PanelData = [
     imgClassName: 'w-full h-full object-cover',
     img3: '/images/newspaper.png',
     alt3: 'Newspaper',
-    img4: '/images/telephone-company.png',
+    img4: '/images/telephone-company1.png',
     alt4: 'Telephone Company',
     text1: 'Fong Ching, aka Little Pete.',
     text2:
@@ -23,12 +23,12 @@ export const PanelData = [
     text4:
       'Suey Ying Tong elders told the story that the Tombstone AZ killers chose January 23, 1897, during the Chinese New Year celebration, when there were a lot of out-of-towners and strangers in the City as the right time to assasinate Little Pete and leave town unnoticed.',
     text5:
-      'Albert Bew Chan (Lucretias grandfather) said that he was the ten year old messanger boy who deliverd the killers message via their Chinatown telephone switchboard to Tombstone that Little Pete had been killed.',
+      'Albert Bew Chan said that he was the ten year old messanger boy who deliverd the killers message via their Chinatown telephone switchboard.',
     overlay1: 'text-overlay-btm-left-sm',
     overlay2: 'text-overlay-full',
     overlay3: 'text-overlay-top',
     overlay4: 'text-overlay-full',
-    overlay5: 'text-overlay-full',
+    overlay5: 'text-overlay-top-right',
   },
   {
     id: 'panel2',

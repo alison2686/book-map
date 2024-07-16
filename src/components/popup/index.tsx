@@ -8,7 +8,7 @@ interface PopupCardProps {
 
 const PopupCard: FC<PopupCardProps> = ({ title, subtitle }) => {
   return (
-    <div className='card bg-white text-black border border-black p-4 rounded shadow-lg w-max'>
+    <div className='card bg-white text-black border border-black p-4 rounded shadow-lg w-96'>
       <p className='text-xl font-bold'>{title}</p>
       <p className=''>{subtitle}</p>
       <Link href='/Comics' className='text-blue-500 underline'>

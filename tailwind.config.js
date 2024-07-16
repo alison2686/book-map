@@ -87,9 +87,9 @@ module.exports = {
         },
         '.text-overlay-top-right': {
           position: 'absolute',
-          top: '0.5rem',
+          top: '6rem',
           right: '0.75rem',
-          width: '55%',
+          width: '35%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',

@@ -2,7 +2,8 @@ export const PopupData = [
   {
     id: 'skull',
     title: 'Little Pete Must Die',
-    subtitle: 'The assassination of Fong Ching, aka Little Pete.',
+    subtitle:
+      "The assassination of Fong Ching, aka Little Pete. The Arizona Suey Ying Tong men wanted to use the assassination of Little Pete as an unspoken warning to San Francisco's rogue police. Lennie heard from her Father, Chow Chong, that the Suey Ying Tong were involved.",
   },
   {
     id: 'sailboat',
