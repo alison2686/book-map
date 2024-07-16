@@ -109,7 +109,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 alt={alt4}
                 width={500}
                 height={500}
-                className='w-full h-full object-contain'
+                className='w-full h-full object-cover'
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                 <div className={overlay4}>{text4}</div>
@@ -121,7 +121,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 alt={alt5}
                 width={500}
                 height={500}
-                className='w-full h-full object-contain'
+                className='w-full h-full object-cover'
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                 <div className={overlay5}>{text5}</div>

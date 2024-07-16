@@ -23,7 +23,7 @@ export const PanelData = [
     text3:
       'San Francisco\'s "Yellow Journalism" news media were forwarned about the impending murder, arriving at the murder scene minutes after the killing.',
     text4:
-      'Suey Ying Tong elders told the story that the Tombstone AZ killers chose January 23, 1897, during the Chinese New Year celebration, when there were a lot of out-of-towners and strangers in the City as the right time to assasinate Little Pete and leave town unnoticed.',
+      'Suey Ying Tong elders told the story that the Tombstone AZ killers chose January 23, 1897, during the Chinese New Year celebration, as the right time to assasinate Little Pete and leave town unnoticed.',
     text5:
       'Albert Bew Chan said that he was the ten year old messanger boy who deliverd the killers message via their Chinatown telephone switchboard.',
     overlay1: 'text-overlay-btm-left-sm',
