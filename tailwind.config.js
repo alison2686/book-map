@@ -118,10 +118,11 @@ module.exports = {
         '.icon-container': {
           position: 'absolute',
         },
-        // '.card': {
-        //   maxWidth: '24rem',
-        //   border: '1px solid #E5E7EB',
-        // },
+        '.comic-bg': {
+          backgroundColor: '#facc15' /* Tailwind's yellow-400 */,
+          backgroundImage:
+            'repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 10px, transparent 10px, transparent 20px)',
+        },
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);

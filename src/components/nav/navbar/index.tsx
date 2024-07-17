@@ -31,7 +31,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             </button>
             <ul className='hidden md:flex gap-x-6 text-white font-comic text-lg'>
               <li>
-                <Link href='/about'>
+                <Link href='/About'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     About the Author
                   </p>
