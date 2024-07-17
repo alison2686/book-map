@@ -38,14 +38,14 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 </Link>
               </li>
               <li>
-                <Link href='/map'>
+                <Link href='/Map'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Cathcart Map
                   </p>
                 </Link>
               </li>
               <li>
-                <Link href='/contacts'>
+                <Link href='/Contact'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Contact Us
                   </p>
