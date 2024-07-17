@@ -25,7 +25,7 @@ export const PanelData = [
     text4:
       'Suey Ying Tong elders told the story that the Tombstone AZ killers chose January 23, 1897, during the Chinese New Year celebration, as the right time to assasinate Little Pete and leave town unnoticed.',
     text5:
-      'Albert Bew Chan said that he was the ten year old messanger boy who deliverd the killers message via their Chinatown telephone switchboard.',
+      "Albert Bew Chan (Lucretia's grandfather) said that he was the young messanger boy who deliverd the killers message via the Chinatown telephone switchboard.",
     overlay1: 'text-overlay-btm-left-sm',
     overlay2: 'text-overlay-full',
     overlay3: 'text-overlay-top',

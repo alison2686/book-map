@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { FC } from 'react';
-import BackButton from '../buttons';
+import BackButton from '../buttons/BackButton';
 
 interface ComicPanelProps {
   title: string;
@@ -55,9 +55,9 @@ const ComicPanel: FC<ComicPanelProps> = ({
 }) => {
   return (
     <div className='compic-panel container mx-auto p-4'>
+      <BackButton />
       <div className='flex items-center justify-center'>
         <div className='border-4 border-black bg-comic-background bg-cover w-full h-screen flex items-center justify-center'>
-          <BackButton />
           <div className='grid grid-cols-6 grid-rows-10 gap-4 w-full h-full p-6'>
             <h1 className='text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
               {title}
