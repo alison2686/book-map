@@ -17,6 +17,7 @@ import PopupCard from '../popup';
 import { PopupData } from '../popup/data';
 
 interface PopupCardProps {
+  id: string;
   title: string;
   subtitle: string;
 }
@@ -65,7 +66,11 @@ const CathcartMap = () => {
 
     setPopup({
       visible: true,
-      content: { title: dataItem.title, subtitle: dataItem.subtitle },
+      content: {
+        id: dataItem.id,
+        title: dataItem.title,
+        subtitle: dataItem.subtitle,
+      },
       top: popupTop,
       left: popupLeft,
     });
@@ -166,7 +171,11 @@ const CathcartMap = () => {
                   transform: 'translate(-50%, -50%)',
                 }}
               >
-                <PopupCard {...popup.content} />
+                <PopupCard
+                  id={popup.content.id}
+                  title={popup.content.title}
+                  subtitle={popup.content.subtitle}
+                />
               </div>
             )}
           </div>
