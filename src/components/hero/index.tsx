@@ -36,22 +36,26 @@ export default function Hero() {
               </h1>
               <h2 className='text-2xl lg:text-4xl mt-6'>
                 Based On An Autobiography and Memoir <br />
-                By L.K. Lennie Lee, née Chow <br /> (1923-2021)
+                By L.K. Lennie Lee, née Chow
               </h2>
-              {/* <h4 className='max-w-xl text-lg leading-relaxed text-left'>
-                Lennie Lee and son Ron Lee had similar careers as real estate
-                investors and public school teachers. In her spare time, she
-                wrote an extensive autobiography and memoir that included
-                detailed observations of life in San Francisco’s Chinatown
-                beyond the facade of tourism.
-                <br />
-                Ron spent his free time advocating for a variety of issues
-                involving Asian American Native Hawaiian Pacific Islanders. At
-                Lennie’s request he was directed, along with his two daughters
-                and nephews, to edit and add to her work. The result is an
-                extraordinary adventure story and a description of the entire
-                Chinese diaspora.
-              </h4> */}
+              <h4 className='max-w-xl text-2xl leading-relaxed text-left mt-6'>
+                “Uncle Ron, look at what grandma wrote. It reads like an episode
+                from Warrior.” “What’s Warrior?” I asked. It turned out to be a
+                TV series based on a “treatment” written by Bruce Lee in the
+                1970s.
+              </h4>
+              <h4 className='max-w-xl text-2xl leading-relaxed text-left mt-6'>
+                My nephew Erik handed me a binder with a lime green cover. It
+                turned out to be a manuscript titled Joke Sings, written by my
+                mother, Erik’s grandmother, L K Lennie Lee, nee Chow
+                (1923-2021.)
+              </h4>
+              <h4 className='max-w-xl text-2xl leading-relaxed text-left mt-6'>
+                “Grandma Lee” had quietly passed away at age 98 after a long,
+                productive life. We came upon the book while going through her
+                belongings. At the top of the first page, she had written a
+                note: “Grandmother Lee’s Autobiography.
+              </h4>
             </div>
           </div>
         </div>

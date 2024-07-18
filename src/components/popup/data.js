@@ -3,7 +3,7 @@ export const PopupData = [
     id: 'skull',
     title: 'Little Pete Must Die',
     subtitle:
-      "The assassination of notorious San Francisco gangster Fong Ching, aka Little Pete in a barbershop chair is one of the most infamous crime stories in Chinatown history. Lennie heard from her Father, Chow Chong, that the Suey Ying Tong were involved. It was said the men wanted to use the assassination of Little Pete as an unspoken warning to San Francisco's rogue police.",
+      "The assassination of notorious San Francisco gangster Fong Ching, aka Little Pete, in a barbershop chair is one of the most infamous crime stories in Chinatown history. Lennie heard from her Father, Chow Chong, that the Suey Ying Tong were involved. It was said the men wanted to use the assassination of Little Pete as an unspoken warning to San Francisco's rogue police.",
   },
   {
     id: 'sailboat',

@@ -48,8 +48,8 @@ export const PanelData = [
     alt3: 'barber',
     img4: '/images/fisherman.png',
     alt4: 'Telephone Company',
-    img5: '/images/telephone-company1.png',
-    alt5: 'Telephone Company',
+    img5: '/images/ggp.png',
+    alt5: 'Golden Gate Park',
     text1:
       'Even though the inscription on the China Beach monument states, “fishing is one of the area’s most important industries and traditions,” one would be hard-pressed to find evidence that Chinese fishermen participated.',
     text2:
