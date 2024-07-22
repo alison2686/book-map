@@ -76,14 +76,21 @@ const CathcartMap = () => {
     });
   };
 
+  const handleClose = () => {
+    setPopup({
+      ...popup,
+      visible: false,
+    });
+  };
+
   return (
     <div className='container mx-auto px-4 overflow-visible'>
-      <div className='w-full h-screen flex justify-center items-center bg-sky'>
+      <div className='w-full h-full flex justify-center items-center bg-sky'>
         <div className='flex flex-col justify-center items-center text-center w-full'>
           <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-6'>
             Cathcart Map <br /> of San Francisco’s Chinatown
           </h1>
-          <div className='border-4 border-black relative-container overflow-visible'>
+          <div className='border-4 border-black relative-container overflow-visible m-8'>
             <Image
               src='/images/map.jpeg'
               alt='Cathcart Map'
@@ -175,6 +182,7 @@ const CathcartMap = () => {
                   id={popup.content.id}
                   title={popup.content.title}
                   subtitle={popup.content.subtitle}
+                  onClose={handleClose}
                 />
               </div>
             )}

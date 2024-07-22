@@ -33,7 +33,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
               <li>
                 <Link href='/About'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
-                    About the Author
+                    About the Authors
                   </p>
                 </Link>
               </li>
