@@ -19,6 +19,8 @@ import { PopupData } from '../popup/data';
 interface PopupCardProps {
   id: string;
   title: string;
+  chapter: string;
+  page: string;
   subtitle: string;
 }
 
@@ -69,6 +71,8 @@ const CathcartMap = () => {
       content: {
         id: dataItem.id,
         title: dataItem.title,
+        chapter: dataItem.chapter,
+        page: dataItem.page,
         subtitle: dataItem.subtitle,
       },
       top: popupTop,
@@ -181,6 +185,8 @@ const CathcartMap = () => {
                 <PopupCard
                   id={popup.content.id}
                   title={popup.content.title}
+                  chapter={popup.content.chapter}
+                  page={popup.content.page}
                   subtitle={popup.content.subtitle}
                   onClose={handleClose}
                 />

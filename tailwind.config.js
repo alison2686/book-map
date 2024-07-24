@@ -125,6 +125,15 @@ module.exports = {
           backgroundSize: '10px 10px',
           backgroundPosition: '0 0, 5px 5px',
         },
+        '.hero-text': {
+          maxWidth: '36rem',
+          fontSize: '1.25rem',
+          lineHeight: '1.625rem',
+          letterSpacing: '0.025em',
+          textAlign: 'left',
+          marginTop: '1.25rem',
+          padding: '1rem',
+        },
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);
