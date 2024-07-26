@@ -32,8 +32,8 @@ const CathcartMap = () => {
   };
 
   useEffect(() => {
+    updateWidth(); // Set the initial width
     window.addEventListener('resize', updateWidth);
-    updateWidth();
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
 
