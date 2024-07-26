@@ -92,7 +92,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faSkull}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('skull', e)}
               />
             </div>
@@ -100,7 +99,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faSailboat}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('sailboat', e)}
               />
             </div>
@@ -108,7 +106,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faSquarePhone}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('phone', e)}
               />
             </div>
@@ -116,7 +113,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faShrimp}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('beach', e)}
               />
             </div>
@@ -124,7 +120,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faVihara}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('shingchong', e)}
               />
             </div>
@@ -132,7 +127,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faJoint}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('cigar', e)}
               />
             </div>
@@ -140,7 +134,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faShirt}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('laundry', e)}
               />
             </div>
@@ -148,7 +141,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faHotel}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('tong', e)}
               />
             </div>
@@ -156,7 +148,6 @@ const CathcartMap = () => {
               <FontAwesomeIcon
                 icon={faHouseUser}
                 className='map-icon'
-                style={{ fontSize: '2rem' }}
                 onClick={(e) => handleIconClick('cameron', e)}
               />
             </div>

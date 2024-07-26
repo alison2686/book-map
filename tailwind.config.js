@@ -41,9 +41,13 @@ module.exports = {
           borderRadius: '9999px', // Fully rounded
           padding: '0.5rem', // Tailwind p-1 equivalent
           backgroundColor: '#FFFFFF',
+          fontSize: '0.75rem',
           '&:hover': {
             transform: 'scale(1.25)',
             opacity: '1',
+          },
+          '@screen lg': {
+            fontSize: '2rem',
           },
         },
         '.text-overlay-full': {
