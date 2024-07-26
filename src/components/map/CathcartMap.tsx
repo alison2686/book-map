@@ -15,21 +15,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import PopupCard from '../popup';
 import { PopupData } from '../popup/data';
-
-interface PopupCardProps {
-  id: string;
-  title: string;
-  chapter: string;
-  page: string;
-  subtitle: string;
-}
-
-interface PopupState {
-  visible: boolean;
-  content: PopupCardProps | null;
-  top: number;
-  left: number;
-}
+import { PopupState } from '@/types/index.d';
 
 const CathcartMap = () => {
   const [width, setWidth] = useState(0);
@@ -74,6 +60,7 @@ const CathcartMap = () => {
         chapter: dataItem.chapter,
         page: dataItem.page,
         subtitle: dataItem.subtitle,
+        onClose: handleClose,
       },
       top: popupTop,
       left: popupLeft,

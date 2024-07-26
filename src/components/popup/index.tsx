@@ -3,15 +3,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-
-interface PopupCardProps {
-  id: string;
-  title: string;
-  chapter: string;
-  page: string;
-  subtitle: string;
-  onClose: () => void; // Add an onClose prop
-}
+import { PopupCardProps } from '@/types/index.d';
 
 const PopupCard: FC<PopupCardProps> = ({
   id,
