@@ -38,10 +38,11 @@ module.exports = {
           transition: 'transform 0.2s ease-in-out',
           cursor: 'pointer',
           border: '3px solid #17202A ', // Tailwind red-500
-          borderRadius: '9999px', // Fully rounded
-          padding: '0.5rem', // Tailwind p-1 equivalent
+          borderRadius: '30%', // Fully rounded
+          padding: '0.25rem', // Tailwind p-1 equivalent
           backgroundColor: '#FFFFFF',
           fontSize: '0.75rem',
+          justifyContent: 'center',
           '&:hover': {
             transform: 'scale(1.25)',
             opacity: '1',
