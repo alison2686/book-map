@@ -48,7 +48,7 @@ module.exports = {
             opacity: '1',
           },
           '@screen lg': {
-            fontSize: '2rem',
+            fontSize: '1.75rem',
           },
         },
         '.text-overlay-full': {
@@ -124,7 +124,7 @@ module.exports = {
           position: 'absolute',
         },
         '.comic-bg': {
-          backgroundColor: '#facc15' /* Tailwind's yellow-400 */,
+          backgroundColor: '#DAA520' /* GoldenRod */,
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',

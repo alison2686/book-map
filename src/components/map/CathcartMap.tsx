@@ -28,6 +28,13 @@ type IconKey =
   | 'tong'
   | 'cameron';
 
+// Lazy load the FontAwesomeIcon component
+const FontAwesomeIcon = lazy(() =>
+  import('@fortawesome/react-fontawesome').then((module) => ({
+    default: module.FontAwesomeIcon,
+  }))
+);
+
 const CathcartMap = () => {
   const [width, setWidth] = useState(0);
   const [popup, setPopup] = useState<PopupState>({
@@ -84,38 +91,6 @@ const CathcartMap = () => {
     });
   };
 
-  // Lazy load FontAwesomeIcon components
-  const Icon = ({
-    icon,
-    className,
-    onClick,
-  }: {
-    icon: IconProp;
-    className?: string;
-    onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
-  }) => {
-    const [IconComponent, setIconComponent] = useState<any>(null);
-
-    useEffect(() => {
-      const loadIcon = async () => {
-        const { FontAwesomeIcon } = await import(
-          '@fortawesome/react-fontawesome'
-        );
-        setIconComponent(() => FontAwesomeIcon);
-      };
-
-      loadIcon();
-    }, []);
-
-    if (!IconComponent) return null;
-
-    return (
-      <div onClick={onClick} className={className}>
-        <IconComponent icon={icon} />
-      </div>
-    );
-  };
-
   const icons: Record<IconKey, IconDefinition> = {
     skull: faSkull,
     sailboat: faSailboat,
@@ -149,11 +124,12 @@ const CathcartMap = () => {
                 key={key}
               >
                 <Suspense fallback={<div>Loading...</div>}>
-                  <Icon
-                    icon={icons[key as IconKey] as IconProp}
-                    className='map-icon'
+                  <div
                     onClick={(e) => handleIconClick(key, e)}
-                  />
+                    className='map-icon'
+                  >
+                    <FontAwesomeIcon icon={icons[key as IconKey] as IconProp} />
+                  </div>
                 </Suspense>
               </div>
             ))}
