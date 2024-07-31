@@ -36,7 +36,9 @@ const FontAwesomeIcon = lazy(() =>
 );
 
 const CathcartMap = () => {
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
   const [popup, setPopup] = useState<PopupState>({
     visible: false,
     content: null,
@@ -50,6 +52,7 @@ const CathcartMap = () => {
   };
 
   useEffect(() => {
+    updateWidth();
     window.addEventListener('resize', updateWidth);
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
