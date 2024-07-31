@@ -37,7 +37,7 @@ module.exports = {
           opacity: '0.7',
           transition: 'transform 0.2s ease-in-out',
           cursor: 'pointer',
-          border: '3px solid #17202A ', // Tailwind red-500
+          border: '3px solid #17202A', // Tailwind red-500
           borderRadius: '30%', // Fully rounded
           padding: '0.25rem', // Tailwind p-1 equivalent
           backgroundColor: '#FFFFFF',
@@ -92,7 +92,7 @@ module.exports = {
         },
         '.text-overlay-top-right': {
           position: 'absolute',
-          top: 'rem',
+          top: '0.5rem',
           right: '0.75rem',
           width: '35%',
           display: 'flex',

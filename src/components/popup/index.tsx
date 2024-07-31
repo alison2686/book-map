@@ -13,7 +13,7 @@ const PopupCard: FC<PopupCardProps> = ({
   page,
 }) => {
   return (
-    <div className='card bg-white text-black border border-black p-4 rounded shadow-lg w-full max-w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl relative'>
+    <div className='card bg-white text-black border border-black p-4 rounded shadow-lg w-full max-w-5xl sm:max-w-lg md:max-w-xl lg:max-w-2xl relative'>
       <button
         className='absolute top-2 right-2 text-black'
         onClick={onClose}

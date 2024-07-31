@@ -1,5 +1,3 @@
-// components/ComicPanel.tsx
-
 import Image from 'next/image';
 import { FC } from 'react';
 import BackButton from '../buttons/BackButton';
@@ -54,19 +52,19 @@ const ComicPanel: FC<ComicPanelProps> = ({
   overlay5,
 }) => {
   return (
-    <div className='compic-panel container mx-auto p-4'>
+    <div className='comic-panel container mx-auto p-4'>
       <BackButton />
-      <div className='flex items-center justify-center'>
-        <div className='comic-bg border-4 border-black w-full h-screen flex items-center justify-center'>
-          <div className='grid grid-cols-6 grid-rows-10 gap-4 w-full h-full p-6'>
-            <h1 className='text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
+      <div className='flex flex-col items-center justify-center md:h-screen'>
+        <div className='comic-bg border-4 border-black w-full md:h-full flex flex-col items-center justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-6 md:grid-rows-10 gap-4 w-full h-full p-2 md:p-6'>
+            <h1 className='text-4xl md:text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
               {title}
             </h1>
-            <div className='col-span-full flex items-center justify-center'>
+            <div className='col-span-full flex items-center justify-center mb-4 md:mb-0'>
               {subtitle}
             </div>
             {/* Top row: 3 square panels */}
-            <div className='col-span-2 row-span-4 comic-panel relative'>
+            <div className='col-span-1 md:col-span-2 row-span-4 comic-panel relative'>
               <Image
                 src={img1}
                 alt={alt1}
@@ -78,7 +76,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 <div className={overlay1}>{text1}</div>
               </div>
             </div>
-            <div className='col-span-2 row-span-4 comic-panel relative'>
+            <div className='col-span-1 md:col-span-2 row-span-4 comic-panel relative'>
               <Image
                 src={img2}
                 alt={alt2}
@@ -90,7 +88,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 <div className={overlay2}>{text2}</div>
               </div>
             </div>
-            <div className='col-span-2 row-span-4 comic-panel relative'>
+            <div className='col-span-1 md:col-span-2 row-span-4 comic-panel relative'>
               <Image
                 src={img3}
                 alt={alt3}
@@ -103,7 +101,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
               </div>
             </div>
             {/* Bottom row: 2 rectangular panels */}
-            <div className='col-span-3 row-span-4 comic-panel relative'>
+            <div className='col-span-1 md:col-span-3 row-span-4 comic-panel relative'>
               <Image
                 src={img4}
                 alt={alt4}
@@ -115,7 +113,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 <div className={overlay4}>{text4}</div>
               </div>
             </div>
-            <div className='col-span-3 row-span-4 comic-panel relative'>
+            <div className='col-span-1 md:col-span-3 row-span-4 comic-panel relative'>
               <Image
                 src={img5}
                 alt={alt5}
