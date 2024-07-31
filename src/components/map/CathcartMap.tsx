@@ -72,7 +72,12 @@ const CathcartMap = () => {
       .getBoundingClientRect();
 
     const popupTop = iconRect.top - containerRect.top + iconRect.height / 2;
-    const popupLeft = iconRect.left - containerRect.left + iconRect.width + 50;
+    let popupLeft = iconRect.left - containerRect.left + iconRect.width + 50;
+
+    if (width < 768) {
+      // Adjust position for mobile screens
+      popupLeft = containerRect.width / 2;
+    }
 
     setPopup({
       visible: true,
@@ -142,11 +147,15 @@ const CathcartMap = () => {
             ))}
             {popup.visible && popup.content && (
               <div
-                className='absolute z-50'
+                className={`absolute z-50 ${
+                  width < 768
+                    ? 'fixed inset-0 flex items-center justify-center'
+                    : ''
+                }`}
                 style={{
                   top: `${popup.top}px`,
                   left: `${popup.left}px`,
-                  transform: 'translate(-50%, -50%)',
+                  transform: width < 768 ? 'none' : 'translate(-50%, -50%)',
                 }}
               >
                 <PopupCard

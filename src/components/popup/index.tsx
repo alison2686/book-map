@@ -1,4 +1,3 @@
-// components/popup/PopupCard.js
 import { FC } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,7 +13,7 @@ const PopupCard: FC<PopupCardProps> = ({
   page,
 }) => {
   return (
-    <div className='card bg-white text-black border border-black p-4 rounded shadow-lg w-96 relative'>
+    <div className='card bg-white text-black border border-black p-4 rounded shadow-lg w-full max-w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl relative'>
       <button
         className='absolute top-2 right-2 text-black'
         onClick={onClose}
@@ -22,10 +21,10 @@ const PopupCard: FC<PopupCardProps> = ({
       >
         <FontAwesomeIcon icon={faTimes} />
       </button>
-      <p className='text-2xl font-bold'>{title}</p>
-      <p className='text-lg'>{chapter}</p>
+      <p className='text-xl sm:text-2xl font-bold'>{title}</p>
+      <p className='text-md sm:text-lg'>{chapter}</p>
       <p className='text-sm'>{page}</p>
-      <p className=''>{subtitle}</p>
+      <p className='text-sm sm:text-base'>{subtitle}</p>
       <Link href={`/Comics/${id}`} className='text-blue-500 underline'>
         Learn More...
       </Link>
