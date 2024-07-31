@@ -36,9 +36,7 @@ const FontAwesomeIcon = lazy(() =>
 );
 
 const CathcartMap = () => {
-  const [width, setWidth] = useState(
-    typeof window !== 'undefined' ? window.innerWidth : 0
-  );
+  const [width, setWidth] = useState(0);
   const [popup, setPopup] = useState<PopupState>({
     visible: false,
     content: null,
@@ -46,15 +44,19 @@ const CathcartMap = () => {
     left: 0,
   });
 
-  const updateWidth = () => {
-    const newWidth = window.innerWidth;
-    setWidth(newWidth);
-  };
-
   useEffect(() => {
-    updateWidth();
-    window.addEventListener('resize', updateWidth);
-    return () => window.removeEventListener('resize', updateWidth);
+    // Check if running in client-side
+    if (typeof window !== 'undefined') {
+      const updateWidth = () => {
+        const newWidth = window.innerWidth;
+        setWidth(newWidth);
+      };
+
+      updateWidth();
+      window.addEventListener('resize', updateWidth);
+
+      return () => window.removeEventListener('resize', updateWidth);
+    }
   }, []);
 
   const handleIconClick = (
@@ -114,12 +116,14 @@ const CathcartMap = () => {
             Cathcart Map <br /> of San Francisco’s Chinatown
           </h1>
           <div className='border-4 border-black relative-container overflow-visible m-8'>
-            <Image
-              src='/images/map.jpeg'
-              alt='Cathcart Map'
-              width={width < 1024 ? 300 : 800}
-              height={width < 1024 ? 400 : 800}
-            />
+            {width > 0 && (
+              <Image
+                src='/images/map.jpeg'
+                alt='Cathcart Map'
+                width={width < 1024 ? 300 : 800}
+                height={width < 1024 ? 400 : 800}
+              />
+            )}
             {Object.keys(icons).map((key) => (
               <div
                 className='icon-container'
