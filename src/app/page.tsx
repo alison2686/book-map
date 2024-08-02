@@ -1,12 +1,12 @@
 'use client';
 import Hero from '@/components/hero';
-import Map from '@/components/map';
+import MapImage from '@/components/map/PlainMap';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Map />
+      <MapImage />
     </>
   );
 }

@@ -36,12 +36,8 @@ export default function Hero() {
             {/* Text column */}
             <div className='flex flex-col justify-center items-center'>
               <div className='flex flex-col items-center'>
-                <h1 className='text-2xl lg:text-4xl text-center'>
-                  Becoming American: <br /> A 600 Year Odyssey
-                </h1>
                 <h2 className='text-2xl lg:text-2xl mt-6 text-center'>
-                  Based On An Autobiography and Memoir <br />
-                  By L.K. Lennie Lee, née Chow
+                  New Text TBD
                 </h2>
               </div>
               <h4 className='hero-text'>
