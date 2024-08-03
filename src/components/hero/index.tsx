@@ -27,7 +27,7 @@ export default function Hero() {
             {/* Image column */}
             <div className='flex justify-center lg:justify-end items-center'>
               <Image
-                src='/images/book-cover.png'
+                src='/images/bookcover.png'
                 alt='Becoming American cover'
                 width={width < 1024 ? 300 : 300}
                 height={width < 1024 ? 300 : 400}
