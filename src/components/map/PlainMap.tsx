@@ -59,6 +59,10 @@ const MapImage = () => {
               )}
             </div>
           </div>
+          {/* Credit Section */}
+          <p className='text-sm text-gray-600 mt-4'>
+            Images courtesy of Schein and Schein Inc.
+          </p>
         </div>
       </div>
     </div>
