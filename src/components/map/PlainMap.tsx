@@ -43,8 +43,8 @@ const MapImage = () => {
                 <Image
                   src='/images/map/map2.png'
                   alt='Cathcart Map'
-                  width={width < 1024 ? 300 : 400}
-                  height={width < 1024 ? 400 : 500}
+                  width={width < 1024 ? 300 : 510}
+                  height={width < 1024 ? 400 : 600}
                 />
               )}
             </div>
