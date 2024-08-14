@@ -27,6 +27,29 @@ const MapImage = () => {
           <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-6'>
             Cathcart Map <br /> of San Francisco’s Chinatown
           </h1>
+          <h3 className='text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4'>
+            While conducting research, a very interesting book came to light by
+            Jim Schein:
+          </h3>
+          <div className='border-4 border-black relative-container overflow-visible m-2'>
+            {width > 0 && (
+              <Image
+                src='/images/map/cathcart-title.png'
+                alt='Cathcart Map'
+                width={width < 1024 ? 300 : 300}
+                height={width < 1024 ? 400 : 400}
+              />
+            )}
+          </div>
+          <em>Gold Mountain Big City </em>by Jim Schein
+          <h3 className='text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4'>
+            Based on the work of photographer/map maker Ken Cathcart, Jim has
+            produced a hand-colorized map of Chinatown in 1947 highlighting
+            historically significant locations in “Dai Fou” (Big City). The map
+            depicts many of the places Lennie referred to and is a wonderful
+            visual aid for the target audience of Becoming American...:: young
+            people.
+          </h3>
           <div className='border-4 border-black relative-container overflow-visible m-8'>
             {width > 0 && (
               <Image
@@ -60,7 +83,7 @@ const MapImage = () => {
             </div>
           </div>
           {/* Credit Section */}
-          <p className='text-sm text-gray-600 mt-4'>
+          <p className='text-md text-gray-600 mt-4'>
             Images courtesy of Schein and Schein Inc.
           </p>
         </div>
