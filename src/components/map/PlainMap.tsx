@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const MapImage = () => {
@@ -41,7 +42,14 @@ const MapImage = () => {
               />
             )}
           </div>
-          <em>Gold Mountain Big City </em>by Jim Schein
+          <div className='text-blue-700 hover:underline'>
+            <Link
+              href='https://www.amazon.com/Gold-Mountain-Big-City-Illustrated/dp/1944903895'
+              passHref
+            >
+              <em>Gold Mountain, Big City</em> by Jim Schein
+            </Link>
+          </div>
           <h3 className='text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4'>
             Based on the work of photographer/map maker Ken Cathcart, Jim has
             produced a hand-colorized map of Chinatown in 1947 highlighting
