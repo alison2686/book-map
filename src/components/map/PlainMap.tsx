@@ -90,6 +90,17 @@ const MapImage = () => {
               )}
             </div>
           </div>
+          <h3 className='text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4'>
+            You are invited to take a virtual tour of San Francisco Chinatown.
+            Study the map, then press the button below and a series of icons
+            will appear. Click on any one and a dialogue box will appear giving
+            a little information about the place selected.
+          </h3>
+          <Link href='/Map' passHref>
+            <button className='bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-900 mt-4'>
+              Go to Map
+            </button>
+          </Link>
           {/* Credit Section */}
           <p className='text-md text-gray-600 mt-4'>
             Images courtesy of Schein and Schein Inc.
