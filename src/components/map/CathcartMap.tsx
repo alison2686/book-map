@@ -119,9 +119,15 @@ const CathcartMap = () => {
       <div className='w-full h-full flex justify-center items-center bg-sky'>
         <HomeButton />
         <div className='flex flex-col justify-center items-center text-center w-full'>
-          <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-20 mt-10'>
+          <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg pt-20 mt-10'>
             Cathcart Map <br /> of San Francisco’s Chinatown
           </h1>
+          <h3 className='text-lg lg:text-xl font-medium leading-relaxed max-w-3xl p-4 mt-4'>
+            You are invited to take a virtual tour of San Francisco Chinatown.
+            Study the map, then press the button below and a series of icons
+            will appear. Click on any one and a dialogue box will appear giving
+            a little information about the place selected.
+          </h3>
           <div className='border-4 border-black relative-container overflow-visible m-2'>
             {width > 0 && (
               <Image
