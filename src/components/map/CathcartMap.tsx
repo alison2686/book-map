@@ -114,13 +114,13 @@ const CathcartMap = () => {
   };
 
   return (
-    <div className='container mx-auto px-4 overflow-visible h-screen'>
+    <div className='container mx-auto px-4 overflow-visible'>
       <div className='w-full h-full flex justify-center items-center bg-sky'>
         <div className='flex flex-col justify-center items-center text-center w-full'>
-          <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-6'>
+          <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-20 mt-10'>
             Cathcart Map <br /> of San Francisco’s Chinatown
           </h1>
-          <div className='border-4 border-black relative-container overflow-visible m-8'>
+          <div className='border-4 border-black relative-container overflow-visible m-2'>
             {width > 0 && (
               <Image
                 src='/images/map.jpeg'
@@ -175,7 +175,7 @@ const CathcartMap = () => {
                 <Image
                   src='/images/map/map2.png'
                   alt='Cathcart Map'
-                  width={width < 1024 ? 300 : 510}
+                  width={width < 1024 ? 300 : 410}
                   height={width < 1024 ? 400 : 600}
                 />
               )}
@@ -185,7 +185,7 @@ const CathcartMap = () => {
                 <Image
                   src='/images/map/map3.png'
                   alt='Cathcart Map'
-                  width={width < 1024 ? 300 : 300}
+                  width={width < 1024 ? 300 : 250}
                   height={width < 1024 ? 400 : 400}
                 />
               )}
