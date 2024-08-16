@@ -23,10 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={bangers.className}>
-        <Navigation />
-        {children}
-        <Footer />
+      <body className={`${bangers.className}`}>
+        <div className='layout-grid'>
+          <Navigation />
+          <main className='content'>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

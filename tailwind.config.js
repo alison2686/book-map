@@ -22,6 +22,12 @@ module.exports = {
   plugins: [
     function ({ addUtilities }) {
       const newUtilities = {
+        '.layout-grid': {
+          display: 'grid',
+          gridTemplateRows: 'auto 1fr auto',
+          minHeight: '100vh',
+        },
+        '.content': {},
         '.comic-panel': {
           backgroundColor: 'white',
           borderWidth: '2px',
