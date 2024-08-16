@@ -1,9 +1,9 @@
-import CathcartMap from '../../components/map/CathcartMap';
+import IconMap from '@/components/map';
 
 export default function Map() {
   return (
     <>
-      <CathcartMap />
+      <IconMap />
     </>
   );
 }

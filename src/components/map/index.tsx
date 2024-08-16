@@ -1,6 +1,6 @@
 import CathcartMap from './CathcartMap';
 
-export default function Map() {
+export default function IconMap() {
   return (
     <>
       <CathcartMap />

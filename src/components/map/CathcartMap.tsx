@@ -114,7 +114,7 @@ const CathcartMap = () => {
   };
 
   return (
-    <div className='container mx-auto px-4 overflow-visible'>
+    <div className='container mx-auto px-4 overflow-visible h-screen'>
       <div className='w-full h-full flex justify-center items-center bg-sky'>
         <div className='flex flex-col justify-center items-center text-center w-full'>
           <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-6'>
@@ -169,6 +169,32 @@ const CathcartMap = () => {
               </div>
             )}
           </div>
+          <div className='flex flex-row justify-center items-center'>
+            <div className='border-4 border-black relative-container overflow-visible m-8'>
+              {width > 0 && (
+                <Image
+                  src='/images/map/map2.png'
+                  alt='Cathcart Map'
+                  width={width < 1024 ? 300 : 510}
+                  height={width < 1024 ? 400 : 600}
+                />
+              )}
+            </div>
+            <div className='border-4 border-black relative-container overflow-visible m-8'>
+              {width > 0 && (
+                <Image
+                  src='/images/map/map3.png'
+                  alt='Cathcart Map'
+                  width={width < 1024 ? 300 : 300}
+                  height={width < 1024 ? 400 : 400}
+                />
+              )}
+            </div>
+          </div>
+          {/* Credit Section */}
+          <p className='text-md text-gray-600 mt-4'>
+            Images courtesy of Schein and Schein Inc.
+          </p>
         </div>
       </div>
     </div>
