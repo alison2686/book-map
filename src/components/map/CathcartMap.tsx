@@ -5,6 +5,7 @@ import { IconProp, IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import PopupCard from '../popup';
 import { PopupData } from '../popup/data';
 import { PopupState } from '@/types/index.d';
+import HomeButton from '../buttons/HomeButton';
 import {
   faSkull,
   faSailboat,
@@ -116,6 +117,7 @@ const CathcartMap = () => {
   return (
     <div className='container mx-auto px-4 overflow-visible'>
       <div className='w-full h-full flex justify-center items-center bg-sky'>
+        <HomeButton />
         <div className='flex flex-col justify-center items-center text-center w-full'>
           <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-20 mt-10'>
             Cathcart Map <br /> of San Francisco’s Chinatown
