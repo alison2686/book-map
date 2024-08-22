@@ -6,6 +6,7 @@ import PopupCard from '../popup';
 import { PopupData } from '../popup/data';
 import { PopupState } from '@/types/index.d';
 import HomeButton from '../buttons/HomeButton';
+import Legend from './Legend';
 import {
   faSkull,
   faSailboat,
@@ -176,6 +177,7 @@ const CathcartMap = () => {
               </div>
             )}
           </div>
+
           <div className='flex flex-row justify-center items-center'>
             <div className='border-4 border-black relative-container overflow-visible m-8'>
               {width > 0 && (
@@ -198,8 +200,11 @@ const CathcartMap = () => {
               )}
             </div>
           </div>
+          <div className='pb-10'>
+            <Legend icons={icons} />
+          </div>
           {/* Credit Section */}
-          <p className='text-md text-gray-600 mt-4'>
+          <p className='text-md text-gray-600 mt-4 p-4'>
             Images courtesy of Schein and Schein Inc.
           </p>
         </div>
