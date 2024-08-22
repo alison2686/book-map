@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 const MapImage = () => {
   const [width, setWidth] = useState(0);
@@ -97,8 +99,12 @@ const MapImage = () => {
             a little information about the place selected.
           </h3>
           <Link href='/Map' passHref>
-            <button className='bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-900 mt-4'>
-              Go to Map
+            <button className='text-blue-500 hover:text-blue-700 border border-blue-500 rounded-full p-3 bg-white m-5'>
+              <span>Go to Map</span>
+              <FontAwesomeIcon
+                icon={faArrowAltCircleRight}
+                className='text-2xl pl-2 align-middle'
+              />
             </button>
           </Link>
           {/* Credit Section */}
