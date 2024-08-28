@@ -23,7 +23,7 @@ export default function Hero() {
     <div className='container mx-auto px-4'>
       <div className='w-full min-h-screen flex flex-col justify-center items-center text-white bg-seafoam'>
         <div className='flex justify-center items-center text-center w-full p-8 mt-20'>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-1 w-full h-full'>
+          <div className='grid grid-cols-1 gap-0 lg:grid-cols-2 w-3/4 h-full'>
             {/* Image column */}
             <div className='flex justify-center lg:justify-center items-center'>
               <Image
@@ -35,11 +35,11 @@ export default function Hero() {
             </div>
             {/* Text column */}
             <div className='flex flex-col justify-center items-center lg:mr-6'>
-              <div className='flex flex-col items-center'>
+              {/* <div className='flex flex-col items-center'>
                 <h2 className='text-2xl lg:text-2xl mt-4 text-center'>
                   Preface
                 </h2>
-              </div>
+              </div> */}
 
               <h4 className='hero-text'>
                 Family Matriarch LK Lennie Lee (1923-2021) had lived a long and
