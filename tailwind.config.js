@@ -138,7 +138,7 @@ module.exports = {
         },
         '.hero-text': {
           maxWidth: '38rem',
-          fontSize: '1.25rem',
+          fontSize: '1.20rem',
           lineHeight: '1.625rem',
           letterSpacing: '0.025em',
           textAlign: 'left',
