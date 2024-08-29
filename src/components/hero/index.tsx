@@ -23,7 +23,7 @@ export default function Hero() {
     <div className='container mx-auto px-4'>
       <div className='w-full min-h-screen flex flex-col justify-center items-center text-white bg-seafoam'>
         <div className='flex justify-center items-center text-center w-full p-4 sm:p-8 mt-10 sm:mt-20'>
-          <div className='grid grid-cols-1 gap-6 lg:grid-cols-2 w-full lg:w-3/4 h-full'>
+          <div className='grid grid-cols-1 gap-12 lg:grid-cols-2 w-full lg:w-3/4 h-full'>
             {/* Image column */}
             <div className='flex justify-center lg:justify-center items-center'>
               <Image
