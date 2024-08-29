@@ -36,7 +36,7 @@ export default function Hero() {
             </div>
             {/* Text column */}
             <div className='flex flex-col justify-center items-center lg:items-start'>
-              <h4 className='hero-text text-lg sm:text-xl md:text-2xl leading-relaxed'>
+              <h4 className='hero-text text-lg sm:text-xl md:text-2xl'>
                 Family Matriarch LK Lennie Lee (1923-2021) had lived a long and
                 productive life. While sorting through her belongings, we
                 discovered a book she had written about her life and times plus

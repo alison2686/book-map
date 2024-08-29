@@ -108,7 +108,7 @@ const MapImage = () => {
             </button>
           </Link>
           {/* Credit Section */}
-          <p className='text-md text-gray-600 mt-4'>
+          <p className='text-md text-gray-600 p-4'>
             Images courtesy of Schein and Schein Inc.
           </p>
         </div>

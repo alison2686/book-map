@@ -140,7 +140,7 @@ module.exports = {
           maxWidth: '38rem',
           fontSize: '1.20rem',
           lineHeight: '1.625rem',
-          letterSpacing: '0.05em',
+          letterSpacing: '0.075em',
           textAlign: 'left',
           // marginTop: '1.25rem',
           padding: '0.5rem',
