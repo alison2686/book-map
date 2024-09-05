@@ -52,7 +52,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
   overlay5,
 }) => {
   return (
-    <div className='comic-panel container mx-auto p-4'>
+    <div className='container flex justify-center align-middle mx-auto p-4'>
       <BackButton />
       <div className='flex flex-col items-center justify-center md:h-screen'>
         <div className='comic-bg border-4 border-black w-full md:h-full flex flex-col items-center justify-center'>
