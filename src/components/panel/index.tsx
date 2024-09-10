@@ -63,9 +63,9 @@ const ComicPanel: FC<ComicPanelProps> = ({
   const bottomRowColSpan = img6 ? 'md:col-span-2' : 'md:col-span-3';
 
   return (
-    <div className='container flex justify-center mx-auto p-4'>
+    <div className='container mx-auto p-4'>
       <BackButton />
-      <div className='flex flex-col items-center justify-center h-screen'>
+      <div className='flex flex-col items-center justify-center min-h-[100vh] lg:h-screen'>
         <div className='comic-bg border-4 border-black w-full h-3/4 flex flex-col items-center justify-center'>
           <div className='grid grid-cols-1 md:grid-cols-6 md:grid-rows-10 gap-4 w-full h-full p-2 md:p-6'>
             <h1 className='text-4xl md:text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
