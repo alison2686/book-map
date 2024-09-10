@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { height } = require('@fortawesome/free-regular-svg-icons/faAddressBook');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
@@ -62,6 +63,7 @@ module.exports = {
           bottom: '0', // Move down from the top edge
           left: '0', // Move left from the right edge
           width: '100%',
+          height: '35%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',

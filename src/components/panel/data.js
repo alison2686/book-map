@@ -50,8 +50,10 @@ export const PanelData = [
     alt4: 'Telephone Company',
     img5: '/images/ggp.png',
     alt5: 'Golden Gate Park',
+    img6: '/images/ggp.png',
+    alt6: 'Golden Gate Park',
     text1:
-      'Even though the inscription on the China Beach monument states, “fishing is one of the area’s most important industries and traditions,” one would be hard-pressed to find evidence that Chinese fishermen participated.',
+      'Despite the China Beach monument inscription, one would be hard-pressed to find evidence that Chinese fishermen participated.',
     text2:
       'Chinese fishermen were banned from fishing these areas. Special license required for Chinese American fishermen.',
     text3:
@@ -59,11 +61,13 @@ export const PanelData = [
     text4:
       'The momument at China Beach inccorectly states that Chinese fishermen fished the area.',
     text5:
-      'Even though the inscription on the China Beach monument states, “fishing is one of the area’s most important industries and traditions,” one would be hard-pressed to find evidence that Chinese fishermen participated.',
+      'Even though the inscription on the China Beach monument states, “fishing is one of the area’s most important industries and traditions,”',
+    text6: 'New text”',
     overlay1: 'text-overlay-full',
     overlay2: 'text-overlay-full',
     overlay3: 'text-overlay-top',
     overlay4: 'text-overlay-full',
     overlay5: 'text-overlay-full',
+    overlay6: 'text-overlay-full',
   },
 ];

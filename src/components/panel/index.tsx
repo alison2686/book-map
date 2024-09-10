@@ -15,16 +15,20 @@ interface ComicPanelProps {
   alt4: string;
   img5: string;
   alt5: string;
+  img6?: string; // Optional 6th image
+  alt6?: string;
   text1: string;
   text2: string;
   text3: string;
   text4: string;
   text5: string;
+  text6?: string; // Optional text for 6th panel
   overlay1: string;
   overlay2: string;
   overlay3: string;
   overlay4: string;
   overlay5: string;
+  overlay6?: string; // Optional overlay for 6th panel
 }
 
 const ComicPanel: FC<ComicPanelProps> = ({
@@ -40,22 +44,29 @@ const ComicPanel: FC<ComicPanelProps> = ({
   alt4,
   img5,
   alt5,
+  img6, // Optional
+  alt6, // Optional
   text1,
   text2,
   text3,
   text4,
   text5,
+  text6, // Optional
   overlay1,
   overlay2,
   overlay3,
   overlay4,
   overlay5,
+  overlay6, // Optional
 }) => {
+  // Determine the column span for the bottom row based on img6 presence
+  const bottomRowColSpan = img6 ? 'md:col-span-2' : 'md:col-span-3';
+
   return (
-    <div className='container flex justify-center align-middle mx-auto p-4'>
+    <div className='container flex justify-center mx-auto p-4'>
       <BackButton />
-      <div className='flex flex-col items-center justify-center md:h-screen'>
-        <div className='comic-bg border-4 border-black w-full md:h-full flex flex-col items-center justify-center'>
+      <div className='flex flex-col items-center justify-center h-screen'>
+        <div className='comic-bg border-4 border-black w-full h-3/4 flex flex-col items-center justify-center'>
           <div className='grid grid-cols-1 md:grid-cols-6 md:grid-rows-10 gap-4 w-full h-full p-2 md:p-6'>
             <h1 className='text-4xl md:text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
               {title}
@@ -100,8 +111,10 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 <div className={overlay3}>{text3}</div>
               </div>
             </div>
-            {/* Bottom row: 2 rectangular panels */}
-            <div className='col-span-1 md:col-span-3 row-span-4 comic-panel relative'>
+            {/* Bottom row: 2 or 3 rectangular panels */}
+            <div
+              className={`col-span-1 ${bottomRowColSpan} row-span-4 comic-panel relative`}
+            >
               <Image
                 src={img4}
                 alt={alt4}
@@ -113,7 +126,9 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 <div className={overlay4}>{text4}</div>
               </div>
             </div>
-            <div className='col-span-1 md:col-span-3 row-span-4 comic-panel relative'>
+            <div
+              className={`col-span-1 ${bottomRowColSpan} row-span-4 comic-panel relative`}
+            >
               <Image
                 src={img5}
                 alt={alt5}
@@ -125,6 +140,21 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 <div className={overlay5}>{text5}</div>
               </div>
             </div>
+            {/* Conditionally Rendered 6th Panel */}
+            {img6 && (
+              <div className='col-span-1 md:col-span-2 row-span-4 comic-panel relative'>
+                <Image
+                  src={img6}
+                  alt={alt6 || 'Additional panel'}
+                  width={500}
+                  height={500}
+                  className='w-full h-full object-cover'
+                />
+                <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+                  <div className={overlay6}>{text6 || 'New panel'}</div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
