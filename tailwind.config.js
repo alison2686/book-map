@@ -63,7 +63,7 @@ module.exports = {
           bottom: '0', // Move down from the top edge
           left: '0', // Move left from the right edge
           width: '100%',
-          height: '35%',
+          height: '50%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',

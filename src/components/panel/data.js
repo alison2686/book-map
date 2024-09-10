@@ -53,16 +53,17 @@ export const PanelData = [
     img6: '/images/ggp.png',
     alt6: 'Golden Gate Park',
     text1:
-      'Despite the China Beach monument inscription, one would be hard-pressed to find evidence that Chinese fishermen participated.',
+      'Scenic China Beach is located at the northwest tip of San Francisco. A monument placed there celebrates Chinese Fishermen assuming that’s how the beach got its name',
     text2:
-      'Chinese fishermen were banned from fishing these areas. Special license required for Chinese American fishermen.',
+      'The site used to be called Phelan Beach after a notoriously anti-ASIAN Politician, James D Phelan, who fittingly did not win re-election in 1920',
     text3:
-      'Fishing rights for Chinese fishermen were barred, starting at the Ferry building on the east side of the city and going out to the Pacific Ocean, including China Beach.',
+      'The Fish Patrol patrolled the Bay, boarding any fishing junks seen on the bay, arresting the crew and confiscating any catch.',
     text4:
-      'The momument at China Beach inccorectly states that Chinese fishermen fished the area.',
+      'The beach was named because Chinese Junks could be seen routinely anchoring there. However, not for fishing.',
     text5:
-      'Even though the inscription on the China Beach monument states, “fishing is one of the area’s most important industries and traditions,”',
-    text6: 'New text',
+      'They were taking bodies to bury at the nearby cemetery or exhuming remains to sail back to China. They did so at night to avoid attacks for venturing outside of Chinatown.”',
+    text6:
+      'A new $26 million dollar facility is being constructed at the beach',
     overlay1: 'text-overlay-full',
     overlay2: 'text-overlay-full',
     overlay3: 'text-overlay-top',
