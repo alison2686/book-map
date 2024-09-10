@@ -62,7 +62,7 @@ export const PanelData = [
       'The momument at China Beach inccorectly states that Chinese fishermen fished the area.',
     text5:
       'Even though the inscription on the China Beach monument states, “fishing is one of the area’s most important industries and traditions,”',
-    text6: 'New text”',
+    text6: 'New text',
     overlay1: 'text-overlay-full',
     overlay2: 'text-overlay-full',
     overlay3: 'text-overlay-top',
