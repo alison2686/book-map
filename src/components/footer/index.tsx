@@ -12,11 +12,11 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Becoming American: A 600 Year
             Odyssey. All rights reserved.
           </p>
-          <div className='flex space-x-4 mt-2 md:mt-0'>
+          {/* <div className='flex space-x-4 mt-2 md:mt-0'>
             <Link href='/privacy' className='hover:underline'>
               Privacy Policy
             </Link>
-          </div>
+          </div> */}
           <div className='flex space-x-4 fill-current text-white'>
             <Link href='https://amazon.com' passHref>
               <Image
