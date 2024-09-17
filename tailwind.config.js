@@ -147,6 +147,13 @@ module.exports = {
           // marginTop: '1.25rem',
           padding: '0.5rem',
         },
+        '.comic-dots': {
+          backgroundColor: '#305784',
+          backgroundImage:
+            'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
+          backgroundSize: '10px 10px',
+          backgroundPosition: '0 0, 5px 5px',
+        },
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);
