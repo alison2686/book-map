@@ -25,7 +25,7 @@ const MapImage = () => {
 
   return (
     <div className='container mx-auto px-4 overflow-visible'>
-      <div className='w-full h-full flex justify-center items-center bg-sky'>
+      <div className='map-dots w-full h-full flex justify-center items-center bg-sky'>
         <div className='flex flex-col justify-center items-center text-center w-full'>
           <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg p-6'>
             Cathcart Map <br /> of San Francisco’s Chinatown

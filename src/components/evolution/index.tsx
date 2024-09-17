@@ -21,7 +21,7 @@ const Evolution = () => {
 
   return (
     <div className='container mx-auto px-4 '>
-      <div className='w-full h-full flex flex-col justify-center items-center text-white bg-sky p-10'>
+      <div className='map-dots w-full h-full flex flex-col justify-center items-center text-white bg-sky p-10'>
         <div className='flex justify-center items-center text-center w-full'>
           <div className='grid grid-cols-3 gap-2 w-full h-full'>
             {/* Title spanning both columns */}
