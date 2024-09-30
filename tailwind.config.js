@@ -81,7 +81,7 @@ module.exports = {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.25rem',
         },
@@ -94,7 +94,7 @@ module.exports = {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.25rem',
         },
@@ -107,7 +107,7 @@ module.exports = {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.25rem',
         },
@@ -120,7 +120,7 @@ module.exports = {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.25rem',
         },

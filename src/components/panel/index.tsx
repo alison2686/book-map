@@ -29,6 +29,12 @@ interface ComicPanelProps {
   overlay4: string;
   overlay5: string;
   overlay6?: string; // Optional overlay for 6th panel
+  img1ClassName?: string;
+  img2ClassName?: string;
+  img3ClassName?: string;
+  img4ClassName?: string;
+  img5ClassName?: string;
+  img6ClassName?: string;
 }
 
 const ComicPanel: FC<ComicPanelProps> = ({
@@ -58,6 +64,12 @@ const ComicPanel: FC<ComicPanelProps> = ({
   overlay4,
   overlay5,
   overlay6, // Optional
+  img1ClassName,
+  img2ClassName,
+  img3ClassName,
+  img4ClassName,
+  img5ClassName,
+  img6ClassName,
 }) => {
   // Determine the column span for the bottom row based on img6 presence
   const bottomRowColSpan = img6 ? 'md:col-span-2' : 'md:col-span-3';
@@ -81,7 +93,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 alt={alt1}
                 width={550}
                 height={550}
-                className='w-full h-full object-cover'
+                className={img1ClassName}
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                 <div className={overlay1}>{text1}</div>
@@ -93,7 +105,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 alt={alt2}
                 width={550}
                 height={550}
-                className='w-full h-full object-contain'
+                className={img2ClassName}
               />
               <div className='absolute w-full h-full flex items-center justify-center'>
                 <div className={overlay2}>{text2}</div>
@@ -105,7 +117,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 alt={alt3}
                 width={500}
                 height={500}
-                className='w-full h-full object-cover'
+                className={img3ClassName}
               />
               <div className='absolute w-full h-full flex items-center justify-center'>
                 <div className={overlay3}>{text3}</div>
@@ -120,7 +132,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 alt={alt4}
                 width={500}
                 height={500}
-                className='w-full h-full object-cover'
+                className={img4ClassName}
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                 <div className={overlay4}>{text4}</div>
@@ -134,7 +146,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 alt={alt5}
                 width={500}
                 height={500}
-                className='w-full h-full object-cover'
+                className={img5ClassName}
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                 <div className={overlay5}>{text5}</div>
@@ -148,7 +160,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                   alt={alt6 || 'Additional panel'}
                   width={500}
                   height={500}
-                  className='w-full h-full object-cover'
+                  className={img6ClassName}
                 />
                 <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                   <div className={overlay6}>{text6 || 'New panel'}</div>
