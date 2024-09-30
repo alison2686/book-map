@@ -79,8 +79,8 @@ const ComicPanel: FC<ComicPanelProps> = ({
               <Image
                 src={img1}
                 alt={alt1}
-                width={500}
-                height={500}
+                width={550}
+                height={550}
                 className='w-full h-full object-cover'
               />
               <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
@@ -91,9 +91,9 @@ const ComicPanel: FC<ComicPanelProps> = ({
               <Image
                 src={img2}
                 alt={alt2}
-                width={500}
-                height={500}
-                className='w-full h-full object-cover'
+                width={550}
+                height={550}
+                className='w-full h-full object-contain'
               />
               <div className='absolute w-full h-full flex items-center justify-center'>
                 <div className={overlay2}>{text2}</div>

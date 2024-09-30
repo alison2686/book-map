@@ -63,12 +63,12 @@ module.exports = {
           bottom: '0', // Move down from the top edge
           left: '0', // Move left from the right edge
           width: '100%',
-          height: '50%',
+          // height: '50%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           padding: '0.75rem', // Tailwind p-4 equivalent
-          backgroundColor: 'rgba(0, 0, 0)', // Tailwind bg-black bg-opacity-70 equivalent
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Tailwind bg-black bg-opacity-70 equivalent
           color: '#FFFFFF', // Tailwind text-white equivalent
           borderRadius: '0.25rem',
         },
