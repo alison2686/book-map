@@ -26,9 +26,11 @@ module.exports = {
         '.layout-grid': {
           display: 'grid',
           gridTemplateRows: 'auto 1fr auto',
-          minHeight: '100vh',
+          height: '100vh',
         },
-        '.content': {},
+        '.content': {
+          paddingTop: '80px', // Adjust this value based on your navbar height (80px or 5rem in Tailwind's scale)
+        },
         '.comic-panel': {
           backgroundColor: 'white',
           borderWidth: '3px',
@@ -37,6 +39,14 @@ module.exports = {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+        },
+        '.navbar-fixed': {
+          position: 'fixed',
+          top: '0',
+          left: '0',
+          width: '100%',
+          height: '80px', // Same as your defined navbar height
+          zIndex: '50', // Ensures navbar stays on top
         },
         '.map-icon': {
           position: 'absolute',

@@ -49,7 +49,7 @@ export const PanelData = [
     img2: '/images/comic/china-beach/fish-patrol.png',
     alt2: 'Fish patrol',
     img2ClassName: 'w-full h-full object-contain',
-    img3: '/images/comic/china-beach/phelan.png',
+    img3: '/images/comic/china-beach/phelan2.png',
     alt3: 'James D Phelan',
     img3ClassName: 'w-full h-full object-cover',
     img4: '/images/comic/china-beach/junk-ship.png',
