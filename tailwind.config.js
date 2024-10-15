@@ -171,6 +171,21 @@ module.exports = {
           backgroundSize: '10px 10px',
           backgroundPosition: '0 0, 5px 5px',
         },
+        '.comic-title': {
+          fontSize: '6rem', // Adjust the size based on your design
+          textAlign: 'center',
+          textTransform: 'uppercase',
+          color: '#305784', // Comic-style red text'
+          letterSpacing: '0.05em',
+          textShadow: `
+            -1px -1px 0 #5DADE2,
+            1px -1px 0 #5DADE2,
+            -1px 1px 0 #5DADE2,
+            1px 1px 0 #5DADE2
+          `, // Yellow text shadow for a comic look
+          lineHeight: '1.2',
+          marginBottom: '1rem',
+        },
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);

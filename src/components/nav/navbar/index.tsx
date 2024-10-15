@@ -35,6 +35,13 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 </Link>
               </li>
               <li>
+                <Link href='/WebComic'>
+                  <p className='hover:text-yellow-300 cursor-pointer'>
+                    Web Comic
+                  </p>
+                </Link>
+              </li>
+              <li>
                 <Link href='/Contact'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Contact Us
