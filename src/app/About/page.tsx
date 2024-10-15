@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import Evolution from '@/components/evolution';
+// import Evolution from '@/components/evolution';
 import AboutCard from '@/components/about';
 
 export default function About() {
@@ -20,7 +20,7 @@ export default function About() {
   return (
     <>
       <AboutCard />
-      <Evolution />
+      {/* <Evolution /> */}
     </>
   );
 }
