@@ -48,7 +48,7 @@ export const PanelData = [
     img1ClassName: 'w-full h-full object-contain',
     img2: '/images/comic/china-beach/fish-patrol.png',
     alt2: 'Fish patrol',
-    img2ClassName: 'w-full h-full object-contain',
+    img2ClassName: 'w-full h-full object-cover',
     img3: '/images/comic/china-beach/phelan2.png',
     alt3: 'James D Phelan',
     img3ClassName: 'w-full h-full object-cover',
