@@ -33,7 +33,7 @@ const Evolution = () => {
             {/* Image column */}
             <div className='col-span-3 flex justify-center items-center p-4'>
               <Image
-                src='/images/joke-sings.png'
+                src='/images/evolution/joke-sings.png'
                 alt='Joke Sings book cover'
                 width={width < 1024 ? 100 : 200}
                 height={width < 1024 ? 100 : 300}

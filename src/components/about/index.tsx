@@ -27,7 +27,7 @@ const AboutCard = () => {
             {/* Image column */}
             <div className='flex justify-end items-center'>
               <Image
-                src='/images/ron-lennie.jpeg'
+                src='/images/about/ron-lennie.jpeg'
                 alt='Becoming American cover'
                 width={width < 1024 ? 100 : 450}
                 height={width < 1024 ? 100 : 550}

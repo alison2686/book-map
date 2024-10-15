@@ -63,7 +63,7 @@ const MapImage = () => {
           <div className='border-4 border-black relative-container overflow-visible m-8'>
             {width > 0 && (
               <Image
-                src='/images/map.jpeg'
+                src='/images/map/map.jpeg'
                 alt='Cathcart Map'
                 width={width < 1024 ? 300 : 800}
                 height={width < 1024 ? 400 : 800}
