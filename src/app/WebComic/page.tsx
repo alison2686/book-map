@@ -1,14 +1,13 @@
 'use client';
 import { PanelData } from '../../components/panel/data';
 import ComicPanel from '../../components/panel';
-import ComicCover from '@/components/web-comic-cover';
 
 function WebComic() {
   return (
     <div>
       <h1 className='comic-title'>Web Comic</h1>
       <div className='comic-bg border-4 border-black w-3/4 h-full flex flex-col items-center justify-center mx-auto p-4'>
-        <h1 className='text-3xl md:text-5xl lg:text-7xl text-center'>
+        <h1 className='comic-cover-title md:text-5xl lg:text-7xl text-center'>
           Becoming American: <br /> A 600-Year Odyssey
         </h1>
         <h2 className='mt-4 md:mt-8 text-sm md:text-base lg:text-lg leading-relaxed text-center max-w-2xl'>
