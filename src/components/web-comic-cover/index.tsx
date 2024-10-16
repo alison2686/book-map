@@ -4,7 +4,7 @@ const ComicCover = () => {
   return (
     <div>
       {/* <BackButton /> */}
-      <div className='flex flex-col items-center justify-center min-h-[100vh] lg:h-screen'>
+      <div className=''>
         <div className='comic-bg border-4 border-black lg:max-w-screen-lg lg:max-h-[100vh] h-full flex flex-col items-center justify-center p-4 md:p-8'>
           <h1 className='comic-title text-3xl md:text-5xl lg:text-7xl text-center leading-tight md:leading-snug lg:leading-normal'>
             Becoming American: <br className='hidden md:block' /> A 600-Year
