@@ -12,8 +12,9 @@ const bangers = Bangers({
 });
 
 export const metadata: Metadata = {
-  title: '600 Year Odyssey',
-  description: 'Based On An Autobiography and Memoir By L.K. Lennie Lee',
+  title: 'Becoming American: A 600-Year Odyssey',
+  description:
+    'Based On An Autobiography and Memoir By L.K. Lennie Lee. Becoming American: A 600 Year Odyssey chronicles the interesting facts and stories found while working to confirm the plausibility of Lennie’s amazing tales',
 };
 
 export default function RootLayout({
