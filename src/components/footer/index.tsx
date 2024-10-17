@@ -9,8 +9,8 @@ const Footer = () => {
       <div className='container mx-auto px-6'>
         <div className='flex justify-between items-center flex-col md:flex-row'>
           <p>
-            &copy; {new Date().getFullYear()} Becoming American: A 600 Year
-            Odyssey. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} Ronald D Lee. All rights
+            reserved.
           </p>
           {/* <div className='flex space-x-4 mt-2 md:mt-0'>
             <Link href='/privacy' className='hover:underline'>
