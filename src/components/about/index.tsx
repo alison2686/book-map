@@ -21,7 +21,7 @@ const AboutCard = () => {
 
   return (
     <div className='container mx-auto px-4'>
-      <div className='comic-dots w-full h-screen flex flex-col justify-center items-center text-white bg-seafoam'>
+      <div className='comic-dots w-full h-screen flex flex-col justify-center items-center text-white'>
         <div className='flex justify-center items-center text-center w-full'>
           <div className='grid grid-cols-2 gap-2 w-full h-full'>
             {/* Image column */}

@@ -9,11 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        seafoam: '#305784', // hero bg
-        peach: '#EBAD0E', // navbar
+        electricBlue: '#305784', // A dark blue
+        vividOrange: '#EBAD0E', // A bright orange
         sky: '#5DADE2', // A light blue
         comic: '#fde047', // A bright yellow, good for backgrounds or highlights
-        border: '#272222', // navbar bottom border
+        navBorder: '#272222', // navbar bottom border
       },
       backgroundImage: {
         'comic-background': "url('/images/yellow-comic.png')",
@@ -142,7 +142,7 @@ module.exports = {
           position: 'absolute',
         },
         '.comic-bg': {
-          backgroundColor: '#DAA520' /* GoldenRod */,
+          backgroundColor: '#5DADE2' /* GoldenRod */,
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',
