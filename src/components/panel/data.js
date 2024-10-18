@@ -1,6 +1,6 @@
 export const PanelData = [
   {
-    id: 'skull',
+    id: 'littlePete',
     title: 'Little Pete Must Die',
     subtitle:
       "During the 1895 San Francisco Fair at Golden Gate Park, hooligan Fong Ching (Little Pete), a city-slicker, police dupe, and stool pigeon, became involved with international kidnapping of Chinese girls from Hong Kong and China to dance at the Park's events. The Arizona Suey Ying Tong men wanted to use the assassination of Little Pete as an unspoken warning to San Francisco's rogue police. Lennie heard from her Father, Chow Chong, that the Suey Ying Tong were involved.",

@@ -1,6 +1,6 @@
 export const PopupData = [
   {
-    id: 'skull',
+    id: 'littlePete',
     title: 'Little Pete Must Die',
     chapter: 'Chapter 11',
     page: 'page 61',

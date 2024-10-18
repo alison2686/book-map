@@ -8,7 +8,7 @@ const FontAwesomeIcon = lazy(() =>
 );
 
 type IconKey =
-  | 'skull'
+  | 'littlePete'
   | 'sailboat'
   | 'phone'
   | 'beach'
@@ -23,7 +23,7 @@ interface LegendProps {
 }
 
 const legendData = [
-  { key: 'skull', label: 'Chapter 11 - Little Pete Must Die' },
+  { key: 'littlePete', label: 'Chapter 11 - Little Pete Must Die' },
   {
     key: 'sailboat',
     label: 'Chapter 9 - Robert Louis StevenSon v. Denis the Menace',

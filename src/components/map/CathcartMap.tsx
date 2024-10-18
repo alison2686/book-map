@@ -20,7 +20,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 type IconKey =
-  | 'skull'
+  | 'littlePete'
   | 'sailboat'
   | 'phone'
   | 'beach'
@@ -101,7 +101,7 @@ const CathcartMap = () => {
   };
 
   const icons: Record<IconKey, IconDefinition> = {
-    skull: faSkull,
+    littlePete: faSkull,
     sailboat: faSailboat,
     phone: faSquarePhone,
     beach: faShrimp,
@@ -131,7 +131,7 @@ const CathcartMap = () => {
             <div className='border-4 border-black relative-container overflow-visible m-8'>
               {width > 0 && (
                 <Image
-                  src='/images/map/map.jpeg'
+                  src='/images/map.jpeg'
                   alt='Cathcart Map'
                   width={width < 1024 ? 300 : 800}
                   height={width < 1024 ? 400 : 800}
@@ -236,7 +236,7 @@ const CathcartMap = () => {
 
   function getIconPositionStyle(key: IconKey) {
     const positions = {
-      skull: { top: '40%', left: '75%' },
+      littlePete: { top: '40%', left: '75%' },
       sailboat: { top: '85%', left: '71%' },
       phone: { top: '76%', left: '77%' },
       beach: { top: '20%', left: '1%' },
