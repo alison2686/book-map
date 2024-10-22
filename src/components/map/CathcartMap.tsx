@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useState, lazy, Suspense } from 'react';
-import { IconProp, IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { useEffect, useState, lazy, Suspense, use } from 'react';
 import PopupCard from '../popup';
 import { PopupData } from '../popup/data';
 import { PopupState } from '@/types/index.d';
@@ -18,12 +17,13 @@ import {
   faHotel,
   faHouseUser,
 } from '@fortawesome/free-solid-svg-icons';
+import { IconProp, IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 type IconKey =
   | 'littlePete'
   | 'sailboat'
   | 'phone'
-  | 'beach'
+  | 'beach' // For map3.png
   | 'shingchong'
   | 'cigar'
   | 'laundry'
@@ -104,7 +104,7 @@ const CathcartMap = () => {
     littlePete: faSkull,
     sailboat: faSailboat,
     phone: faSquarePhone,
-    beach: faShrimp,
+    beach: faShrimp, // Beach icon for map3
     shingchong: faVihara,
     cigar: faJoint,
     laundry: faShirt,
@@ -137,24 +137,26 @@ const CathcartMap = () => {
                   height={width < 1024 ? 400 : 800}
                 />
               )}
-              {Object.keys(icons).map((key) => (
-                <div
-                  className='icon-container'
-                  style={getIconPositionStyle(key as IconKey)}
-                  key={key}
-                >
-                  <Suspense fallback={<div>Loading...</div>}>
-                    <div
-                      onClick={(e) => handleIconClick(key, e)}
-                      className='map-icon'
-                    >
-                      <FontAwesomeIcon
-                        icon={icons[key as IconKey] as IconProp}
-                      />
-                    </div>
-                  </Suspense>
-                </div>
-              ))}
+              {Object.keys(icons)
+                .filter((key) => key !== 'beach') // Exclude the beach icon for map.jpeg
+                .map((key) => (
+                  <div
+                    className='icon-container'
+                    style={getIconPositionStyle(key as IconKey)}
+                    key={key}
+                  >
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <div
+                        onClick={(e) => handleIconClick(key, e)}
+                        className='map-icon'
+                      >
+                        <FontAwesomeIcon
+                          icon={icons[key as IconKey] as IconProp}
+                        />
+                      </div>
+                    </Suspense>
+                  </div>
+                ))}
               {popup.visible && popup.content && (
                 <div
                   className={`absolute z-50 ${
@@ -193,6 +195,7 @@ const CathcartMap = () => {
                 />
               )}
             </div>
+
             <div className='border-4 border-black relative-container overflow-visible m-8'>
               {width > 0 && (
                 <Image
@@ -202,15 +205,14 @@ const CathcartMap = () => {
                   height={width < 1024 ? 400 : 400}
                 />
               )}
-
-              {/* Beach icon placed on this image */}
+              {/* Beach icon placed on this map3.png */} {/* Adjusted */}
               <div
                 className='icon-container'
                 style={{ top: '15%', left: '15%' }} // Adjust these values as needed
               >
                 <Suspense fallback={<div>Loading...</div>}>
                   <div
-                    onClick={(e) => handleIconClick('beach', e)}
+                    onClick={(e) => handleIconClick('beach', e)} // Use 'beach' for this map
                     className='map-icon'
                   >
                     <FontAwesomeIcon icon={icons.beach as IconProp} />
@@ -239,13 +241,14 @@ const CathcartMap = () => {
       littlePete: { top: '40%', left: '75%' },
       sailboat: { top: '85%', left: '71%' },
       phone: { top: '76%', left: '77%' },
-      beach: { top: '20%', left: '1%' },
+      beach: { top: '90%', left: '90%' }, // Adjusted for map3.png
       shingchong: { top: '72%', left: '59%' },
       cigar: { top: '90%', left: '50%' },
       laundry: { top: '62%', left: '75%' },
       tong: { top: '72%', left: '65%' },
       cameron: { top: '22%', left: '35%' },
     };
+
     return positions[key] || {};
   }
 };
