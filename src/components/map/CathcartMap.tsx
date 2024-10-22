@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useState, lazy, Suspense, use } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import PopupCard from '../popup';
 import { PopupData } from '../popup/data';
 import { PopupState } from '@/types/index.d';
@@ -165,9 +165,16 @@ const CathcartMap = () => {
                       : ''
                   }`}
                   style={{
-                    top: `${popup.top}px`,
-                    left: `${popup.left}px`,
-                    transform: width < 768 ? 'none' : 'translate(-50%, -50%)',
+                    top:
+                      popup.content.id === 'beach' ? '105%' : `${popup.top}px`, // Custom position for beach
+                    left:
+                      popup.content.id === 'beach' ? '80%' : `${popup.left}px`, // Center horizontally for beach
+                    transform:
+                      popup.content.id === 'beach'
+                        ? 'translateX(-50%)' // Horizontally center for beach
+                        : width < 768
+                        ? 'none'
+                        : 'translate(-50%, -50%)',
                   }}
                 >
                   <PopupCard
@@ -205,10 +212,11 @@ const CathcartMap = () => {
                   height={width < 1024 ? 400 : 400}
                 />
               )}
-              {/* Beach icon placed on this map3.png */} {/* Adjusted */}
+              {/* Beach icon placed on this map3.png */}
+
               <div
                 className='icon-container'
-                style={{ top: '15%', left: '15%' }} // Adjust these values as needed
+                style={{ top: '15%', left: '15%' }}
               >
                 <Suspense fallback={<div>Loading...</div>}>
                   <div
