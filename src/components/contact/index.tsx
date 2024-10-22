@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
     <div className='flex justify-center items-center min-h-screen'>
       <form
         onSubmit={handleSubmit}
-        className='w-full max-w-lg bg-white shadow-md rounded-lg p-8'
+        className='w-full max-w-lg bg-white shadow-md rounded-lg p-8 border-2 border-black'
       >
         <h1 className='text-3xl font-bold mb-6 text-center'>Contact Us</h1>
         {isSubmitted && (
@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
           </p>
         )}
         <div className='mb-4'>
-          <label className='block text-gray-700 text-sm font-bold mb-2'>
+          <label className='block text-gray-800 text-sm font-bold mb-2'>
             Name
           </label>
           <input
@@ -72,7 +72,7 @@ const ContactForm: React.FC = () => {
             name='name'
             value={formData.name}
             onChange={handleChange}
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+            className='shadow-lg appearance-none border-2 border-gray-500 rounded-lg w-full py-3 px-4 text-gray-900 bg-white leading-tight focus:outline-none focus:border-gray-700 focus:ring-2 focus:ring-gray-500 focus:shadow-lg'
             required
           />
         </div>
@@ -85,7 +85,7 @@ const ContactForm: React.FC = () => {
             name='email'
             value={formData.email}
             onChange={handleChange}
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+            className='shadow-lg appearance-none border-2 border-gray-500 rounded-lg w-full py-3 px-4 text-gray-900 bg-white leading-tight focus:outline-none focus:border-gray-700 focus:ring-2 focus:ring-gray-500 focus:shadow-lg'
             required
           />
         </div>
@@ -98,7 +98,7 @@ const ContactForm: React.FC = () => {
             name='subject'
             value={formData.subject}
             onChange={handleChange}
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+            className='shadow-lg appearance-none border-2 border-gray-500 rounded-lg w-full py-3 px-4 text-gray-900 bg-white leading-tight focus:outline-none focus:border-gray-700 focus:ring-2 focus:ring-gray-500 focus:shadow-lg'
             required
           />
         </div>
@@ -110,7 +110,7 @@ const ContactForm: React.FC = () => {
             name='message'
             value={formData.message}
             onChange={handleChange}
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+            className='shadow-lg appearance-none border-2 border-gray-500 rounded-lg w-full py-3 px-4 text-gray-900 bg-white leading-tight focus:outline-none focus:border-gray-700 focus:ring-2 focus:ring-gray-500 focus:shadow-lg'
             rows={4}
             required
           ></textarea>
@@ -121,7 +121,7 @@ const ContactForm: React.FC = () => {
             disabled={isSubmitting}
             className={`${
               isSubmitting
-                ? 'bg-gray-500 cursor-not-allowed'
+                ? 'bg-blue-500 cursor-not-allowed'
                 : 'bg-blue-500 hover:bg-blue-700'
             } text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`}
           >
