@@ -4,6 +4,7 @@ export interface PopupCardProps {
   chapter: string;
   page: string;
   subtitle: string;
+  subtitle2: string;
   onClose: () => void; // Add an onClose prop
 }
 

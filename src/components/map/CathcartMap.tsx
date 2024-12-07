@@ -86,6 +86,7 @@ const CathcartMap = () => {
         chapter: dataItem.chapter,
         page: dataItem.page,
         subtitle: dataItem.subtitle,
+        subtitle2: dataItem.subtitle2,
         onClose: handleClose,
       },
       top: popupTop,
@@ -183,6 +184,7 @@ const CathcartMap = () => {
                     chapter={popup.content.chapter}
                     page={popup.content.page}
                     subtitle={popup.content.subtitle}
+                    subtitle2={popup.content.subtitle2}
                     onClose={handleClose}
                   />
                 </div>

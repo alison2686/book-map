@@ -8,6 +8,7 @@ const PopupCard: FC<PopupCardProps> = ({
   id,
   title,
   subtitle,
+  subtitle2,
   onClose,
   chapter,
   page,
@@ -26,6 +27,7 @@ const PopupCard: FC<PopupCardProps> = ({
         <p className='text-md sm:text-lg'>{chapter}</p>
         <p className='text-sm'>{page}</p>
         <p className='text-sm sm:text-base'>{subtitle}</p>
+        <p className='text-sm sm:text-base py-4'>{subtitle2}</p>
         <Link href={`/Comics/${id}`} className='text-blue-500 underline'>
           Learn More...
         </Link>
