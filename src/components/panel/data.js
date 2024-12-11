@@ -41,14 +41,14 @@ export const PanelData = [
     id: 'beach',
     title: 'The Mystery of China Beach',
     subtitle:
-      'The Northwest corner of San Francisco has one of the most scenic beaches in California, if not the world: China Beach. How this lovely place got that name is a bit of a mystery. \nThe National Parks Service website states there’s no evidence the Chinese camped there. Historian Eva Ma reported that Chinese Junks were seen anchored there from time to time but with no evidence of fishing. Some speculated that they were pirates.',
+      'The Northwest corner of San Francisco has one of the most scenic beaches in California, if not the world: China Beach. How this lovely place got that name is a bit of a mystery. \nThe National Parks Service website states there’s no evidence the Chinese camped there. Historian Eva Ma reported that Chinese Junks were seen anchored there from time to time but with no evidence of fishing. Some speculated that they were pirates',
     imgWidth: '500',
     imgHeight: '500',
     img1: '/images/comic/china-beach/china-beach-monument.png',
     alt1: 'China Beach monument',
     img1ClassName: 'w-full h-full object-cover',
     text1:
-      'In 1981, a well-meaning but not so well informed family erected a monument that assumed fishermen camped there. \nIt celebratd Chinese fishing but unfortunately did not mention that fishermen were barred from fishing in the Bay and were subject to persecution.',
+      'In 1981, a well-meaning but not so well informed family erected a monument that assumed fishermen camped there. \nIt celebratd Chinese fishing but unfortunately did not mention that fishermen were barred from fishing in the Bay and were subject to persecution',
     img2: '/images/comic/china-beach/fish-patrol.png',
     alt2: 'Fish Patrol',
     img2ClassName: 'w-full h-full object-fit',
@@ -68,12 +68,12 @@ export const PanelData = [
     alt5: 'Cemetary',
     img5ClassName: 'w-full h-full object-fit',
     text5:
-      'The Clan was in the business of exhuming bodies of sojourners who had died in America and returning the remains to the deceased home village. After anchoring at the beach, they would go to a nearby cemetery to “Jub Gwuch” (Pick up bones) In 1880 Robert Louis Stevenson sailed with them. He later wrote about “Skeleton Island” in his famous novel Treasure Island',
+      'The Clan was in the business of exhuming bodies of sojourners who had died in America and returning the remains to the deceased\'s home village. After anchoring at the beach, they would go to a nearby cemetery to “Jub Gwuch” (Pick up bones). In 1880 Robert Louis Stevenson sailed with them. He later wrote about “Skeleton Island” in his famous novel "Treasure Island"',
     img6: '/images/comic/china-beach/new-facility.png',
     alt6: 'New China Beach facility',
     img6ClassName: 'w-full h-full object-fit',
     text6:
-      'Eventually China Beach will become a premiere attraction of the GGNRA',
+      'Eventually China Beach will become a premiere attraction of the Golden Gate National Recreation Area (GGNRA)',
     overlay1: 'text-overlay-full',
     overlay2: 'text-overlay-full',
     overlay3: 'text-overlay-full',
