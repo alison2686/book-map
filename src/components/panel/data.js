@@ -21,7 +21,8 @@ export const PanelData = [
     img5: '/images/comic/little-pete/chinese-telephone-company.png',
     alt5: 'Chinese telephone ompany',
     img5ClassName: 'w-full h-full object-fit',
-    text1: 'Fong Ching, aka Little Pete.',
+    text1:
+      'In his 1962 book, "The Hatchet Men", noted historian Richard Dillon described gangster Fong Chine, aka “Little Pete,” as totally amoral who was a Chinatown crime kingpin.',
     text2:
       'His gangland style murder in a barbershop chair is one of the most infamous crime stories in Chinatown history.',
     text3:
@@ -30,9 +31,9 @@ export const PanelData = [
       'Suey Ying Tong elders told the story that the Tombstone AZ killers chose January 23, 1897, during the Chinese New Year celebration, as the right time to assasinate Little Pete and leave town unnoticed.',
     text5:
       "Albert Bew Chan (Lucretia's grandfather) said that he was the young messanger boy who deliverd the killers message via the Chinatown telephone switchboard.",
-    overlay1: 'text-overlay-btm-left-sm',
+    overlay1: 'text-overlay-full',
     overlay2: 'text-overlay-full',
-    overlay3: 'text-overlay-top',
+    overlay3: 'text-overlay-full',
     overlay4: 'text-overlay-full',
     overlay5: 'text-overlay-full',
   },
@@ -40,19 +41,20 @@ export const PanelData = [
     id: 'beach',
     title: 'The Mystery of China Beach',
     subtitle:
-      'The National Parks Service website states there’s no evidence the Chinese camped there. Historian Eva Ma reported that Chinese Junks were seen anchored there from time to time but with no evidence of fishing. Some speculated that they were pirates.',
+      'The Northwest corner of San Francisco has one of the most scenic beaches in California, if not the world: China Beach. How this lovely place got that name is a bit of a mystery. \nThe National Parks Service website states there’s no evidence the Chinese camped there. Historian Eva Ma reported that Chinese Junks were seen anchored there from time to time but with no evidence of fishing. Some speculated that they were pirates.',
     imgWidth: '500',
     imgHeight: '500',
     img1: '/images/comic/china-beach/china-beach-monument.png',
     alt1: 'China Beach monument',
-    img1ClassName: 'w-full h-full object-fit',
+    img1ClassName: 'w-full h-full object-cover',
     text1:
-      'In 1981, a well-meaning but not so well informed family erected a monument that assumed fishermen camped there. It celebratd Chinese fishing but unfortunately did not mention that fishermen were barred from fishing in the Bay and were subject to persecution.',
-    img3: '/images/comic/china-beach/james-d-phelan2.png',
+      'In 1981, a well-meaning but not so well informed family erected a monument that assumed fishermen camped there. \nIt celebratd Chinese fishing but unfortunately did not mention that fishermen were barred from fishing in the Bay and were subject to persecution.',
     img2: '/images/comic/china-beach/fish-patrol.png',
+    alt2: 'Fish Patrol',
     img2ClassName: 'w-full h-full object-fit',
     text2:
       'If a Chinese fishing vessel ventured into the Bay, a group called the Fish Patrol would board, arrest the crew and confiscate any catch. They would then sell the fish for profit. As a young man world famous author Jack London was part of the Fish Patrol and wrote about his exploits',
+    img3: '/images/comic/china-beach/james-d-phelan2.png',
     alt3: 'James D Phelan',
     img3ClassName: 'w-full h-full object-fit',
     text3:

@@ -78,16 +78,18 @@ const ComicPanel: FC<ComicPanelProps> = ({
     <div className='container mx-auto p-4'>
       <BackButton />
       <div className='flex flex-col items-center justify-center min-h-[100vh] lg:h-screen'>
-        <div className='comic-bg border-4 border-black lg:max-w-screen-lg lg:max-h-[100vh] h-full flex flex-col items-center justify-center'>
-          <div className='grid grid-cols-1 md:grid-cols-6 md:grid-rows-10 gap-4 w-full h-full p-2 md:p-6'>
+        <div className='comic-bg border-4 border-black lg:max-w-screen-lg max-h-screen h-full flex flex-col items-center justify-center overflow-y-auto scrollbar-hide'>
+          <div className='grid grid-cols-1 md:grid-cols-6 auto-rows-auto gap-4 w-full h-full p-2 md:p-6'>
             <h1 className='text-4xl md:text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
               {title}
             </h1>
-            <div className='col-span-full flex items-center justify-center mb-4 md:mb-0'>
-              {subtitle}
+            <div className='col-span-full flex flex-col items-center justify-center mb-4 md:mb-0'>
+              {subtitle.split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
             </div>
             {/* Top row: 3 square panels */}
-            <div className='col-span-1 md:col-span-2 row-span-4 comic-panel relative'>
+            <div className='col-span-1 md:col-span-2 row-span-4 flex flex-col items-center comic-panel'>
               <Image
                 src={img1}
                 alt={alt1}
@@ -95,11 +97,12 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 height={550}
                 className={img1ClassName}
               />
-              <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+              <div className='text-center'>
                 <div className={overlay1}>{text1}</div>
               </div>
             </div>
-            <div className='col-span-1 md:col-span-2 row-span-4 comic-panel relative'>
+
+            <div className='col-span-1 md:col-span-2 row-span-4 flex flex-col items-center comic-panel'>
               <Image
                 src={img2}
                 alt={alt2}
@@ -107,11 +110,11 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 height={500}
                 className={img2ClassName}
               />
-              <div className='absolute w-full h-full flex items-center justify-center'>
+              <div className='text-center'>
                 <div className={overlay2}>{text2}</div>
               </div>
             </div>
-            <div className='col-span-1 md:col-span-2 row-span-4 comic-panel relative'>
+            <div className='col-span-1 md:col-span-2 row-span-4 flex flex-col items-center comic-panel'>
               <Image
                 src={img3}
                 alt={alt3}
@@ -119,13 +122,13 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 height={500}
                 className={img3ClassName}
               />
-              <div className='absolute w-full h-full flex items-center justify-center'>
+              <div className='text-center'>
                 <div className={overlay3}>{text3}</div>
               </div>
             </div>
             {/* Bottom row: 2 or 3 rectangular panels */}
             <div
-              className={`col-span-1 ${bottomRowColSpan} row-span-4 comic-panel relative`}
+              className={`col-span-1 ${bottomRowColSpan} md:col-span-2 row-span-4 flex flex-col items-center comic-panel `}
             >
               <Image
                 src={img4}
@@ -134,12 +137,12 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 height={500}
                 className={img4ClassName}
               />
-              <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+              <div className='text-center'>
                 <div className={overlay4}>{text4}</div>
               </div>
             </div>
             <div
-              className={`col-span-1 ${bottomRowColSpan} row-span-4 comic-panel relative`}
+              className={`col-span-1 ${bottomRowColSpan} md:col-span-2 row-span-4 flex flex-col items-center comic-panel `}
             >
               <Image
                 src={img5}
@@ -148,13 +151,13 @@ const ComicPanel: FC<ComicPanelProps> = ({
                 height={500}
                 className={img5ClassName}
               />
-              <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+              <div className='text-center'>
                 <div className={overlay5}>{text5}</div>
               </div>
             </div>
             {/* Conditionally Rendered 6th Panel */}
             {img6 && (
-              <div className='col-span-1 md:col-span-2 row-span-4 comic-panel relative'>
+              <div className='col-span-1 md:col-span-2 row-span-4 flex flex-col items-center comic-panel'>
                 <Image
                   src={img6}
                   alt={alt6 || 'Additional panel'}
@@ -162,7 +165,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
                   height={500}
                   className={img6ClassName}
                 />
-                <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+                <div className='text-center'>
                   <div className={overlay6}>{text6 || 'New panel'}</div>
                 </div>
               </div>
