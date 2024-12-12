@@ -116,7 +116,9 @@ const CathcartMap = () => {
   return (
     <div className='container mx-auto px-4 overflow-visible'>
       <div className='map-dots w-full h-full flex flex-col items-center bg-sky'>
-        <HomeButton />
+        <div className='hidden md:block'>
+          <HomeButton />
+        </div>
         <div className='flex flex-col justify-center items-center text-center w-full'>
           <h1 className='text-4xl lg:text-6xl font-bold text-shadow-lg pt-20 mt-10'>
             Cathcart Map <br /> of San Francisco’s Chinatown
