@@ -150,12 +150,13 @@ module.exports = {
         },
         '.hero-text': {
           maxWidth: '38rem',
-          fontSize: '1.2rem',
+          fontSize: '1.3rem',
           lineHeight: '1.625rem',
           letterSpacing: '0.075em',
           textAlign: 'left',
           // marginTop: '1.25rem',
           padding: '0.5rem',
+          // fontWeight: '100',
         },
         '.comic-dots': {
           backgroundColor: '#305784',

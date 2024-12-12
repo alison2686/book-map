@@ -37,7 +37,7 @@ export default function Hero() {
             {/* Text column */}
             <div className='flex flex-col justify-center items-center lg:items-start'>
               <h4 className='hero-text'>
-                Family Matriarch LK Lennie Lee (1923-2021) had lived a long and
+                Family Matriarch LK Lennie Lee (1923-2021) lived a long and
                 productive life. While sorting through her belongings, we
                 discovered a book she had written about her life and times plus
                 those of our forebears. At the top of the first page, there was
