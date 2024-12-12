@@ -30,8 +30,10 @@ export const PopupData = [
     title: 'They Mystery of China Beach',
     chapter: 'Chapter 7',
     page: 'page 23',
-    subtitle: 'How this lovely place got that name is a bit of a mystery.',
-    subtitle2: '',
+    subtitle:
+      '“China Beach", a small, sandy cove between Lands End and Baker Beach in San Francisco’s Sea Cliff neighborhood, is used today as a public recreation area that offers spectacular views of the Marin.',
+    subtitle2:
+      'How this lovely place got that name is a bit of a mystery. This chapter will shed some light on the subject.',
   },
   {
     id: 'shingchong',
