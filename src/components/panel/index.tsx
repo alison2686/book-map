@@ -76,7 +76,10 @@ const ComicPanel: FC<ComicPanelProps> = ({
 
   return (
     <div className='container mx-auto p-4'>
-      <BackButton />
+      <div className='hidden md:block'>
+        <BackButton />
+      </div>
+
       <div className='flex flex-col items-center justify-center lg:h-screen'>
         <div className='comic-bg border-4 border-black lg:max-w-screen-lg h-full flex flex-col items-center justify-center overflow-y-auto scrollbar-hide cursor-pointer'>
           <div className='grid grid-cols-1 md:grid-cols-6 auto-rows-auto gap-4 w-full h-full p-2 md:p-6'>
