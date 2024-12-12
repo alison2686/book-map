@@ -3,7 +3,7 @@ export const PanelData = [
     id: 'littlePete',
     title: 'Little Pete Must Die',
     subtitle:
-      "During the 1895 San Francisco Fair at Golden Gate Park, hooligan Fong Ching (Little Pete), a city-slicker, police dupe, and stool pigeon, became involved with international kidnapping of Chinese girls from Hong Kong and China to dance at the Park's events. The Arizona Suey Ying Tong men wanted to use the assassination of Little Pete as an unspoken warning to San Francisco's rogue police. Lennie heard from her Father, Chow Chong, that the Suey Ying Tong were involved.",
+      "During the 1895 San Francisco Fair at Golden Gate Park, hooligan Fong Ching (Little Pete), a city-slicker, police dupe, and stool pigeon, became involved with international kidnapping of Chinese girls from Hong Kong and China to dance at the Park's events. \nThe Arizona Suey Ying Tong men wanted to use the assassination of Little Pete as an unspoken warning to San Francisco's rogue police. Lennie heard from her Father, Chow Chong, that the Suey Ying Tong were involved.",
     imgWidth: '500',
     imgHeight: '500',
     img1: '/images/comic/little-pete/little-pete.png',
@@ -41,7 +41,7 @@ export const PanelData = [
     id: 'beach',
     title: 'The Mystery of China Beach',
     subtitle:
-      'The Northwest corner of San Francisco has one of the most scenic beaches in California, if not the world: China Beach. How this lovely place got that name is a bit of a mystery. \nThe National Parks Service website states there’s no evidence the Chinese camped there. Historian Eva Ma reported that Chinese Junks were seen anchored there from time to time but with no evidence of fishing. Some speculated that they were pirates',
+      'The Northwest corner of San Francisco has one of the most scenic beaches in California, if not the world: China Beach. \nHow this lovely place got that name is a bit of a mystery. \nThe National Parks Service website states there’s no evidence the Chinese camped there. Historian Eva Ma reported that Chinese Junks were seen anchored there from time to time but with no evidence of fishing. Some speculated that they were pirates',
     imgWidth: '500',
     imgHeight: '500',
     img1: '/images/comic/china-beach/china-beach-monument.png',

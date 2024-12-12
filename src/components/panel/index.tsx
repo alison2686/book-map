@@ -83,7 +83,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
             <h1 className='text-4xl md:text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
               {title}
             </h1>
-            <div className='col-span-full flex flex-col items-center justify-center mb-4 md:mb-0'>
+            <div className='col-span-full flex flex-col items-center text-center mb-4 md:mb-0'>
               {subtitle.split('\n').map((line, index) => (
                 <p key={index}>{line}</p>
               ))}
@@ -128,7 +128,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
             </div>
             {/* Bottom row: 2 or 3 rectangular panels */}
             <div
-              className={`col-span-1 ${bottomRowColSpan} md:col-span-2 row-span-4 flex flex-col items-center comic-panel `}
+              className={`col-span-1 ${bottomRowColSpan} md:col-span-2 row-span-4 flex flex-col items-center comic-panel`}
             >
               <Image
                 src={img4}
