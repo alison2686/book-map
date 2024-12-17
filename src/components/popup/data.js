@@ -14,7 +14,8 @@ export const PopupData = [
     title: 'Robert Louis Stevenson V. Denis the Menace',
     chapter: 'Chapter 8',
     page: 'page 37',
-    subtitle: '“RLS” v. Denis the Menace.',
+    subtitle:
+      'Famed author Robert Louis Stevenson isn’t someone that would normally be associated with Chinese American history, let alone being a family friend of the Clan. The knew each other for a very brief amount of time, but the influence the Clan on Stevenson is quite a story.',
     subtitle2: '',
   },
   {
@@ -22,8 +23,10 @@ export const PopupData = [
     title: 'Chinese Telephone Exchange',
     chapter: 'Chapter 29',
     page: 'page 181',
-    subtitle: 'High tech Joke Sings.',
-    subtitle2: '',
+    subtitle:
+      'Long before the advent of Silicon Valley, one of California’s earliest high-tech enterprises started in San Francisco’s Chinatown.',
+    subtitle2:
+      'This gave rise to some enterprising Chinatown entrepreneurs who formed their own telephone company. Like any startup, The Chinese Exchange began on a relatively small scale but proceeded to expand rapidly.',
   },
   {
     id: 'beach',
@@ -41,7 +44,7 @@ export const PopupData = [
     chapter: 'Chapter 28',
     page: 'page 176',
     subtitle:
-      'Being classified as a merchant was crucial during the 1882 Chinese Exclusion Act era.',
+      'Being classified as a merchant was crucial during the 1882 Chinese Exclusion Act era because it was specifically exempted from deportation and was an important basis for becoming American.',
     subtitle2: '',
   },
   {
@@ -49,8 +52,10 @@ export const PopupData = [
     title: 'The Cigar Makers',
     chapter: 'Chapter 25',
     page: 'page 134',
-    subtitle: 'Optimo Five Cent Cigars.',
-    subtitle2: '',
+    subtitle:
+      "San Francisco's 1876 Directory listed the Lee clan's two wholesale and cigar manufacturing stores at 308 and 425 Commercial Street; the company's two cigar brand names were Ramirez and La Espanola Co.",
+    subtitle2:
+      'At the height of business around 1870-1880, as many as 8,000 Chinese cigar makers either worked at "Yin Hong," were subcontractors,or purchased tobacco leaves from "Yin Hong" to open their own cigar business with Spanish names.',
   },
   {
     id: 'laundry',
@@ -68,8 +73,9 @@ export const PopupData = [
     chapter: 'Chapter 14',
     page: 'page 83',
     subtitle:
-      'I ventured into forbidden territory two floors above where we lived. I walked into a room where several men, smoking opium, were lying on a wooden bed made up of four saw horses laid over with a dozen wooden planks.',
-    subtitle2: '',
+      'Lennie’s excellent recall ability and attention to detail was always evident in her writing. For example, Lennie wrote:',
+    subtitle2:
+      'In 1927, when I was around 4 years of age, and the family was still living at the “Suey Ying Tong Headquarters Building,” I ventured into forbidden territory two floors above where we lived. I walked into a room where several men, smoking opium, were lying on a wooden bed made up of four saw horses laid over with a dozen wooden planks.',
   },
   {
     id: 'cameron',
