@@ -57,7 +57,7 @@ const MapImage = () => {
             produced a hand-colorized map of Chinatown in 1947 highlighting
             historically significant locations in “Dai Fou” (Big City). The map
             depicts many of the places Lennie referred to and is a wonderful
-            visual aid for the target audience of Becoming American...:: young
+            visual aid for the target audience of Becoming American...young
             people.
           </h3>
           <div className='border-4 border-black relative-container overflow-visible m-8'>

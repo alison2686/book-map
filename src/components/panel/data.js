@@ -236,7 +236,8 @@ export const PanelData = [
   {
     id: 'cigar',
     title: 'The Cigar Makers',
-    subtitle: 'Optimo Five Cent Cigars',
+    subtitle:
+      '"Optimo Five Cent Cigars" \n by Lennie Lee \nDuring World War II, when Grandfather Jing Loy Lee and I were young and on a tight budget, we sometimes took slow reminiscing strolls along Commercial Street, from Front to Sansome, once known as the Chinese "Yin Hong,"',
     imgWidth: '500',
     imgHeight: '500',
     img1: '/images/comic/',
