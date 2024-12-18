@@ -38,7 +38,7 @@ export default function Hero() {
             <div className='flex flex-col justify-center items-center lg:items-start'>
               <h4 className='hero-text'>
                 Family Matriarch LK Lennie Lee (1923-2021) lived a long and
-                productive life. While sorting through her belongings, we
+                productive life. <br /> While sorting through her belongings, we
                 discovered a book she had written about her life and times plus
                 those of our forebears. At the top of the first page, there was
                 a handwritten note:
@@ -49,11 +49,11 @@ export default function Hero() {
               </h4>
               <h4 className='hero-text leading-relaxed'>
                 Our family dutifully began to go over her work expecting
-                conventional tales. Perhaps they came for the 1849 Gold Rush, or
-                to work on the railroads. Instead, we found astonishing stories.
-                For example, Lennie claimed our ancestors’ seafaring stories
-                were in part, the inspiration for Robert Louis Stevenson’s
-                iconic adventure novel <em>Treasure Island</em>.
+                conventional tales. <br /> Perhaps they came for the 1849 Gold
+                Rush, or to work on the railroads. Instead, we found astonishing
+                stories. For example, Lennie claimed our ancestors’ seafaring
+                stories were in part, the inspiration for Robert Louis
+                Stevenson’s iconic adventure novel <em>Treasure Island</em>.
               </h4>
               <h4 className='hero-text leading-relaxed'>
                 <em>Becoming American: a 600 Year Odyssey</em> chronicles the

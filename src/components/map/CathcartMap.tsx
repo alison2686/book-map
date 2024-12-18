@@ -126,7 +126,8 @@ const CathcartMap = () => {
           <h3 className='text-lg lg:text-xl font-medium leading-relaxed max-w-3xl p-4 mt-4'>
             You are invited to take a virtual tour of San Francisco Chinatown.
             Click on any icon on the map and a dialogue box will appear giving a
-            little information about the place selected.
+            little information about the place selected and a link to the web
+            comic for this chapter.
           </h3>
 
           {/* First row with map.jpeg */}

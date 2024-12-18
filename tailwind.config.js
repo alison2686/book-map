@@ -150,7 +150,7 @@ module.exports = {
         },
         '.hero-text': {
           maxWidth: '38rem',
-          fontSize: '1.3rem',
+          fontSize: '1.2rem',
           lineHeight: '1.625rem',
           letterSpacing: '0.075em',
           textAlign: 'left',

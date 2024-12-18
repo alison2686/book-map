@@ -29,7 +29,7 @@ const PopupCard: FC<PopupCardProps> = ({
         <p className='text-sm sm:text-base py-2'>{subtitle}</p>
         <p className='text-sm sm:text-base py-2'>{subtitle2}</p>
         <Link href={`/Comics/${id}`} className='text-blue-500 underline'>
-          Learn More...
+          View the web comic
         </Link>
       </div>
     </div>
