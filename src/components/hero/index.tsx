@@ -27,10 +27,10 @@ export default function Hero() {
             {/* Image column */}
             <div className='flex justify-center lg:justify-center items-center'>
               <Image
-                src='/images/hero/bookcover.png'
+                src='/images/hero/book-cover.jpeg'
                 alt='Becoming American cover'
-                width={width < 1024 ? 250 : 350}
-                height={width < 1024 ? 350 : 450}
+                width={width < 1024 ? 250 : 300}
+                height={width < 1024 ? 350 : 400}
                 // className='w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg'
               />
             </div>
@@ -56,9 +56,9 @@ export default function Hero() {
                 Stevenson’s iconic adventure novel <em>Treasure Island</em>.
               </h4>
               <h4 className='hero-text leading-relaxed'>
-                <em>Becoming American: a 600 Year Odyssey</em> chronicles the
-                interesting facts and stories found while working to confirm the
-                plausibility of Lennie’s amazing tales.
+                <em>Sojourners To Joke Sings: Tales of Chinatown and Beyond</em>{' '}
+                chronicles the interesting facts and stories found while working
+                to confirm the plausibility of Lennie’s amazing tales.
               </h4>
             </div>
           </div>
