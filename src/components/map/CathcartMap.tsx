@@ -57,7 +57,7 @@ const CathcartMap = () => {
   }, []);
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (
         popupRef.current &&
         !popupRef.current.contains(event.target as Node)
@@ -68,10 +68,12 @@ const CathcartMap = () => {
 
     if (popup.visible) {
       document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside); // for mobile
     }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
     };
   }, [popup.visible]);
 
@@ -181,7 +183,7 @@ const CathcartMap = () => {
                   : ''
               }`}
               style={{
-                top: popup.content.id === 'beach' ? '105%' : `${popup.top}px`,
+                top: popup.content.id === 'beach' ? '135%' : `${popup.top}px`,
                 left: popup.content.id === 'beach' ? '80%' : `${popup.left}px`,
                 transform:
                   popup.content.id === 'beach'
