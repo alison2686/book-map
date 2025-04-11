@@ -16,7 +16,7 @@ export default function Hero() {
     <div className='w-full bg-electricBlue text-white comic-dots'>
       {/* Author Talk Banner */}
       <div className='w-full bg-eventYellow border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
-        📖 <strong>Author Talk:</strong> May 18 at Mitchell Park Library, Palo
+        📖 <strong>Author Talk:</strong> May 18th at Mitchell Park Library, Palo
         Alto &nbsp; — &nbsp;
         <a
           href='#events'
