@@ -15,20 +15,20 @@ interface ComicPanelProps {
   alt4: string;
   img5: string;
   alt5: string;
-  img6?: string; // Optional 6th image
+  img6?: string;
   alt6?: string;
   text1: string;
   text2: string;
   text3: string;
   text4: string;
   text5: string;
-  text6?: string; // Optional text for 6th panel
+  text6?: string;
   overlay1: string;
   overlay2: string;
   overlay3: string;
   overlay4: string;
   overlay5: string;
-  overlay6?: string; // Optional overlay for 6th panel
+  overlay6?: string;
   img1ClassName?: string;
   img2ClassName?: string;
   img3ClassName?: string;
@@ -50,20 +50,20 @@ const ComicPanel: FC<ComicPanelProps> = ({
   alt4,
   img5,
   alt5,
-  img6, // Optional
-  alt6, // Optional
+  img6,
+  alt6,
   text1,
   text2,
   text3,
   text4,
   text5,
-  text6, // Optional
+  text6,
   overlay1,
   overlay2,
   overlay3,
   overlay4,
   overlay5,
-  overlay6, // Optional
+  overlay6,
   img1ClassName,
   img2ClassName,
   img3ClassName,
@@ -71,105 +71,122 @@ const ComicPanel: FC<ComicPanelProps> = ({
   img5ClassName,
   img6ClassName,
 }) => {
-  // Determine the column span for the bottom row based on img6 presence
-  const bottomRowColSpan = img6 ? 'md:col-span-2' : 'md:col-span-3';
-
   return (
-    <div className='container mx-auto p-4'>
-      <div className='hidden md:block'>
+    <div className='container mx-auto px-4 py-6'>
+      <div className='hidden md:block mb-4'>
         <BackButton />
       </div>
 
-      <div className='flex flex-col items-center justify-center lg:h-screen'>
-        <div className='comic-bg border-4 border-black lg:max-w-screen-lg h-full flex flex-col items-center justify-center overflow-y-auto scrollbar-hide cursor-pointer'>
-          <div className='grid grid-cols-1 md:grid-cols-6 auto-rows-auto gap-4 w-full h-full p-2 md:p-6'>
-            <h1 className='text-4xl md:text-8xl col-span-full row-span-2 flex items-center justify-center [text-shadow:_6px_3px_0_rgb(255_255_255_/_90%)]'>
+      <div className='flex flex-col items-center justify-center'>
+        <div className='comic-bg border-4 border-black w-full lg:max-w-screen-lg h-full overflow-y-auto scrollbar-hide'>
+          <div className='grid grid-cols-1 md:grid-cols-6 auto-rows-auto gap-4 p-4 md:p-6'>
+            {/* Title */}
+            <h1 className='text-3xl sm:text-5xl lg:text-6xl font-bold col-span-full text-center text-shadow-lg'>
               {title}
             </h1>
-            <div className='col-span-full flex flex-col items-center text-center mb-4 md:mb-0'>
-              {subtitle.split('\n').map((line, index) => (
-                <p key={index}>{line}</p>
+
+            {/* Subtitle */}
+            <div className='col-span-full text-center text-base sm:text-lg lg:text-xl mt-2 mb-4 space-y-1'>
+              {subtitle.split('\n').map((line, i) => (
+                <p key={i}>{line}</p>
               ))}
             </div>
-            {/* Top row: 3 square panels */}
-            <div className='col-span-1 md:col-span-2 row-span-4 flex flex-col items-center comic-panel'>
-              <Image
-                src={img1}
-                alt={alt1}
-                width={550}
-                height={550}
-                className={img1ClassName}
-              />
-              <div className='text-center'>
-                <div className={overlay1}>{text1}</div>
-              </div>
-            </div>
 
-            <div className='col-span-1 md:col-span-2 row-span-4 flex flex-col items-center comic-panel'>
-              <Image
-                src={img2}
-                alt={alt2}
-                width={500}
-                height={500}
-                className={img2ClassName}
-              />
-              <div className='text-center'>
-                <div className={overlay2}>{text2}</div>
+            {/* Top row - first 3 panels */}
+            {[
+              {
+                img: img1,
+                alt: alt1,
+                text: text1,
+                overlay: overlay1,
+                className: img1ClassName,
+              },
+              {
+                img: img2,
+                alt: alt2,
+                text: text2,
+                overlay: overlay2,
+                className: img2ClassName,
+              },
+              {
+                img: img3,
+                alt: alt3,
+                text: text3,
+                overlay: overlay3,
+                className: img3ClassName,
+              },
+            ].map((panel, i) => (
+              <div
+                key={i}
+                className='md:col-span-2 flex flex-col items-center comic-panel'
+              >
+                <Image
+                  src={panel.img}
+                  alt={panel.alt}
+                  width={500}
+                  height={500}
+                  className={`w-full h-auto border-4 border-black ${
+                    panel.className || ''
+                  }`}
+                />
+                <div className={`text-center ${panel.overlay}`}>
+                  {panel.text}
+                </div>
               </div>
-            </div>
-            <div className='col-span-1 md:col-span-2 row-span-4 flex flex-col items-center comic-panel'>
-              <Image
-                src={img3}
-                alt={alt3}
-                width={500}
-                height={500}
-                className={img3ClassName}
-              />
-              <div className='text-center'>
-                <div className={overlay3}>{text3}</div>
+            ))}
+
+            {/* Bottom row - next 2 panels (adjust col-span based on img6 presence) */}
+            {[
+              {
+                img: img4,
+                alt: alt4,
+                text: text4,
+                overlay: overlay4,
+                className: img4ClassName,
+              },
+              {
+                img: img5,
+                alt: alt5,
+                text: text5,
+                overlay: overlay5,
+                className: img5ClassName,
+              },
+            ].map((panel, i) => (
+              <div
+                key={i + 3}
+                className={`${
+                  img6 ? 'md:col-span-2' : 'md:col-span-3'
+                } flex flex-col items-center comic-panel`}
+              >
+                <Image
+                  src={panel.img}
+                  alt={panel.alt}
+                  width={500}
+                  height={500}
+                  className={`w-full h-auto border-4 border-black ${
+                    panel.className || ''
+                  }`}
+                />
+                <div className={`text-center ${panel.overlay}`}>
+                  {panel.text}
+                </div>
               </div>
-            </div>
-            {/* Bottom row: 2 or 3 rectangular panels */}
-            <div
-              className={`col-span-1 ${bottomRowColSpan} md:col-span-2 row-span-4 flex flex-col items-center comic-panel`}
-            >
-              <Image
-                src={img4}
-                alt={alt4}
-                width={500}
-                height={500}
-                className={img4ClassName}
-              />
-              <div className='text-center'>
-                <div className={overlay4}>{text4}</div>
-              </div>
-            </div>
-            <div
-              className={`col-span-1 ${bottomRowColSpan} md:col-span-2 row-span-4 flex flex-col items-center comic-panel `}
-            >
-              <Image
-                src={img5}
-                alt={alt5}
-                width={500}
-                height={500}
-                className={img5ClassName}
-              />
-              <div className='text-center'>
-                <div className={overlay5}>{text5}</div>
-              </div>
-            </div>
-            {/* Conditionally Rendered 6th Panel */}
+            ))}
+
+            {/* Optional 6th panel */}
             {img6 && (
-              <div className='col-span-1 md:col-span-2 row-span-4 flex flex-col items-center comic-panel'>
+              <div className='md:col-span-2 flex flex-col items-center comic-panel'>
                 <Image
                   src={img6}
                   alt={alt6 || 'Additional panel'}
                   width={500}
                   height={500}
-                  className={img6ClassName}
+                  className={`w-full h-auto border-4 border-black ${
+                    img6ClassName || ''
+                  }`}
                 />
-                <div className='text-center'>
-                  <div className={overlay6}>{text6 || 'New panel'}</div>
+                <div className={`text-center ${overlay6}`}>
+                  {text6 || 'New panel'}
                 </div>
               </div>
             )}
