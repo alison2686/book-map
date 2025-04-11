@@ -26,7 +26,7 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className='h-screen flex items-center justify-center lg:h-screen sm:min-h-[90vh] px-4 sm:px-6 lg:px-8 py-12'>
+      <div className='min-h-[calc(100vh-56px)] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl'>
           {/* Image */}
           <div className='flex justify-center items-center'>
