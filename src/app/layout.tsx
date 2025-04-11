@@ -12,7 +12,7 @@ const bangers = Bangers({
 });
 
 export const metadata: Metadata = {
-  title: 'Becoming American: A 600-Year Odyssey',
+  title: 'Sojourners to Joke Sings: Tales of Chinatown and Beyond',
   description:
     'Based On An Autobiography and Memoir By L.K. Lennie Lee. Becoming American: A 600 Year Odyssey chronicles the interesting facts and stories found while working to confirm the plausibility of Lennie’s amazing tales',
 };

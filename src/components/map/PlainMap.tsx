@@ -18,7 +18,7 @@ const MapImage = () => {
   }, []);
 
   return (
-    <div className='w-full bg-sky map-dots px-4 sm:px-6 lg:px-8 py-12'>
+    <div className='w-full bg-sky comic-dots px-4 sm:px-6 lg:px-8 py-12'>
       <div className='max-w-6xl mx-auto flex flex-col items-center text-center'>
         {/* Header */}
         <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-black p-4'>
