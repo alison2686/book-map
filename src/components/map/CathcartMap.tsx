@@ -175,7 +175,6 @@ const CathcartMap = () => {
 
           {popup.visible && popup.content && (
             <div
-              ref={popupRef}
               className={`absolute z-50 ${
                 width < 768
                   ? 'fixed inset-0 flex items-center justify-center'
@@ -192,7 +191,9 @@ const CathcartMap = () => {
                     : 'translate(-50%, -50%)',
               }}
             >
-              <PopupCard {...popup.content} />
+              <div ref={popupRef}>
+                <PopupCard {...popup.content} />
+              </div>
             </div>
           )}
         </div>
