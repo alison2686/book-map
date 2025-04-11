@@ -12,7 +12,7 @@ module.exports = {
         electricBlue: '#305784', // A dark blue
         vividOrange: '#EBAD0E', // A bright orange
         sky: '#5DADE2', // A light blue
-        comic: '#fde047', // A bright yellow, good for backgrounds or highlights
+        eventYellow: '#eab308', // A bright yellow, good for backgrounds or highlights
         navBorder: '#272222', // navbar bottom border
       },
       backgroundImage: {

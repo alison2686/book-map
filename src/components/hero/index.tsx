@@ -14,6 +14,18 @@ export default function Hero() {
 
   return (
     <div className='w-full bg-electricBlue text-white comic-dots'>
+      {/* Author Talk Banner */}
+      <div className='w-full bg-eventYellow border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
+        📖 <strong>Author Talk:</strong> May 18 at Mitchell Park Library, Palo
+        Alto &nbsp; — &nbsp;
+        <a
+          href='#events'
+          className='underline underline-offset-2 hover:text-electricBlue transition-colors '
+        >
+          see details
+        </a>
+      </div>
+
       <div className='h-screen flex items-center justify-center lg:h-screen sm:min-h-[90vh] px-4 sm:px-6 lg:px-8 py-12'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl'>
           {/* Image */}
