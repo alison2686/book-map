@@ -20,7 +20,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             </Link>
 
             {/* Navbar links - only visible on medium screens and larger */}
-            <ul className='hidden md:flex gap-x-6 text-white font-comic text-lg'>
+            <ul className='hidden md:flex gap-x-6 text-white font-comic text-lg tracking-wide'>
               <li>
                 <Link href='/About'>
                   <p className='hover:text-yellow-300 cursor-pointer'>

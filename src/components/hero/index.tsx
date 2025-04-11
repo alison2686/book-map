@@ -43,7 +43,7 @@ export default function Hero() {
 
           {/* Speech Bubble Text */}
           <div className='relative'>
-            <div className='bg-white text-black p-6 rounded-2xl border-4 border-black shadow-comic font-comic leading-relaxed text-base sm:text-lg md:text-xl'>
+            <div className='bg-white text-black p-6 rounded-2xl border-4 border-black shadow-comic font-comic leading-relaxed text-base sm:text-lg md:text-xl tracking-wide'>
               <p>
                 Family Matriarch LK Lennie Lee (1923–2021) lived a long and
                 productive life. While sorting through her belongings, we
