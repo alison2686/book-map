@@ -4,9 +4,12 @@ const ComicCover = () => {
   return (
     <div className='w-full px-4 py-8'>
       <div className='comic-dots border-4 border-black w-full sm:w-11/12 md:w-4/5 lg:w-3/4 h-full mx-auto p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center text-black bg-white'>
-        <h1 className='comic-cover-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight tracking-tight mb-6'>
-          Becoming American: <br /> A 600-Year Odyssey
+        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight tracking-widest mb-6 font-comic text-eventYellow drop-shadow-[4px_4px_0_rgba(0,0,0,0.8)]'>
+          Sojourners to Joke Sings: <br /> Tales of Chinatown and Beyond
         </h1>
+        <h3 className='text-xl sm:text-2xl md:text-3xl text-center font-bold leading-snug tracking-wider mb-6 font-comic text-eventYellow drop-shadow-[3px_3px_0_rgba(0,0,0,0.8)]'>
+          Check out the web comic <br /> for select chapters of the book
+        </h3>
 
         <h2 className='text-sm sm:text-base lg:text-lg leading-relaxed max-w-3xl text-center md:text-left mb-4'>
           “Uncle Ron, look at what Grandma wrote, it reads like something out of
@@ -30,8 +33,8 @@ const ComicCover = () => {
           that a book was produced. A bonus is that her incredible recall
           allowed for detailed descriptions of Chinatown life beyond the façade
           of tourism. Realizing this work would appeal to young people, it was
-          decided to produce this version that has the look and feel of a
-          graphic novel.
+          decided to produce a web comic version of certain chapters that has
+          the look and feel of a graphic novel.
         </h2>
       </div>
     </div>

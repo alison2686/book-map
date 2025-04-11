@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { PopupCardProps } from '@/types/index.d';
+import { PanelData } from '../panel/data';
 
 const PopupCard: FC<PopupCardProps> = ({
   id,
@@ -13,6 +14,8 @@ const PopupCard: FC<PopupCardProps> = ({
   chapter,
   page,
 }) => {
+  const isComicAvailable = PanelData.some((comic) => comic.id === id);
+
   return (
     <div className='fixed inset-0 flex items-center justify-center p-4'>
       <div className='card bg-white text-black border border-black p-4 rounded shadow-lg min-w-96 sm:max-w-lg md:max-w-xl lg:max-w-2xl relative'>
@@ -23,14 +26,23 @@ const PopupCard: FC<PopupCardProps> = ({
         >
           <FontAwesomeIcon icon={faTimes} />
         </button>
+
         <p className='text-xl sm:text-2xl font-bold'>{title}</p>
         <p className='text-md sm:text-lg'>{chapter}</p>
         <p className='text-sm'>{page}</p>
         <p className='text-sm sm:text-base py-2'>{subtitle}</p>
         <p className='text-sm sm:text-base py-2'>{subtitle2}</p>
-        <Link href={`/Comics/${id}`} className='text-blue-500 underline'>
-          View the web comic
-        </Link>
+
+        {isComicAvailable ? (
+          <Link
+            href={`/Comics/${id}`}
+            className='text-blue-500 underline hover:text-electricBlue transition-colors'
+          >
+            View the web comic
+          </Link>
+        ) : (
+          <p className='italic text-blue-700'>Comic coming soon</p>
+        )}
       </div>
     </div>
   );

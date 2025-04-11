@@ -81,7 +81,7 @@ export const PanelData = [
     overlay5: 'text-overlay-full',
     overlay6: 'text-overlay-full',
   },
-  /* {
+  /*{
     id: 'laundry',
     title: 'Laundries',
     subtitle:
@@ -346,5 +346,6 @@ export const PanelData = [
     overlay4: 'text-overlay-full',
     overlay5: 'text-overlay-full',
     overlay6: 'text-overlay-full',
-  }, */
+  },
+  */
 ];
