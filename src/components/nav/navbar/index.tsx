@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import Link from 'next/link';
 import Logo from './Logo';
 import Button from './Button';
@@ -26,6 +27,16 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                     About the Authors
                   </p>
                 </Link>
+              </li>
+              <li>
+                <ScrollLink
+                  to='events'
+                  smooth={true}
+                  duration={500}
+                  offset={-96} // adjust to match your navbar height
+                >
+                  <p className='hover:text-yellow-300 cursor-pointer'>Events</p>
+                </ScrollLink>
               </li>
               <li>
                 <Link href='/Map'>
