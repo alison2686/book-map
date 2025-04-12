@@ -5,6 +5,7 @@ interface EventItem {
   title: string;
   date: string;
   location: string;
+  address: string;
   description?: string;
 }
 
@@ -12,8 +13,8 @@ const events: EventItem[] = [
   {
     title: 'Author Talk: Palo Alto Mitchell Park Public Library',
     date: 'May 18, 2025',
-    location:
-      'Mitchell Park Public Library – 700 Middlefield Rd, Palo Alto, CA 94303 Palo Alto, CA',
+    location: 'Mitchell Park Public Library',
+    address: '700 Middlefield Rd, Palo Alto, CA 94301',
     description:
       'Ron Lee will be discussing his book, “Sojournors to Joke Sings: Tales of Chinatown and Beyond” at the Mitchell Park Public Library in Palo Alto as part of Asian American History Month',
   },
@@ -37,8 +38,10 @@ export default function Events() {
                   <h2 className='text-xl md:text-2xl font-bold mb-2 font-comic'>
                     {event.title}
                   </h2>
+                  {''}
                   <p className='text-md font-semibold mb-1'>{event.date}</p>
                   <p className='text-md italic mb-3'>{event.location}</p>
+                  <p className='text-md italic mb-3'>{event.address}</p>
                   {event.description && (
                     <p className='text-sm leading-relaxed'>
                       {event.description}
