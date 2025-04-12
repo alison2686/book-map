@@ -20,7 +20,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             </Link>
 
             {/* Navbar links - only visible on medium screens and larger */}
-            <ul className='hidden md:flex gap-x-6 text-white font-comic text-lg tracking-wide'>
+            {/* <ul className='hidden md:flex gap-x-6 text-white font-comic text-lg tracking-wide'>
               <li>
                 <Link href='/About'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
@@ -59,12 +59,12 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                   </p>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
 
             {/* Button (visible on larger screens) */}
-            <div className='hidden md:block'>
+            {/* <div className='hidden md:block'>
               <Button />
-            </div>
+            </div> */}
 
             {/* Hamburger menu icon for mobile view */}
             <div className='md:hidden'>
