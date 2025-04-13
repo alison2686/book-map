@@ -49,7 +49,9 @@ const Sidebar = ({
         </svg>
       </button>
 
-      <ul className='sidebar-nav text-center leading-relaxed text-xl'>
+      <h1>🚧 Site Under Maintenance 🚧</h1>
+
+      {/* <ul className='sidebar-nav text-center leading-relaxed text-xl'>
         <li>
           <Link href='/About' onClick={toggle}>
             <p>About the Author</p>
@@ -75,7 +77,7 @@ const Sidebar = ({
             <p>Contact Us</p>
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 };
