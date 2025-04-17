@@ -32,7 +32,7 @@ export default function Hero() {
           <div className='flex justify-center items-center'>
             <div className='border-4 border-black shadow-comic bg-black rounded-2xl'>
               <Image
-                src='/images/hero/book-cover.jpeg'
+                src='/images/hero/bookcover-2.png'
                 alt='Becoming American cover'
                 width={width < 1024 ? 250 : 300}
                 height={width < 1024 ? 350 : 400}
