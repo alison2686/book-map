@@ -6,8 +6,8 @@ import Event from '@/components/events';
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Event />
+      {/* <Hero /> */}
+      {/* <Event /> */}
       <MapImage />
     </>
   );

@@ -55,11 +55,11 @@ const Sidebar = ({
             <p>About the Author</p>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <button onClick={handleEventsClick} className='hover:text-yellow-300'>
             Events
           </button>
-        </li>
+        </li> */}
         <li>
           <Link href='/Map' onClick={toggle}>
             <p>Cathcart Map</p>

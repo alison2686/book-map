@@ -38,10 +38,10 @@ const PopupCard: FC<PopupCardProps> = ({
             href={`/Comics/${id}`}
             className='text-blue-700 underline hover:text-electricBlue transition-colors'
           >
-            Go to web comic
+            Learn more
           </Link>
         ) : (
-          <p className='italic text-blue-700'>Comic coming soon</p>
+          <p className='italic text-blue-700'></p>
         )}
       </div>
     </div>
