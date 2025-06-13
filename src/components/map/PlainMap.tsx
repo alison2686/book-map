@@ -18,7 +18,17 @@ const MapImage = () => {
   }, []);
 
   return (
-    <div className='w-full bg-sky comic-dots px-4 sm:px-6 lg:px-8 py-12'>
+    <div className='w-full bg-sky comic-dots'>
+      {/* Author Talk Banner */}
+      <div className='w-full bg-eventYellow border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
+        📖 <strong>Coming soon!</strong> Get Updates here &nbsp; — &nbsp;
+        <a
+          href='/Contact'
+          className='underline underline-offset-2 hover:text-electricBlue transition-colors '
+        >
+          see details
+        </a>
+      </div>
       <div className='max-w-6xl mx-auto flex flex-col items-center text-center'>
         {/* Header */}
         <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-black p-4'>
