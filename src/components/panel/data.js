@@ -59,7 +59,7 @@ export const PanelData = [
     img3ClassName: 'w-full h-full object-fit',
     text3:
       'The cove was originally named Phelan beach after James Phelan who made a large contribution that enabled the State to purchase the property from a private party. Phelan was a notorious racist who persecuted the Chinese. In 1974 when the beach became part of the NPS, it was renamed China Beach',
-    img4: '/images/comic/china-beach/junk-ship.png',
+    img4: '/images/comic/china-beach/junk-ship1.png',
     alt4: 'Chinese Junk ships',
     img4ClassName: 'w-full h-full object-fit',
     text4:
