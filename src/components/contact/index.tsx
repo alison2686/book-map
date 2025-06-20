@@ -46,9 +46,12 @@ export default function ContactForm() {
         onSubmit={handleSubmit(onSubmit)}
         className='w-full max-w-lg bg-white shadow-md rounded-lg p-8 border-2 border-black'
       >
-        <h1 className='text-3xl font-bold mb-6 text-center tracking-wide'>
+        <h1 className='text-3xl font-bold text-center tracking-wide'>
           Sign Up to Receive Updates
         </h1>
+        <h2 className='text-xl font-bold mb-6 text-center tracking-wide'>
+          or Send Us a Message
+        </h2>
         {isSubmitted && (
           <p className='text-green-500 text-center mb-4'>
             Your message has been sent!

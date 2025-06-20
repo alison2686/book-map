@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+// import { MapPinned } from 'lucide-react';
 
 const MapImage = () => {
   const [width, setWidth] = useState(0);
@@ -18,22 +19,25 @@ const MapImage = () => {
   }, []);
 
   return (
-    <div className='w-full bg-sky comic-dots'>
-      {/* Author Talk Banner */}
-      <div className='w-full bg-eventYellow border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
-        📖 <strong>Coming soon!</strong> Get Updates here &nbsp; — &nbsp;
-        <a
-          href='/Contact'
-          className='underline underline-offset-2 hover:text-electricBlue transition-colors '
-        >
-          see details
-        </a>
-      </div>
+    <div className='w-full bg-sky map-dots'>
       <div className='max-w-6xl mx-auto flex flex-col items-center text-center'>
         {/* Header */}
-        <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-black p-4'>
-          Cathcart Map <br /> of San Francisco’s Chinatown
-        </h1>
+        <Link href='/Map' passHref>
+          <div className='text-center px-4 py-6'>
+            <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-black text-shadow-lg transition-colors duration-300 underline decoration-solid underline-offset-4 cursor-pointer  hover:text-gray-700'>
+              Cathcart Map <br className='hidden sm:block' />
+              of San Francisco’s Chinatown
+            </h1>
+            <div className='mt-2 flex justify-center items-center gap-1 text-sm sm:text-base text-gray-700 sm:text-gray-700  hover:text-gray-900'>
+              {/* <MapPinned className='w-4 h-4' /> */}
+              <span className='font-medium'>Tap to open interactive map</span>
+              <FontAwesomeIcon
+                icon={faArrowAltCircleRight}
+                className='text-xl'
+              />
+            </div>
+          </div>
+        </Link>
 
         <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-black'>
           While conducting research, a very interesting book came to light by

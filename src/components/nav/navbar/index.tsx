@@ -12,7 +12,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
           <div className='flex justify-between items-center h-full'>
             <Link href='/'>
               <div className='transition duration-300 ease-in-out transform hover:scale-105'>
-                <p className='text-4xl '>Sojourners To Joke Sings</p>
+                <p className='text-3xl'>Sojourners To Joke Sings</p>
                 <p className='text-xl flex justify-center'>
                   Tales of Chinatown and Beyond
                 </p>

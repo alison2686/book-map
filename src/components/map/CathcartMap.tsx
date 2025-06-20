@@ -135,7 +135,7 @@ const CathcartMap = () => {
     <div className='w-full bg-sky map-dots px-4 sm:px-6 lg:px-8 py-12'>
       <div className='max-w-6xl mx-auto flex flex-col items-center text-center'>
         <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-black pt-16'>
-          Cathcart Map <br /> of San Francisco’s Chinatown
+          Welcome to the Interactive Map <br /> of San Francisco’s Chinatown
         </h1>
         <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-black'>
           You are invited to take a virtual tour of San Francisco Chinatown.
@@ -189,8 +189,8 @@ const CathcartMap = () => {
                   popup.content.id === 'beach'
                     ? 'translateX(-50%)'
                     : width < 768
-                    ? 'none'
-                    : 'translate(-50%, -50%)',
+                      ? 'none'
+                      : 'translate(-50%, -50%)',
               }}
             >
               <div ref={popupRef}>
