@@ -17,13 +17,13 @@ const AboutCard = () => {
       {' '}
       {/* Info Banner */}
       <div className='w-full bg-eventYellow border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
-        📖 <strong>Book Coming soon!</strong> Signup to receive updates here
+        📖 <strong>Book Coming July 2025!</strong>
         &nbsp; — &nbsp;
         <a
           href='/Contact'
           className='underline underline-offset-2 hover:text-electricBlue transition-colors '
         >
-          see details
+          Signup to receive updates here
         </a>
       </div>
       <div className='w-full bg-electricBlue text-white comic-dots px-4 sm:px-6 lg:px-8 py-12 min-h-screen flex items-center justify-center'>
