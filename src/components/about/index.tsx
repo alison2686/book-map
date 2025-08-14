@@ -17,7 +17,7 @@ const AboutCard = () => {
       {' '}
       {/* Info Banner */}
       <div className='w-full bg-eventYellow border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
-        📖 <strong>Book Coming July 2025!</strong>
+        📖 <strong>Book Coming August 25th!</strong>
         &nbsp; — &nbsp;
         <a
           href='/Contact'
