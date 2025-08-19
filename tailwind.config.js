@@ -166,7 +166,7 @@ module.exports = {
           backgroundPosition: '0 0, 5px 5px',
         },
         '.map-dots': {
-          backgroundColor: '#5A0000',
+          backgroundColor: '#8B0000',
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',
