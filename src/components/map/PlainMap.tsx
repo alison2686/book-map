@@ -28,7 +28,7 @@ const MapImage = () => {
               Cathcart Map <br className='hidden sm:block' />
               of San Francisco’s Chinatown
             </h1>
-            <div className='mt-2 flex justify-center items-center gap-1 text-sm sm:text-base text-gray-700 sm:text-gray-700  hover:text-gray-900'>
+            <div className='mt-2 flex justify-center items-center gap-1 text-sm sm:text-base text-[#806517] sm:text-[#806517]  hover:text-gray-900'>
               {/* <MapPinned className='w-4 h-4' /> */}
               <span className='font-medium'>Tap to open interactive map</span>
               <FontAwesomeIcon
@@ -58,7 +58,7 @@ const MapImage = () => {
         </div>
 
         {/* Amazon Link */}
-        <div className='text-black-700 hover:underline font-medium my-2'>
+        <div className='text-[#806517] hover:underline font-medium my-2'>
           <Link
             href='https://www.amazon.com/Gold-Mountain-Big-City-Illustrated/dp/1944903895'
             target='_blank'
@@ -126,7 +126,7 @@ const MapImage = () => {
 
         {/* Button */}
         <Link href='/Map' passHref>
-          <button className='text-blue-500 hover:text-blue-700 border border-blue-500 rounded-full px-6 py-3 bg-white flex items-center gap-2 mt-6 shadow-md hover:shadow-lg transition'>
+          <button className='text-[#806517] hover:text-gray-700 border border-gray-900 rounded-full px-6 py-3 bg-white flex items-center gap-2 mt-6 shadow-md hover:shadow-lg transition'>
             <span>Go to Map</span>
             <FontAwesomeIcon
               icon={faArrowAltCircleRight}

@@ -7,10 +7,11 @@ import About from './About/page';
 export default function Home() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       {/* <Event /> */}
-      <About />
+
       <MapImage />
+      <About />
     </>
   );
 }

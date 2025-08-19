@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        electricBlue: '#305784', // A dark blue
+        electricBlue: '#27272a', // A dark blue
         vividOrange: '#EBAD0E', // A bright orange
         sky: '#5DADE2', // A light blue
         eventYellow: '#eab308', // A bright yellow, good for backgrounds or highlights
@@ -159,14 +159,14 @@ module.exports = {
           // fontWeight: '100',
         },
         '.comic-dots': {
-          backgroundColor: '#305784',
+          backgroundColor: '#27272a',
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',
           backgroundPosition: '0 0, 5px 5px',
         },
         '.map-dots': {
-          backgroundColor: '#5DADE2',
+          backgroundColor: '#5A0000',
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',

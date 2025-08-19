@@ -1,75 +1,77 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+
+function CoverCard({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div
+      className='
+    relative aspect-[3/4]
+    w-44 sm:w-56 md:w-64 lg:w-72 xl:w-80
+    overflow-hidden rounded-xl
+
+    transition-transform duration-300
+    hover:scale-[1.02] hover:shadow-xl
+  '
+    >
+      <Image src={src} alt={alt} fill className='object-contain p-2' priority />
+    </div>
+  );
+}
 
 export default function Hero() {
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    const updateWidth = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', updateWidth);
-    updateWidth();
-    return () => window.removeEventListener('resize', updateWidth);
-  }, []);
-
   return (
-    <div className='w-full bg-electricBlue text-white comic-dots'>
-      {/* Author Talk Banner */}
-      <div className='w-full bg-eventYellow border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
-        📖 <strong>Author Talk:</strong> May 18th at Mitchell Park Library, Palo
-        Alto &nbsp; — &nbsp;
+    <div className='w-full comic-dots text-white'>
+      {/* Info Banner */}
+      <div className='w-full bg-[#806517] border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
+        📖 <strong>Book Coming August 25th!</strong>
+        &nbsp; — &nbsp;
         <a
-          href='#events'
-          className='underline underline-offset-2 hover:text-electricBlue transition-colors '
+          href='/Contact'
+          className='underline underline-offset-2 hover:text-electricBlue transition-colors'
         >
-          see details
+          Signup to receive updates here
         </a>
       </div>
 
-      <div className='min-h-[calc(100vh-56px)] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl'>
-          {/* Image */}
-          <div className='flex justify-center items-center'>
-            <div className='border-4 border-black shadow-comic bg-black rounded-2xl'>
-              <Image
-                src='/images/hero/bookcover-2.png'
-                alt='Becoming American cover'
-                width={width < 1024 ? 250 : 300}
-                height={width < 1024 ? 350 : 400}
-                className='rounded'
-              />
-            </div>
-          </div>
+      <div className='flex flex-col items-center px-4 sm:px-6 lg:px-8 py-12 max-w-5xl mx-auto'>
+        {/* Sleek Covers */}
+        <div className=' flex flex-wrap justify-center gap-6 sm:gap-8 mb-10'>
+          <CoverCard
+            src='/images/hero/front-cover.png'
+            alt='Sojourners to Joke Sings front book cover'
+          />
+          <CoverCard
+            src='/images/hero/back-cover.png'
+            alt='Sojourners to Joke Sings back book cover'
+          />
+        </div>
 
-          {/* Speech Bubble Text */}
-          <div className='relative'>
-            <div className='bg-white text-black p-6 rounded-2xl border-4 border-black shadow-comic font-comic leading-relaxed text-base sm:text-lg md:text-xl tracking-wide'>
-              <p>
-                Family Matriarch LK Lennie Lee (1923–2021) lived a long and
-                productive life. While sorting through her belongings, we
-                discovered a book she had written about her life and times —
-                plus those of our forebears. At the top of the first page, there
-                was a handwritten note:
-              </p>
-              <p className='italic mt-4'>
-                “Grandmother Lee’s Autobiography.
-                <br /> Note: Needs Corrections and upgrading”
-              </p>
-              <p className='mt-4'>
-                Our family began reviewing her work expecting conventional tales
-                — the Gold Rush, the railroads — but instead, we found
-                astonishing stories. Lennie claimed our ancestors inspired
-                Robert Louis Stevenson’s <em>Treasure Island</em>.
-              </p>
-              <p className='mt-4 italic'>
-                <em>Sojourners To Joke Sings: Tales of Chinatown and Beyond</em>{' '}
-                reveals what we uncovered while exploring her claims.
-              </p>
-            </div>
-
-            {/* Speech bubble pointer */}
-            {/* <div className='absolute -left-6 top-10 w-0 h-0 border-t-[20px] border-t-transparent border-b-[20px] border-b-transparent border-r-[20px] border-r-white border-r-4 border-r-black'></div> */}
-          </div>
+        {/* Intro Copy */}
+        <div
+          className='bg-white text-black p-6 md:p-8 rounded-2xl border border-black/10 shadow-lg 
+                leading-relaxed text-sm sm:text-base md:text-lg max-w-3xl'
+        >
+          <p>
+            Family Matriarch LK Lennie Lee (1923–2021) lived a long and
+            productive life. While sorting through her belongings, we discovered
+            a book she had written about her life and times — plus those of our
+            forebears. At the top of the first page, there was a handwritten
+            note:
+          </p>
+          <p className='italic mt-3'>
+            “Grandmother Lee’s Autobiography.
+            <br /> Note: Needs Corrections and upgrading”
+          </p>
+          <p className='mt-3'>
+            Our family began reviewing her work expecting conventional tales —
+            the Gold Rush, the railroads — but instead, we found astonishing
+            stories. Lennie claimed our ancestors inspired Robert Louis
+            Stevenson’s <em>Treasure Island</em>.
+          </p>
+          <p className='mt-3 italic'>
+            <em>Sojourners To Joke Sings: Tales of Chinatown and Beyond</em>{' '}
+            reveals what we uncovered while exploring her claims.
+          </p>
         </div>
       </div>
     </div>
