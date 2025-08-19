@@ -6,7 +6,7 @@ import { faBookOpen, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
-    <footer className='bg-[#806517] text-black text-center p-4 border-t-2 border-black'>
+    <footer className='bg-[#996515] text-black text-center p-4 border-t-2 border-black'>
       <div className='container mx-auto px-6'>
         <div className='flex justify-between items-center flex-col md:flex-row'>
           <p>
