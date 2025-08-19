@@ -28,7 +28,7 @@ const MapImage = () => {
               Cathcart Map <br className='hidden sm:block' />
               of San Francisco’s Chinatown
             </h1>
-            <div className='mt-2 flex justify-center items-center gap-1 text-sm sm:text-base text-[#806517] sm:text-[#806517]  hover:text-gray-900'>
+            <div className='mt-2 flex justify-center items-center gap-1 text-sm sm:text-base text-[#996515] sm:text-[#996515]  hover:text-gray-900'>
               {/* <MapPinned className='w-4 h-4' /> */}
               <span className='font-medium'>Tap to open interactive map</span>
               <FontAwesomeIcon
