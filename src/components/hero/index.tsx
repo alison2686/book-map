@@ -6,9 +6,8 @@ function CoverCard({ src, alt }: { src: string; alt: string }) {
     <div
       className='
     relative aspect-[3/4]
-    w-44 sm:w-56 md:w-64 lg:w-72 xl:w-80
+    w-60 sm:w-64 md:w-72 lg:w-80 xl:w-96
     overflow-hidden rounded-xl
-
     transition-transform duration-300
     hover:scale-[1.02] hover:shadow-xl
   '
