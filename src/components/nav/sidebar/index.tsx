@@ -29,7 +29,7 @@ const Sidebar = ({
 
   return (
     <div
-      className='sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10'
+      className='sidebar-container font-bangers fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10'
       style={{
         opacity: `${isOpen ? '1' : '0'}`,
         top: ` ${isOpen ? '0' : '-100%'}`,

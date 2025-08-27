@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <div className='w-full comic-dots text-white'>
       {/* Info Banner */}
-      <div className='w-full bg-[#996515] border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-wide'>
+      <div className='w-full font-bangers bg-[#996515] border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-widest'>
         📖 <strong>Book Coming August 25th!</strong>
         &nbsp; — &nbsp;
         <a

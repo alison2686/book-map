@@ -12,7 +12,7 @@ const Button = () => {
     <div className='relative'>
       <button
         onClick={handleClick}
-        className='h-12 rounded-lg tracking-wide bg-white font-bold px-5 hover:bg-yellow-200 transition-colors'
+        className='font-bangers h-12 rounded-lg tracking-wide bg-white font-bold px-5 hover:bg-yellow-200 transition-colors'
       >
         Get Updates
       </button>

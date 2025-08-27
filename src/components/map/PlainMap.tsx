@@ -19,27 +19,28 @@ const MapImage = () => {
   }, []);
 
   return (
-    <div className='w-full bg-sky map-dots'>
+    <div className='w-full map-dots'>
       <div className='max-w-6xl mx-auto flex flex-col items-center text-center'>
         {/* Header */}
         <Link href='/Map' passHref>
           <div className='text-center px-4 py-6'>
-            <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-black text-shadow-lg transition-colors duration-300 underline decoration-solid underline-offset-4 cursor-pointer  hover:text-gray-700'>
+            <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-white text-shadow-lg transition-colors duration-300 underline decoration-solid underline-offset-6 cursor-pointer  hover:text-gray-300 tracking-widest'>
               Cathcart Map <br className='hidden sm:block' />
-              of San Francisco’s Chinatown
+              of San Francisco’s <br /> Chinatown
             </h1>
-            <div className='mt-2 flex justify-center items-center gap-1 text-sm sm:text-base text-[#996515] sm:text-[#996515]  hover:text-gray-900'>
-              {/* <MapPinned className='w-4 h-4' /> */}
-              <span className='font-medium'>Tap to open interactive map</span>
+            <div className='mt-3 flex justify-center items-center gap-2 rounded-lg bg-[#a32b2b] border-4 border-black px-4 py-2 shadow-md hover:bg-[#8e2525] transition'>
+              <span className='text-sm sm:text-base font-semibold text-white'>
+                Tap to open interactive map
+              </span>
               <FontAwesomeIcon
                 icon={faArrowAltCircleRight}
-                className='text-xl'
+                className='text-white text-lg sm:text-xl'
               />
             </div>
           </div>
         </Link>
 
-        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-black'>
+        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-white'>
           While conducting research, a very interesting book came to light by
           Jim Schein:
         </h3>
@@ -58,17 +59,18 @@ const MapImage = () => {
         </div>
 
         {/* Amazon Link */}
-        <div className='text-[#806517] hover:underline font-medium my-2'>
+        <div className='my-3'>
           <Link
             href='https://www.amazon.com/Gold-Mountain-Big-City-Illustrated/dp/1944903895'
             target='_blank'
+            className='inline-block rounded-lg bg-[#a32b2b] border-4 border-black px-4 py-2 font-bangers text-white text-base sm:text-lg tracking-wide shadow-md hover:bg-[#8e2525] hover:underline transition'
           >
-            <em>Gold Mountain, Big City</em> by Jim Schein
+            <em>Gold Mountain, Big City</em> <br /> by Jim Schein
           </Link>
         </div>
 
         {/* Description */}
-        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-black'>
+        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-white'>
           Based on the work of photographer/map maker Ken Cathcart, Jim has
           produced a hand-colorized map of Chinatown in 1947 highlighting
           historically significant locations in “Dai Fou” (Big City). The map
@@ -117,7 +119,7 @@ const MapImage = () => {
         </div>
 
         {/* Call to Action */}
-        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-6 text-black'>
+        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-6 text-white'>
           You are invited to take a virtual tour of San Francisco Chinatown.
           Study the map, then press the button below and a series of icons will
           appear. Click on any one and a dialogue box will appear giving a
@@ -126,7 +128,7 @@ const MapImage = () => {
 
         {/* Button */}
         <Link href='/Map' passHref>
-          <button className='text-[#806517] hover:text-gray-700 border border-gray-900 rounded-full px-6 py-3 bg-white flex items-center gap-2 mt-6 shadow-md hover:shadow-lg transition'>
+          <button className='font-bangers text-[#806517] hover:text-gray-700 border border-gray-900 rounded-full px-6 py-3 bg-white flex items-center gap-2 mt-6 shadow-md hover:shadow-lg transition'>
             <span>Go to Map</span>
             <FontAwesomeIcon
               icon={faArrowAltCircleRight}
@@ -136,7 +138,7 @@ const MapImage = () => {
         </Link>
 
         {/* Credit */}
-        <p className='text-sm text-black mt-6'>
+        <p className='text-sm text-white mt-6 py-8'>
           Images courtesy of Schein and Schein Inc.
         </p>
       </div>
