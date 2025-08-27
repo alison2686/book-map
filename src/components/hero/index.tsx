@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function CoverCard({ src, alt }: { src: string; alt: string }) {
   return (
@@ -21,15 +22,35 @@ export default function Hero() {
   return (
     <div className='w-full comic-dots text-white'>
       {/* Info Banner */}
-      <div className='w-full font-bangers bg-[#996515] border-y-4 border-black py-4 px-6 text-center font-comic text-black text-base sm:text-lg md:text-xl tracking-widest'>
-        📖 <strong>Book Coming August 25th!</strong>
-        &nbsp; — &nbsp;
-        <a
-          href='/Contact'
-          className='underline underline-offset-2 hover:text-electricBlue transition-colors'
-        >
-          Signup to receive updates here
-        </a>
+      <div className='w-full font-bangers border-y-8 border-black bg-[#996515] tracking-widest'>
+        <div className='mx-auto max-w-6xl px-3 sm:px-4'>
+          <div className='flex flex-wrap items-center justify-center gap-3 py-2 sm:py-3'>
+            {/* Emoji + headline */}
+            <div className='flex items-center gap-2'>
+              <span className='text-2xl sm:text-3xl md:text-4xl'>📖</span>
+              <span className='text-black text-base sm:text-lg md:text-xl tracking-widest uppercase'>
+                <strong>
+                  Book coming{' '}
+                  <span className='whitespace-nowrap'>August 25</span>!
+                </strong>
+              </span>
+            </div>
+
+            {/* Divider dot for larger screens */}
+            <span className='hidden sm:inline text-black'>•</span>
+
+            {/* CTA button */}
+            <Link
+              href='/Contact'
+              className='inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-3 py-1
+                 text-xs sm:text-sm md:text-base tracking-widest hover:underline
+                 shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform
+                 hover:translate-x-[1px] hover:translate-y-[1px]'
+            >
+              Sign up for updates
+            </Link>
+          </div>
+        </div>
       </div>
 
       <div className='flex flex-col items-center px-4 sm:px-6 lg:px-8 py-12 max-w-5xl mx-auto'>
