@@ -18,7 +18,7 @@ const Footer = () => {
             <Link href='https://amazon.com' passHref>
               <FontAwesomeIcon icon={faBookOpen} className='w-6 h-6' />
             </Link>
-            <Link href='mailto:someone@example.com' passHref>
+            <Link href='mailto:info@sojournerstojokesings.com' passHref>
               <FontAwesomeIcon icon={faEnvelope} className='w-6 h-6' />
             </Link>
           </div>

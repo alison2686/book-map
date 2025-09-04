@@ -101,7 +101,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
                 onClick={toggle}
                 className='block hover:underline font-bangers tracking-wide'
               >
-                About the Author
+                About the Authors
               </Link>
             </li>
 
