@@ -70,14 +70,14 @@ const MapImage = () => {
         </div>
 
         {/* Description */}
-        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-white'>
+        <p className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-white'>
           Based on the work of photographer/map maker Ken Cathcart, Jim has
           produced a hand-colorized map of Chinatown in 1947 highlighting
           historically significant locations in “Dai Fou” (Big City). The map
           depicts many of the places Lennie referred to and is a wonderful
           visual aid for the target audience of Sojourners to Joke Sings...young
           people.
-        </h3>
+        </p>
 
         {/* Main Map */}
         <div className='border-4 border-black bg-white shadow-comic p-2 my-8'>
@@ -119,12 +119,12 @@ const MapImage = () => {
         </div>
 
         {/* Call to Action */}
-        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-6 text-white'>
+        <p className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-6 text-white'>
           You are invited to take a virtual tour of San Francisco Chinatown.
           Study the map, then press the button below and a series of icons will
           appear. Click on any one and a dialogue box will appear giving a
           little information about the place selected.
-        </h3>
+        </p>
 
         {/* Button */}
         <Link href='/Map' passHref>
