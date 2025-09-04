@@ -13,7 +13,11 @@ const Footer = () => {
             Copyright &copy; {new Date().getFullYear()} Ronald D Lee. All rights
             reserved.
           </p>
+          <div>
+            <h2 className='text-sm font-semibold'>Contact Us</h2>
 
+            <p>Email: info@sojournerstojokesings.com </p>
+          </div>
           <div className='flex space-x-4 mt-2 md:mt-0 text-black'>
             <Link href='https://amazon.com' passHref>
               <FontAwesomeIcon icon={faBookOpen} className='w-6 h-6' />
