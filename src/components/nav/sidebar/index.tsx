@@ -1,6 +1,4 @@
 'use client';
-import Link from 'next/link';
-import { Link as ScrollLink } from 'react-scroll';
 import { useRouter, usePathname } from 'next/navigation';
 import { useEffect, useCallback } from 'react';
 
@@ -37,8 +35,20 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [onKeyDown]);
 
+  // ✅ About scroll handler
+  const handleAboutClick = () => {
+    toggle();
+    if (pathname === '/') {
+      const el = document.getElementById('about');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      router.push('/#about');
+    }
+  };
+
+  // Example: Events handler (already present)
   const handleEventsClick = () => {
-    toggle(); // close the sidebar
+    toggle();
     if (pathname === '/') {
       const el = document.getElementById('events');
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -97,48 +107,56 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
         <nav className='px-6 py-6'>
           <ul className='space-y-4 text-center leading-relaxed text-xl'>
             <li>
-              <Link
-                href='#about'
-                onClick={toggle}
-                className='block hover:underline font-bangers tracking-wide'
+              <button
+                onClick={handleAboutClick}
+                className='block w-full hover:underline font-bangers tracking-wide'
               >
                 About the Authors
-              </Link>
+              </button>
             </li>
 
-            {/* Example: scroll to events when on home */}
+            {/* Example: scroll to events */}
             {/* <li>
-              <button onClick={handleEventsClick} className="block w-full hover:underline font-bangers tracking-wide">
+              <button
+                onClick={handleEventsClick}
+                className="block w-full hover:underline font-bangers tracking-wide"
+              >
                 Events
               </button>
             </li> */}
 
             <li>
-              <Link
-                href='/Map'
-                onClick={toggle}
-                className='block hover:underline font-bangers tracking-wide'
+              <button
+                onClick={() => {
+                  toggle();
+                  router.push('/Map');
+                }}
+                className='block w-full hover:underline font-bangers tracking-wide'
               >
                 Cathcart Map
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                href='/Comics'
-                onClick={toggle}
-                className='block hover:underline font-bangers tracking-wide'
+              <button
+                onClick={() => {
+                  toggle();
+                  router.push('/Comics');
+                }}
+                className='block w-full hover:underline font-bangers tracking-wide'
               >
                 Web Comic
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                href='/Contact'
-                onClick={toggle}
-                className='block hover:underline font-bangers tracking-wide'
+              <button
+                onClick={() => {
+                  toggle();
+                  router.push('/Contact');
+                }}
+                className='block w-full hover:underline font-bangers tracking-wide'
               >
                 Contact Us
-              </Link>
+              </button>
             </li>
           </ul>
         </nav>

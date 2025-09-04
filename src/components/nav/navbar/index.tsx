@@ -39,7 +39,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 </ScrollLink>
               </li> */}
               <li>
-                <Link href='#map'>
+                <Link href='/Map'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Cathcart Map
                   </p>
