@@ -1,10 +1,12 @@
 // components/AboutCard.tsx
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function AboutCard() {
   return (
-    <section className='w-full comic-dots text-white '>
+    <section
+      id='about'
+      className='section id="about"w-full comic-dots text-white overflow-hidden'
+    >
       <div className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center'>
           {/* Image column */}
@@ -13,18 +15,17 @@ export default function AboutCard() {
               <Image
                 src='/images/about/ron-lennie.jpeg'
                 alt='Ron and Lennie Lee'
-                width={900} // large intrinsic size for quality
+                width={900}
                 height={1100}
                 sizes='(min-width: 1024px) 450px, 250px'
                 className='h-auto w-[250px] sm:w-[300px] md:w-[360px] lg:w-[450px]'
-                priority={false}
               />
             </div>
           </div>
 
           {/* Text column */}
-          <div className='text-center lg:text-left'>
-            <h1 className='font-comic font-bold tracking-wider text-3xl sm:text-4xl lg:text-5xl mb-4'>
+          <div className='text-center lg:text-left space-y-6'>
+            <h1 className='font-comic font-bold tracking-wider text-3xl sm:text-4xl lg:text-5xl'>
               About the Authors
             </h1>
 
@@ -36,7 +37,7 @@ export default function AboutCard() {
               facade of tourism.
             </p>
 
-            <p className='font-comic text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 mt-6'>
+            <p className='font-comic text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0'>
               Ron spent his free time advocating for a variety of issues
               involving Asian American Native Hawaiian Pacific Islanders. At
               Lennie’s request he was directed, along with his two daughters and

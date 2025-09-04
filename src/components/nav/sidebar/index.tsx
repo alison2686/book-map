@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 import { useRouter, usePathname } from 'next/navigation';
 import { useEffect, useCallback } from 'react';
 
@@ -97,7 +98,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
           <ul className='space-y-4 text-center leading-relaxed text-xl'>
             <li>
               <Link
-                href='/About'
+                href='#about'
                 onClick={toggle}
                 className='block hover:underline font-bangers tracking-wide'
               >

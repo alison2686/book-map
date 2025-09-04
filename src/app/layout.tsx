@@ -52,11 +52,11 @@ export default function RootLayout({
           }}
         />
       </head>
-      {/* Attach BOTH font variables to <body>; make Inter the default via Tailwind's font-sans */}
       <body className={`${inter.variable} ${bangers.variable} font-sans`}>
-        <div className='layout-grid'>
+        {/* 3-row flex layout: nav / content / footer */}
+        <div className='min-h-screen flex flex-col'>
           <Navigation />
-          <main className='content'>{children}</main>
+          <main className='flex-1 min-h-0'>{children}</main>
           <Footer />
         </div>
       </body>

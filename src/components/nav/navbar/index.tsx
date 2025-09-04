@@ -22,7 +22,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             {/* Navbar links - only visible on medium screens and larger */}
             <ul className='hidden md:flex gap-x-6 text-white font-comic text-lg tracking-wide'>
               <li>
-                <Link href='/About'>
+                <Link href='#about'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     About the Authors
                   </p>
@@ -39,7 +39,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 </ScrollLink>
               </li> */}
               <li>
-                <Link href='/Map'>
+                <Link href='#map'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Cathcart Map
                   </p>
