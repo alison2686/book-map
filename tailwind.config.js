@@ -144,21 +144,21 @@ module.exports = {
 
         // Backgrounds / textures
         '.comic-bg': {
-          backgroundColor: '#5DADE2',
+          backgroundColor: '#5DADE2', // light blue
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',
           backgroundPosition: '0 0, 5px 5px',
         },
         '.comic-dots': {
-          backgroundColor: '#27272a',
+          backgroundColor: '#27272a', // grayish black
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',
           backgroundPosition: '0 0, 5px 5px',
         },
         '.map-dots': {
-          backgroundColor: '#8B0000',
+          backgroundColor: '#8B0000', // Dark red
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',

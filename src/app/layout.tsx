@@ -53,10 +53,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${bangers.variable} font-sans`}>
-        {/* 3-row flex layout: nav / content / footer */}
         <div className='min-h-screen flex flex-col'>
           <Navigation />
-          <main className='flex-1 min-h-0'>{children}</main>
+          {/* If your nav is ~96px tall (24 in Tailwind scale), pad main by that */}
+          <main className='flex-1 min-h-0 pt-24 md:pt-28'>{children}</main>
           <Footer />
         </div>
       </body>
