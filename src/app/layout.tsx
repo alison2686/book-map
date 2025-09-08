@@ -56,7 +56,7 @@ export default function RootLayout({
         <div className='min-h-screen flex flex-col'>
           <Navigation />
           {/* If your nav is ~96px tall (24 in Tailwind scale), pad main by that */}
-          <main className='flex-1 min-h-0 pt-24 md:pt-28'>{children}</main>
+          <main className='flex-1 min-h-0 '>{children}</main>
           <Footer />
         </div>
       </body>

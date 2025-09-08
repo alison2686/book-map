@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <div className='w-full comic-dots text-white'>
       {/* Info Banner */}
-      <div className='w-full font-bangers border-y-8 border-black bg-[#996515] tracking-widest'>
+      <div className='w-full font-bangers border-b-8 border-black bg-[#996515] tracking-widest'>
         <div className='mx-auto max-w-6xl px-3 sm:px-4'>
           <div className='flex flex-wrap items-center justify-center gap-3 py-2 sm:py-3'>
             {/* Emoji + headline */}
