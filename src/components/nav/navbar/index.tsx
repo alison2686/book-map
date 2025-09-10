@@ -22,9 +22,16 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             {/* Navbar links - only visible on medium screens and larger */}
             <ul className='hidden md:flex gap-x-6 text-amber-50 font-comic text-lg tracking-wide'>
               <li>
-                <Link href='#about'>
+                <Link href='/#about'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     About the Authors
+                  </p>
+                </Link>
+              </li>
+              <li>
+                <Link href='/#map'>
+                  <p className='hover:text-yellow-300 cursor-pointer'>
+                    Cathcart Map
                   </p>
                 </Link>
               </li>
@@ -41,7 +48,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
               <li>
                 <Link href='/Map'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
-                    Cathcart Map
+                    Interactive Map
                   </p>
                 </Link>
               </li>
