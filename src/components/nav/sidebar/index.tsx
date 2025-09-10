@@ -158,7 +158,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
               <button
                 onClick={() => {
                   toggle();
-                  router.push('/Comics');
+                  router.push('/WebComic');
                 }}
                 className='block w-full hover:underline font-bangers tracking-wide'
               >
