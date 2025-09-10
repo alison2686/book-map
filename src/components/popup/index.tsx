@@ -27,18 +27,18 @@ const PopupCard: FC<PopupCardProps> = ({
           <FontAwesomeIcon icon={faTimes} />
         </button>
 
-        <p className='text-xl sm:text-2xl font-bold'>{title}</p>
-        <p className='text-md sm:text-lg'>{chapter}</p>
-        <p className='text-sm'>{page}</p>
+        <p className='font-bangers text-xl sm:text-2xl font-bold'>{title}</p>
+        <p className='font-bangers text-md sm:text-lg'>{chapter}</p>
+        <p className='font-bangers text-sm'>{page}</p>
         <p className='text-sm sm:text-base py-2'>{subtitle}</p>
         <p className='text-sm sm:text-base py-2'>{subtitle2}</p>
 
         {isComicAvailable ? (
           <Link
             href={`/Comics/${id}`}
-            className='text-blue-700 underline hover:text-electricBlue transition-colors'
+            className='text-blue-700 underline hover:text-electricBlue transition-colors lowercase'
           >
-            Learn more
+            View Web Comic
           </Link>
         ) : (
           <p className='italic text-blue-700'></p>

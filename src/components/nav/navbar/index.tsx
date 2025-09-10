@@ -20,7 +20,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             </Link>
 
             {/* Navbar links - only visible on medium screens and larger */}
-            <ul className='hidden md:flex gap-x-6 text-white font-comic text-lg tracking-wide'>
+            <ul className='hidden md:flex gap-x-6 text-amber-50 font-comic text-lg tracking-wide'>
               <li>
                 <Link href='#about'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
@@ -55,7 +55,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
               <li>
                 <Link href='/Contact'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
-                    Contact Us
+                    Contact
                   </p>
                 </Link>
               </li>

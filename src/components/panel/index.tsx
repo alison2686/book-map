@@ -72,7 +72,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
   img6ClassName,
 }) => {
   return (
-    <div className='container mx-auto px-4 py-6'>
+    <div className='comic-dots px-4 py-6'>
       <div className='hidden md:block mb-4'>
         <BackButton />
       </div>
