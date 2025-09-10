@@ -104,7 +104,7 @@ export default function Hero() {
             stories. Lennie claimed our ancestors inspired Robert Louis
             Stevenson’s <em>Treasure Island</em>.
           </p>
-          <p className='mt-3 italic'>
+          <p className='mt-3'>
             <em>Sojourners To Joke Sings: Tales of Chinatown and Beyond</em>{' '}
             reveals what we uncovered while exploring her claims.
           </p>
