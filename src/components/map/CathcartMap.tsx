@@ -132,17 +132,17 @@ const CathcartMap = () => {
   };
 
   return (
-    <div className='w-full bg-sky map-dots px-4 sm:px-6 lg:px-8 py-12'>
+    <div className='w-full comic-dots px-4 sm:px-6 lg:px-8 py-12'>
       <div className='max-w-6xl mx-auto flex flex-col items-center text-center'>
-        <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-black pt-16'>
+        <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-[#996515]  pt-16'>
           Welcome to the Interactive Map <br /> of San Francisco’s Chinatown
         </h1>
-        <h3 className='text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 text-black'>
+        <p className='text-base text-[#996515] sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 '>
           You are invited to take a virtual tour of San Francisco Chinatown.
           Click on any icon on the map and a dialogue box will appear giving a
           little information about the place selected with a link to the web
           comic for this chapter.
-        </h3>
+        </p>
 
         {/* Map 1 */}
         <div className='relative-container border-4 border-black bg-white shadow-comic my-10'>

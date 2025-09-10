@@ -40,14 +40,16 @@ const legendData = [
 const Legend: React.FC<LegendProps> = ({ icons }) => {
   return (
     <div className='mt-10'>
-      <h2 className='text-2xl lg:text-4xl font-bold mb-4'>Map Legend</h2>
+      <h2 className='text-2xl text-[#996515] lg:text-4xl font-bold mb-4'>
+        Map Legend
+      </h2>
       <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {legendData.map(({ key, label }) => (
-          <li key={key} className='flex items-center'>
+          <li key={key} className='flex items-center text-amber-50'>
             <Suspense fallback={<div>Loading...</div>}>
               <FontAwesomeIcon
                 icon={icons[key as IconKey] as IconProp}
-                className='text-2xl mr-2'
+                className='text-2xl text-amber-50 mr-2'
               />
             </Suspense>
             <span>{label}</span>
