@@ -5,7 +5,7 @@ import ComicPanel from '../panel';
 function Comic() {
   return (
     <>
-      <div>
+      <div className=''>
         <div className='container mx-auto p-4'>
           {PanelData.map((panel, index) => {
             return <ComicPanel key={index} {...panel} />;

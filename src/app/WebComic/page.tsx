@@ -5,7 +5,7 @@ import ComicCover from '@/components/web-comic-cover';
 
 function WebComic() {
   return (
-    <div>
+    <div className='comic-dots'>
       <ComicCover />
       {PanelData.map((panel, panelId) => {
         return <ComicPanel key={panelId} {...panel} />;

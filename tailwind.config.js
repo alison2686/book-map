@@ -151,14 +151,21 @@ module.exports = {
           backgroundPosition: '0 0, 5px 5px',
         },
         '.comic-dots': {
-          backgroundColor: '#27272a', // grayish black
+          backgroundColor: '#27272a', // grayish black with dots
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',
           backgroundPosition: '0 0, 5px 5px',
         },
         '.map-dots': {
-          backgroundColor: '#8B0000', // Dark red
+          backgroundColor: '#8B0000', // Dark red with dots
+          backgroundImage:
+            'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
+          backgroundSize: '10px 10px',
+          backgroundPosition: '0 0, 5px 5px',
+        },
+        '.gold-dots': {
+          backgroundColor: '#996515', // Gold with dots
           backgroundImage:
             'radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 1px)',
           backgroundSize: '10px 10px',

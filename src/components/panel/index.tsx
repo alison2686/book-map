@@ -78,7 +78,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
       </div>
 
       <div className='flex flex-col items-center justify-center'>
-        <div className='comic-bg border-4 border-black w-full lg:max-w-screen-lg h-full overflow-y-auto scrollbar-hide'>
+        <div className='gold-dots border-4 border-black w-full lg:max-w-screen-lg h-full overflow-y-auto scrollbar-hide'>
           <div className='grid grid-cols-1 md:grid-cols-6 auto-rows-auto gap-4 p-4 md:p-6'>
             {/* Title */}
             <h1 className='text-3xl sm:text-5xl lg:text-6xl font-bold col-span-full text-center text-shadow-lg'>
@@ -86,7 +86,7 @@ const ComicPanel: FC<ComicPanelProps> = ({
             </h1>
 
             {/* Subtitle */}
-            <div className='col-span-full text-center text-base sm:text-lg lg:text-xl mt-2 mb-4 space-y-1'>
+            <div className='font-bangers tracking-widest col-span-full text-center text-base sm:text-lg lg:text-xl mt-2 mb-4 space-y-1'>
               {subtitle.split('\n').map((line, i) => (
                 <p key={i}>{line}</p>
               ))}
