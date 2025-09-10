@@ -19,7 +19,7 @@ const MapImage = () => {
   }, []);
 
   return (
-    <div id='map' className='w-full map-dots'>
+    <div id='map' className='w-full map-dots scroll-mt-24 md:scroll-mt-28'>
       <div className='max-w-6xl mx-auto flex flex-col items-center text-center'>
         {/* Header */}
         <Link href='/Map' passHref>
