@@ -1,48 +1,63 @@
 'use client';
-import Image from 'next/image';
-import Link from 'next/link';
 
-function CoverCard({ src, alt }: { src: string; alt: string }) {
-  return (
-    <div
-      className='
-    relative aspect-[3/4]
-    w-60 sm:w-64 md:w-72 lg:w-80 xl:w-96
-    overflow-hidden rounded-xl
-    transition-transform duration-300
-    hover:scale-[1.02] hover:shadow-xl
-  '
-    >
-      <Image src={src} alt={alt} fill className='object-contain p-2' priority />
-    </div>
-  );
-}
+import Link from 'next/link';
+import { useState, useCallback, useMemo } from 'react';
+import CoverCard from '../coverCard/coverCard';
+import Lightbox, { LightboxImage } from '../lightbox/lightbox';
 
 export default function Hero() {
+  // Keep images stable (avoids re-creating callbacks)
+  const images = useMemo<LightboxImage[]>(
+    () => [
+      {
+        src: '/images/hero/front-cover.png',
+        alt: 'Sojourners to Joke Sings front book cover',
+      },
+      {
+        src: '/images/hero/back-cover.png',
+        alt: 'Sojourners to Joke Sings back book cover',
+      },
+    ],
+    []
+  );
+
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const onPrev = useCallback(
+    () => setIndex((i) => (i - 1 + images.length) % images.length),
+    [images.length]
+  );
+  const onNext = useCallback(
+    () => setIndex((i) => (i + 1) % images.length),
+    [images.length]
+  );
+
   return (
-    <div className='w-full comic-dots text-white'>
+    <section
+      className='w-full comic-dots text-white'
+      aria-labelledby='hero-title'
+    >
       {/* Info Banner */}
       <div className='w-full font-bangers border-b-8 border-black bg-[#996515] tracking-widest'>
         <div className='mx-auto max-w-6xl px-3 sm:px-4'>
           <div className='flex flex-wrap items-center justify-center gap-3 py-2 sm:py-3'>
-            {/* Emoji + headline */}
+            <h1 id='hero-title' className='sr-only'>
+              Sojourners To Joke Sings
+            </h1>
             <div className='flex items-center gap-2'>
               <span className='text-2xl sm:text-3xl md:text-4xl'>📖</span>
               <span className='text-black text-base sm:text-lg md:text-xl tracking-widest uppercase'>
                 <strong>Book release coming soon!</strong>
               </span>
             </div>
-
-            {/* Divider dot for larger screens */}
             <span className='hidden sm:inline text-black'>•</span>
-
-            {/* CTA button */}
             <Link
               href='/Contact'
               className='inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-2 py-1
-                 text-xs sm:text-sm md:text-base tracking-widest hover:underline
-                 shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform
-                 hover:translate-x-[1px] hover:translate-y-[1px]'
+                         text-xs sm:text-sm md:text-base tracking-widest hover:underline
+                         shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform
+                         hover:translate-x-[1px] hover:translate-y-[1px]'
             >
               Sign up for updates
             </Link>
@@ -50,23 +65,27 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Covers + Intro */}
       <div className='flex flex-col items-center px-4 sm:px-6 lg:px-8 py-12 max-w-5xl mx-auto'>
-        {/* Sleek Covers */}
-        <div className=' flex flex-wrap justify-center gap-6 sm:gap-8 mb-10'>
-          <CoverCard
-            src='/images/hero/front-cover.png'
-            alt='Sojourners to Joke Sings front book cover'
-          />
-          <CoverCard
-            src='/images/hero/back-cover.png'
-            alt='Sojourners to Joke Sings back book cover'
-          />
+        {/* Book Covers */}
+        <div className='flex flex-wrap justify-center gap-6 sm:gap-8 mb-10'>
+          {images.map((img, i) => (
+            <CoverCard
+              key={img.src}
+              src={img.src}
+              alt={img.alt}
+              onClick={() => {
+                setIndex(i);
+                setOpen(true);
+              }}
+            />
+          ))}
         </div>
 
         {/* Intro Copy */}
         <div
           className='bg-white text-black p-6 md:p-8 rounded-2xl border border-black/10 shadow-lg 
-                leading-relaxed text-sm sm:text-base md:text-lg max-w-3xl'
+                        leading-relaxed text-sm sm:text-base md:text-lg max-w-3xl'
         >
           <p>
             Family Matriarch LK Lennie Lee (1923–2021) lived a long and
@@ -91,6 +110,16 @@ export default function Hero() {
           </p>
         </div>
       </div>
-    </div>
+
+      {/* Lightbox */}
+      <Lightbox
+        open={open}
+        images={images}
+        index={index}
+        onClose={() => setOpen(false)}
+        onPrev={onPrev}
+        onNext={onNext}
+      />
+    </section>
   );
 }
