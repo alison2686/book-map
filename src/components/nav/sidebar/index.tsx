@@ -176,6 +176,19 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
                 Contact Us
               </button>
             </li>
+            <li>
+              <button
+                onClick={() => {
+                  toggle();
+                  router.push(
+                    'https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+                  );
+                }}
+                className='block w-full hover:underline font-bangers tracking-wide'
+              >
+                Purchase the Book
+              </button>
+            </li>
           </ul>
         </nav>
       </aside>
