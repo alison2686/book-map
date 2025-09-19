@@ -5,7 +5,9 @@ const Button = () => {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push('/Contact');
+    router.push(
+      'https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+    );
   };
 
   return (
@@ -14,7 +16,7 @@ const Button = () => {
         onClick={handleClick}
         className='font-bangers h-12 rounded-lg tracking-wide bg-white font-bold px-5 hover:bg-yellow-200 transition-colors'
       >
-        Get Updates
+        Purchase the Book
       </button>
     </div>
   );

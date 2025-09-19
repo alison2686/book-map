@@ -39,7 +39,7 @@ export default function Hero() {
       aria-labelledby='hero-title'
     >
       {/* Info Banner */}
-      <div className='w-full font-bangers border-b-8 border-black bg-[#996515] tracking-widest'>
+      <div className='w-full border-b-8 border-black bg-[#996515] tracking-wide'>
         <div className='mx-auto max-w-6xl px-3 sm:px-4'>
           <div className='flex flex-wrap items-center justify-center gap-3 py-2 sm:py-3'>
             <h1 id='hero-title' className='sr-only'>
@@ -47,19 +47,19 @@ export default function Hero() {
             </h1>
             <div className='flex items-center gap-2'>
               <span className='text-2xl sm:text-3xl md:text-4xl'>📖</span>
-              <span className='text-black text-base sm:text-lg md:text-xl tracking-widest uppercase'>
-                <strong>Book release coming soon!</strong>
+              <span className='text-black text-base sm:text-lg md:text-xl '>
+                <strong>Available now on IngramSpark!</strong>
               </span>
             </div>
-            <span className='hidden sm:inline text-black'>•</span>
+            <span className='hidden sm:inline text-black font-bangers'>•</span>
             <Link
-              href='/Contact'
-              className='inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-2 py-1
+              href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+              className='font-bangers inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-2 py-1
                          text-xs sm:text-sm md:text-base tracking-widest hover:underline
                          shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform
                          hover:translate-x-[1px] hover:translate-y-[1px]'
             >
-              Sign up for updates
+              Order here
             </Link>
           </div>
         </div>
