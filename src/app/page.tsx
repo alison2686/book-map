@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       {/* <Event /> */}
 
-      <MapImage />
+      {/* <MapImage /> */}
       <About />
     </>
   );

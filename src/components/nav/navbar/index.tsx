@@ -28,13 +28,13 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                   </p>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href='/#map'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Cathcart Map
                   </p>
                 </Link>
-              </li>
+              </li> */}
               {/* <li>
                 <ScrollLink
                   to='events'
@@ -45,7 +45,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                   <p className='hover:text-yellow-300 cursor-pointer'>Events</p>
                 </ScrollLink>
               </li> */}
-              <li>
+              {/* <li>
                 <Link href='/Map'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Interactive Map
@@ -58,11 +58,11 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                     Web Comic
                   </p>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href='/Contact'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
-                    Contact
+                    Contact Us
                   </p>
                 </Link>
               </li>

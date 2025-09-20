@@ -124,14 +124,14 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
                 About the Authors
               </button>
             </li>
-            <li>
+            {/* <li>
               <button
                 onClick={handleMapClick}
                 className='block w-full hover:underline font-bangers tracking-wide'
               >
                 Cathcart Map
               </button>
-            </li>
+            </li> */}
 
             {/* Example: scroll to events */}
             {/* <li>
@@ -142,7 +142,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
                 Events
               </button>
             </li> */}
-
+            {/* 
             <li>
               <button
                 onClick={() => {
@@ -153,8 +153,8 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
               >
                 Interactive Map
               </button>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <button
                 onClick={() => {
                   toggle();
@@ -164,7 +164,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
               >
                 Web Comic
               </button>
-            </li>
+            </li> */}
             <li>
               <button
                 onClick={() => {
