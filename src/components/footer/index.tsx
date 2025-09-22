@@ -16,7 +16,14 @@ const Footer = () => {
               rights reserved.
             </p>
             <div className='mt-1 text-xs text-black'>
-              ISBN: 978-1-961794-06-1 | Published by Conocimientos Press, 2025
+              ISBN: 978-1-961794-06-1 | Published by{' '}
+              <Link
+                href='https://www.conocimientospressllc.com/'
+                className='underline'
+              >
+                Conocimientos Press
+              </Link>
+              , 2025
             </div>
           </div>
 
