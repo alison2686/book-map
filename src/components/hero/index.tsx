@@ -101,19 +101,20 @@ export default function Hero() {
           <p className='mt-3'>
             Our family began reviewing her work expecting conventional tales —
             the Gold Rush, the railroads — but instead, we found astonishing
-            stories. Lennie claimed our ancestors inspired Robert Louis
-            Stevenson’s <em>Treasure Island</em>.
-          </p>
-          <p className='mt-3'>
-            <em>Sojourners To Joke Sings: Tales of Chinatown and Beyond</em> is
-            a transgenerational, genre-blending work of family memoir,
-            historical recovery, and cultural witness.
+            stories.
           </p>
           <p className='mt-3'>
             From tales of coffin stowaways and shrimping villages to the 1939
             World’s Fair and years serving as a teacher and fiery counselor, the
             narrative threads together, personal, political, and cultural
             elements.
+          </p>
+          <p className='mt-3'>
+            Rooted in the vivid recollections of L K Lennie Lee and expanded by
+            her son, Ron Lee, and descendants, this book blends oral history,
+            myth, and archival research to reclaim erased narratives and honor
+            the lives of “Joke Sings”—those who survived and forged belonging
+            across oceans and generations.
           </p>
         </div>
       </div>
