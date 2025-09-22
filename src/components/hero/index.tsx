@@ -105,8 +105,15 @@ export default function Hero() {
             Stevenson’s <em>Treasure Island</em>.
           </p>
           <p className='mt-3'>
-            <em>Sojourners To Joke Sings: Tales of Chinatown and Beyond</em>{' '}
-            reveals what we uncovered while exploring her claims.
+            <em>Sojourners To Joke Sings: Tales of Chinatown and Beyond</em> is
+            a transgenerational, genre-blending work of family memoir,
+            historical recovery, and cultural witness.
+          </p>
+          <p className='mt-3'>
+            From tales of coffin stowaways and shrimping villages to the 1939
+            World’s Fair and years serving as a teacher and fiery counselor, the
+            narrative threads together, personal, political, and cultural
+            elements.
           </p>
         </div>
       </div>
