@@ -111,10 +111,11 @@ export default function Hero() {
           </p>
           <p className='mt-3'>
             Rooted in the vivid recollections of L K Lennie Lee and expanded by
-            her son, Ron Lee, and descendants, this book blends oral history,
-            myth, and archival research to reclaim erased narratives and honor
-            the lives of “Joke Sings”—those who survived and forged belonging
-            across oceans and generations.
+            her son, Ron Lee, and descendants,{' '}
+            <em>Sojourners to Joke Sings: Tales of Chinatown & Beyond</em>{' '}
+            blends oral history, myth, and archival research to reclaim erased
+            narratives and honor the lives of “Joke Sings”—those who survived
+            and forged belonging across oceans and generations.
           </p>
         </div>
       </div>
