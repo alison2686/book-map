@@ -96,7 +96,7 @@ export default function Hero() {
           </p>
           <p className='italic mt-3'>
             “Grandmother Lee’s Autobiography.
-            <br /> Note: Needs Corrections and upgrading”
+            <br /> Note: Needs corrections and upgrading”
           </p>
           <p className='mt-3'>
             Our family began reviewing her work expecting conventional tales —
