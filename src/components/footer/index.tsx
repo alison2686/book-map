@@ -28,7 +28,10 @@ const Footer = () => {
 
           {/* Icons */}
           <div className='flex space-x-4 mt-2 md:mt-0 text-black'>
-            <Link href='https://amazon.com' passHref>
+            <Link
+              href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+              passHref
+            >
               <FontAwesomeIcon icon={faBookOpen} className='w-6 h-6' />
             </Link>
             <Link href='mailto:info@sojournerstojokesings.com' passHref>
