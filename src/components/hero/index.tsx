@@ -47,13 +47,15 @@ export default function Hero() {
             </h1>
             <div className='flex items-center gap-2'>
               <span className='text-2xl sm:text-3xl md:text-4xl'>📖</span>
-              <span className='text-black text-base sm:text-lg md:text-xl '>
-                <strong>Available now on IngramSpark!</strong>
+              <span className='text-black text-base sm:text-lg md:text-xl font-bold hover:underline '>
+                <Link href='https://www.amazon.com/-/es/Ron-Lee/dp/1961794063'>
+                  Available now on Amazon!
+                </Link>
               </span>
             </div>
             <span className='hidden sm:inline text-black font-bangers'>•</span>
             <Link
-              href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+              href='https://www.amazon.com/-/es/Ron-Lee/dp/1961794063'
               className='font-bangers inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-2 py-1
                          text-xs sm:text-sm md:text-base tracking-widest hover:underline
                          shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform
