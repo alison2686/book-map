@@ -134,14 +134,14 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
             </li> */}
 
             {/* Example: scroll to events */}
-            {/* <li>
+            <li>
               <button
                 onClick={handleEventsClick}
-                className="block w-full hover:underline font-bangers tracking-wide"
+                className='block w-full hover:underline font-bangers tracking-wide'
               >
                 Events
               </button>
-            </li> */}
+            </li>
             {/* 
             <li>
               <button

@@ -35,7 +35,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                   </p>
                 </Link>
               </li> */}
-              {/* <li>
+              <li>
                 <ScrollLink
                   to='events'
                   smooth={true}
@@ -44,7 +44,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 >
                   <p className='hover:text-yellow-300 cursor-pointer'>Events</p>
                 </ScrollLink>
-              </li> */}
+              </li>
               {/* <li>
                 <Link href='/Map'>
                   <p className='hover:text-yellow-300 cursor-pointer'>

@@ -5,7 +5,7 @@ export default function AboutCard() {
   return (
     <section
       id='about'
-      className='section scroll-mt-24 md:scroll-mt-28 w-full map-dots text-white overflow-hidden'
+      className='section scroll-mt-24 md:scroll-mt-28 w-full map-dots text-amber-50 overflow-hidden'
     >
       <div className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center'>
