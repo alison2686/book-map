@@ -28,13 +28,13 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                   </p>
                 </Link>
               </li>
-              {/* <li>
-                <Link href='/#map'>
+              <li>
+                <Link href='/Map'>
                   <p className='hover:text-yellow-300 cursor-pointer'>
                     Cathcart Map
                   </p>
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <ScrollLink
                   to='events'

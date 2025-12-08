@@ -5,7 +5,9 @@ const Button = () => {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push('https://www.amazon.com/-/es/Ron-Lee/dp/1961794063');
+    router.push(
+      'https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+    );
   };
 
   return (

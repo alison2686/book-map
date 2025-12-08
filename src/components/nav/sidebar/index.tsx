@@ -46,15 +46,15 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
     }
   };
   // ✅ Cathcart Map scroll handler
-  const handleMapClick = () => {
-    toggle();
-    if (pathname === '/') {
-      const el = document.getElementById('map');
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      router.push('/#map');
-    }
-  };
+  // const handleMapClick = () => {
+  //   toggle();
+  //   if (pathname === '/') {
+  //     const el = document.getElementById('map');
+  //     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //   } else {
+  //     router.push('/Map');
+  //   }
+  // };
 
   // Example: Events handler (already present)
   const handleEventsClick = () => {
@@ -124,16 +124,19 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
                 About the Authors
               </button>
             </li>
-            {/* <li>
+            <li>
               <button
-                onClick={handleMapClick}
+                onClick={() => {
+                  toggle();
+                  router.push('/Map');
+                }}
                 className='block w-full hover:underline font-bangers tracking-wide'
               >
                 Cathcart Map
               </button>
-            </li> */}
+            </li>
 
-            {/* Example: scroll to events */}
+            {/* Example: scroll to events
             <li>
               <button
                 onClick={handleEventsClick}

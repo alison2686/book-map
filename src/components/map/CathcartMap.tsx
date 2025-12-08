@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
 import PopupCard from '../popup';
 import { PopupData } from '../popup/data';
@@ -137,6 +138,44 @@ const CathcartMap = () => {
         <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-[#996515]  pt-16'>
           Welcome to the Interactive Map <br /> of San Francisco’s Chinatown
         </h1>
+        <p className='text-base text-[#996515] sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 '>
+          While conducting research, a very interesting book came to light by
+          Jim Schein:
+        </p>
+
+        {/* Description */}
+        <p className='text-base text-[#996515] sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 '>
+          Based on the work of photographer/map maker Ken Cathcart, Jim has
+          produced a hand-colorized map of Chinatown in 1947 highlighting
+          historically significant locations in “Dai Fou” (Big City). The map
+          depicts many of the places Lennie referred to and is a wonderful
+          visual aid for the target audience of Sojourners to Joke Sings...young
+          people.
+        </p>
+
+        {/* Book Image */}
+        <div className='border-4 border-black bg-white shadow-comic p-2 my-6'>
+          {width > 0 && (
+            <Image
+              src='/images/map/cathcart-title.png'
+              alt='Cathcart Map'
+              width={width < 1024 ? 300 : 300}
+              height={width < 1024 ? 400 : 400}
+              className='rounded'
+            />
+          )}
+        </div>
+
+        {/* Amazon Link */}
+        <div className='my-3'>
+          <Link
+            href='https://www.amazon.com/Gold-Mountain-Big-City-Illustrated/dp/1944903895'
+            target='_blank'
+            className='inline-block rounded-lg bg-[#a32b2b] border-4 border-black px-4 py-2 font-bangers text-white text-base sm:text-lg tracking-wide shadow-md hover:bg-[#8e2525] hover:underline transition'
+          >
+            <em>Gold Mountain, Big City</em> <br /> by Jim Schein
+          </Link>
+        </div>
         <p className='text-base text-[#996515] sm:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl px-4 mt-4 '>
           You are invited to take a virtual tour of San Francisco Chinatown.
           Click on any icon on the map and a dialogue box will appear giving a
