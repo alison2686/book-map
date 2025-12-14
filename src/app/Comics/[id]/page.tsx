@@ -1,26 +1,23 @@
 import { PanelData } from '../../../components/panel/data';
 import ComicPanel from '../../../components/panel';
 
-interface Params {
+interface PageProps {
   params: {
     id: string;
   };
 }
 
-const ComicPage = ({ params }: Params) => {
-  const { id } = params;
-
-  const panel = PanelData.find((panel) => panel.id === id);
+export default function ComicPage({ params }: PageProps) {
+  const panel = PanelData.find((p) => String(p.id) === String(params.id));
+  console.log('params.id:', params.id);
+  console.log(
+    'PanelData ids:',
+    PanelData.map((p) => p.id)
+  );
 
   if (!panel) {
     return <div>Comic panel not found</div>;
   }
 
-  return (
-    <div>
-      <ComicPanel {...panel} />
-    </div>
-  );
-};
-
-export default ComicPage;
+  return <ComicPanel {...panel} />;
+}

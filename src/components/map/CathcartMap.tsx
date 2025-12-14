@@ -293,7 +293,7 @@ const CathcartMap = () => {
       phone: { top: '76%', left: '77%' },
       beach: { top: '90%', left: '90%' },
       shingchong: { top: '72%', left: '59%' },
-      cigar: { top: '90%', left: '50%' },
+      cigar: { top: '85%', left: '50%' },
       laundry: { top: '62%', left: '75%' },
       tong: { top: '72%', left: '65%' },
       cameron: { top: '22%', left: '35%' },
