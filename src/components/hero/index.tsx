@@ -52,7 +52,7 @@ export default function Hero() {
 
               <Link
                 href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
-                className='text-black text-base sm:text-lg md:text-xl font-bold hover:underline'
+                className='text-black text-sm sm:text-base md:text-lg font-bold hover:underline'
               >
                 Available for purchase now!
               </Link>
