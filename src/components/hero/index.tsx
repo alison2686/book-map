@@ -41,28 +41,45 @@ export default function Hero() {
       {/* Info Banner */}
       <div className='w-full border-b-8 border-black bg-[#996515] tracking-wide'>
         <div className='mx-auto max-w-6xl px-3 sm:px-4'>
-          <div className='flex flex-wrap items-center justify-center gap-3 py-2 sm:py-3'>
+          <div className='flex flex-col items-center justify-center gap-2 py-2 sm:py-3'>
             <h1 id='hero-title' className='sr-only'>
               Sojourners To Joke Sings
             </h1>
-            <div className='flex items-center gap-2'>
+
+            {/* Top inline row */}
+            <div className='flex items-center justify-center gap-2 text-center'>
               <span className='text-2xl sm:text-3xl md:text-4xl'>📖</span>
-              <span className='text-black text-base sm:text-lg md:text-xl font-bold hover:underline '>
-                <Link href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'>
-                  Available for purchase now!
-                </Link>
-              </span>
+
+              <Link
+                href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
+                className='text-black text-base sm:text-lg md:text-xl font-bold hover:underline'
+              >
+                Available for purchase now!
+              </Link>
+
+              <span className='text-black font-bangers'>•</span>
+
+              <Link
+                href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
+                className='font-bangers inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-2 py-1
+                 text-xs sm:text-sm md:text-base tracking-widest hover:underline
+                 shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform
+                 hover:translate-x-[1px] hover:translate-y-[1px]'
+              >
+                Order here
+              </Link>
             </div>
-            <span className='hidden sm:inline text-black font-bangers'>•</span>
-            <Link
-              href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
-              className='font-bangers inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-2 py-1
-                         text-xs sm:text-sm md:text-base tracking-widest hover:underline
-                         shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform
-                         hover:translate-x-[1px] hover:translate-y-[1px]'
-            >
-              Order here
-            </Link>
+
+            {/* Donation link on its own line */}
+            <div className='flex justify-center'>
+              <Link
+                href='https://pay.odesseytoamerica.com/joke-sings-CHCP'
+                className='text-black/80 text-xs italic font-medium hover:underline text-center max-w-md'
+              >
+                To donate a portion of your book sale to Chinese Historical and
+                Cultural Project, click here
+              </Link>
+            </div>
           </div>
         </div>
       </div>
