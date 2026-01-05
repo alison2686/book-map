@@ -1,4 +1,5 @@
 'use client';
+
 import { useRouter, usePathname } from 'next/navigation';
 import { useEffect, useCallback } from 'react';
 
@@ -7,19 +8,20 @@ type Props = {
   toggle: () => void;
 };
 
-export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
+export default function Sidebar({ isOpen, toggle }: Props) {
   const router = useRouter();
   const pathname = usePathname();
 
   // Prevent body scroll while drawer is open
   useEffect(() => {
-    if (isOpen) {
-      const prev = document.body.style.overflow;
-      document.body.style.overflow = 'hidden';
-      return () => {
-        document.body.style.overflow = prev;
-      };
-    }
+    if (!isOpen) return;
+
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = prev;
+    };
   }, [isOpen]);
 
   // Close on ESC
@@ -35,33 +37,23 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [onKeyDown]);
 
-  // ✅ About scroll handler
   const handleAboutClick = () => {
     toggle();
+
     if (pathname === '/') {
       const el = document.getElementById('about');
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       router.push('/#about');
     }
   };
-  // ✅ Cathcart Map scroll handler
-  // const handleMapClick = () => {
-  //   toggle();
-  //   if (pathname === '/') {
-  //     const el = document.getElementById('map');
-  //     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  //   } else {
-  //     router.push('/Map');
-  //   }
-  // };
 
-  // Example: Events handler (already present)
   const handleEventsClick = () => {
     toggle();
+
     if (pathname === '/') {
       const el = document.getElementById('events');
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       router.push('/#events');
     }
@@ -98,7 +90,6 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
             onClick={toggle}
             className='p-2 rounded-md hover:bg-black/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-black'
           >
-            {/* X icon */}
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='32'
@@ -124,6 +115,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
                 About the Authors
               </button>
             </li>
+
             <li>
               <button
                 onClick={() => {
@@ -136,7 +128,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
               </button>
             </li>
 
-            {/* Example: scroll to events
+            {/* Example: scroll to events */}
             <li>
               <button
                 onClick={handleEventsClick}
@@ -145,29 +137,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
                 Events
               </button>
             </li>
-            {/* 
-            <li>
-              <button
-                onClick={() => {
-                  toggle();
-                  router.push('/Map');
-                }}
-                className='block w-full hover:underline font-bangers tracking-wide'
-              >
-                Interactive Map
-              </button>
-            </li> */}
-            {/* <li>
-              <button
-                onClick={() => {
-                  toggle();
-                  router.push('/WebComic');
-                }}
-                className='block w-full hover:underline font-bangers tracking-wide'
-              >
-                Web Comic
-              </button>
-            </li> */}
+
             <li>
               <button
                 onClick={() => {
@@ -179,6 +149,7 @@ export default function Sidebar({ isOpen, toggle }: Props): JSX.Element {
                 Contact Us
               </button>
             </li>
+
             <li>
               <button
                 onClick={() => {
