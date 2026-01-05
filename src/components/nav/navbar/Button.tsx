@@ -5,7 +5,7 @@ const Button = () => {
   return (
     <div className='relative'>
       <Link
-        href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+        href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
         target='_blank'
         rel='noopener noreferrer'
         className='inline-flex items-center justify-center font-bangers h-12 rounded-lg tracking-wide bg-white font-bold px-5 hover:underline

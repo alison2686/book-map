@@ -36,7 +36,7 @@ const Footer = () => {
           {/* Icons */}
           <div className='flex space-x-4 mt-2 md:mt-0 text-black'>
             <Link
-              href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+              href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
               passHref
             >
               <FontAwesomeIcon icon={faBookOpen} className='w-6 h-6' />

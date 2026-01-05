@@ -48,14 +48,14 @@ export default function Hero() {
             <div className='flex items-center gap-2'>
               <span className='text-2xl sm:text-3xl md:text-4xl'>📖</span>
               <span className='text-black text-base sm:text-lg md:text-xl font-bold hover:underline '>
-                <Link href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'>
-                  Available now on IngramSpark!
+                <Link href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'>
+                  Available for purchase now!
                 </Link>
               </span>
             </div>
             <span className='hidden sm:inline text-black font-bangers'>•</span>
             <Link
-              href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+              href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
               className='font-bangers inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-2 py-1
                          text-xs sm:text-sm md:text-base tracking-widest hover:underline
                          shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform

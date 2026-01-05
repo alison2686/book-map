@@ -155,7 +155,7 @@ export default function Sidebar({ isOpen, toggle }: Props) {
                 onClick={() => {
                   toggle();
                   router.push(
-                    'https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
+                    'https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
                   );
                 }}
                 className='block w-full hover:underline font-bangers tracking-wide'
