@@ -35,8 +35,8 @@ const PopupCard: FC<PopupCardProps> = ({
 
         {isComicAvailable ? (
           <Link
-            // href={`/Comics/${id}`}
-            href={`/WebComic`}
+            href={`/Comics/${id}`}
+            // href={`/WebComic`}
             className='text-blue-700 underline hover:text-electricBlue transition-colors 
             '
           >
