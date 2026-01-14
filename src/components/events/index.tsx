@@ -9,9 +9,21 @@ interface EventItem {
   address: string;
   description?: string;
   link?: string;
+  linkLabel?: string;
 }
 
 const events: EventItem[] = [
+  {
+    title:
+      'BACGG/CHCP Book Reading: "Sojourners to Joke Sings: Tales of Chinatown & Beyond',
+    date: 'January 14, 2026',
+    location: 'Online Zoom',
+    address: '',
+    description:
+      'Join the Bay Area Chinese Genealogy Group (BACGG) and Chinese Historical and Cultural Project (CHCP) for a book reading by Ron Lee with L K Lennie Lee.',
+    link: 'https://us02web.zoom.us/meeting/register/UNG_N10IR6-rRIrS2K5Org#/registration',
+    linkLabel: 'Register for Zoom',
+  },
   {
     title: 'Author Talk: Palo Alto Mitchell Park Public Library',
     date: 'May 18, 2025',
@@ -20,6 +32,7 @@ const events: EventItem[] = [
     description:
       'Ron Lee will be discussing his book, “Sojournors to Joke Sings: Tales of Chinatown and Beyond” at the Mitchell Park Public Library in Palo Alto as part of Asian American History Month',
     link: 'https://www.youtube.com/watch?v=xzO7vd95imk',
+    linkLabel: 'Watch the Recording',
   },
 ];
 
@@ -29,34 +42,55 @@ export default function Events() {
       <div className='w-full min-h-screen comic-dots text-amber-50 py-16'>
         <div className='max-w-6xl mx-auto'>
           <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-center mb-10 tracking-wider'>
-            Upcoming Author Events
+            📅 Upcoming Author Events
           </h1>
           <div className='w-full flex justify-center px-4 sm:px-6'>
-            <div
+            {/* <div
               className='
-      w-full max-w-2xl
-      bg-[#996515]
-      border-y-4 border-black
-      text-black text-center
-      font-bangers tracking-widest
-      px-3 py-2 sm:py-3
-      mb-6 sm:mb-8
-      text-base sm:text-lg md:text-xl
-      leading-snug
-      rounded-lg
-      shadow-[3px_3px_0_0_#000]
-    '
+                w-full max-w-2xl
+                bg-[#996515]
+                border-y-4 border-black
+                text-black text-center
+                font-bangers tracking-widest
+                px-3 py-2 sm:py-3
+                mb-6 sm:mb-8
+                text-base sm:text-lg md:text-xl
+                leading-snug
+                rounded-lg
+                shadow-[3px_3px_0_0_#000]
+              '
             >
               📅 <strong>Check back soon for new author events!</strong>
-            </div>
+            </div> */}
           </div>
 
           <div className='w-full flex justify-center px-4 tracking-wide'>
-            <div className='grid gap-6' style={{ maxWidth: '20rem' }}>
+            <div
+              className='
+                grid
+                gap-6
+                w-full
+                max-w-6xl
+                mx-auto
+                grid-cols-[repeat(auto-fit,minmax(18rem,1fr))]
+              '
+            >
               {events.map((event, index) => (
                 <div
                   key={index}
-                  className='w-full bg-white text-black border-4 border-black shadow-comic p-6 rounded-xl flex flex-col justify-between h-full'
+                  className='
+                    w-full
+                    bg-white
+                    text-black
+                    border-4 border-black
+                    shadow-comic
+                    p-6
+                    rounded-xl
+                    flex
+                    flex-col
+                    justify-between
+                    h-full
+                  '
                 >
                   <div>
                     <h2 className='text-xl md:text-2xl font-bold mb-2 font-comic'>
@@ -79,7 +113,7 @@ export default function Events() {
                       rel='noopener noreferrer'
                       className='mt-2 inline-block bg-black text-white text-center py-2 px-4 rounded-md font-bold hover:bg-gray-800 transition'
                     >
-                      Watch the Recording
+                      {event.linkLabel ?? 'Learn More'}
                     </Link>
                   )}
                 </div>
