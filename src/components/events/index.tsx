@@ -16,7 +16,7 @@ const events: EventItem[] = [
   {
     title:
       'BACGG/CHCP Book Reading: "Sojourners to Joke Sings: Tales of Chinatown & Beyond',
-    date: 'January 14, 2026',
+    date: 'January 14, 2026 | 6:00 PM - 7:30 PM',
     location: 'Online Zoom',
     address: '',
     description:
