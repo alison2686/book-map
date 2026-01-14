@@ -10,6 +10,7 @@ interface EventItem {
   description?: string;
   link?: string;
   linkLabel?: string;
+  previousEvent: string;
 }
 
 const events: EventItem[] = [
@@ -23,6 +24,7 @@ const events: EventItem[] = [
       'Join the Bay Area Chinese Genealogy Group (BACGG) and Chinese Historical and Cultural Project (CHCP) for a book reading by Ron Lee with L K Lennie Lee.',
     link: 'https://us02web.zoom.us/meeting/register/UNG_N10IR6-rRIrS2K5Org#/registration',
     linkLabel: 'Register for Zoom',
+    previousEvent: '',
   },
   {
     title: 'Author Talk: Palo Alto Mitchell Park Public Library',
@@ -33,6 +35,7 @@ const events: EventItem[] = [
       'Ron Lee will be discussing his book, “Sojournors to Joke Sings: Tales of Chinatown and Beyond” at the Mitchell Park Public Library in Palo Alto as part of Asian American History Month',
     link: 'https://www.youtube.com/watch?v=xzO7vd95imk',
     linkLabel: 'Watch the Recording',
+    previousEvent: 'Previous Event:',
   },
 ];
 
@@ -93,6 +96,9 @@ export default function Events() {
                   '
                 >
                   <div>
+                    <h2 className='text-xl md:text-2xl mb-2 font-comic text-[#996515]'>
+                      {event.previousEvent}
+                    </h2>
                     <h2 className='text-xl md:text-2xl font-bold mb-2 font-comic'>
                       {event.title}
                     </h2>
