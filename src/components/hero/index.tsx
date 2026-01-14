@@ -82,7 +82,7 @@ export default function Hero() {
                   alt='Chinese Historical and Cultural Project'
                   width={38}
                   height={38}
-                  className='object-contain'
+                  className='object-contain transition-transform duration-300 ease-out hover:scale-105'
                 />
 
                 <span className='text-center'>
