@@ -80,8 +80,8 @@ export default function Hero() {
                 <Image
                   src='/images/hero/chcp-logo.png'
                   alt='Chinese Historical and Cultural Project'
-                  width={40}
-                  height={40}
+                  width={38}
+                  height={38}
                   className='object-contain'
                 />
 
