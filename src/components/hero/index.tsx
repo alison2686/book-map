@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useCallback, useMemo } from 'react';
 import CoverCard from '../coverCard/coverCard';
 import Lightbox, { LightboxImage } from '../lightbox/lightbox';
@@ -74,10 +75,20 @@ export default function Hero() {
             <div className='flex justify-center'>
               <Link
                 href='https://pay.odesseytoamerica.com/joke-sings-CHCP'
-                className='text-black/80 text-xs italic font-medium hover:underline text-center max-w-md'
+                className='flex items-center gap-2 text-black/80 text-xs italic font-medium hover:underline max-w-md'
               >
-                To donate a portion of your book sale to Chinese Historical and
-                Cultural Project, click here
+                <Image
+                  src='/images/hero/chcp-logo.png'
+                  alt='Chinese Historical and Cultural Project'
+                  width={40}
+                  height={40}
+                  className='object-contain'
+                />
+
+                <span className='text-center'>
+                  To donate a portion of your book sale to Chinese Historical
+                  and Cultural Project, click here
+                </span>
               </Link>
             </div>
           </div>
