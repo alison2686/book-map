@@ -22,9 +22,9 @@ const events: EventItem[] = [
     address: '',
     description:
       'Join the Bay Area Chinese Genealogy Group (BACGG) and Chinese Historical and Cultural Project (CHCP) for a book reading by Ron Lee with L K Lennie Lee.',
-    link: 'https://us02web.zoom.us/meeting/register/UNG_N10IR6-rRIrS2K5Org#/registration',
-    linkLabel: 'Register for Zoom',
-    previousEvent: '',
+    link: 'https://youtu.be/_AWdWgaA6b8?si=F5rNM0mVVoRtk-av',
+    linkLabel: 'Watch the Recording',
+    previousEvent: 'Previous Event:',
   },
   {
     title: 'Author Talk: Palo Alto Mitchell Park Public Library',
@@ -44,7 +44,7 @@ export default function Events() {
     <div id='events' className='scroll-mt-24'>
       <div className='w-full min-h-screen comic-dots text-amber-50 py-16'>
         <div className='max-w-6xl mx-auto'>
-          <h1 className='text-3xl sm:text-4xl lg:text-6xl font-bold text-shadow-lg text-center mb-10 tracking-wider'>
+          <h1 className='text-3xl sm:text-4xl lg:text-6xl text-shadow-lg text-center mb-10 tracking-widest'>
             📅 Upcoming Author Events
           </h1>
           <div className='w-full flex justify-center px-4 sm:px-6'>
