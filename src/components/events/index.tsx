@@ -15,6 +15,17 @@ interface EventItem {
 
 const events: EventItem[] = [
   {
+    title: 'Robert Louis Stevenson and the Chinese',
+    date: 'May 8, 2026 | 6:00 - 7:00pm',
+    location: 'Robert Louis Stevenson Museum',
+    address: '1490 Library Ln, St Helena, CA 94574',
+    description:
+      "Presented by Guest Lecturer Ron Lee. We invite you to attend our lecture detailing Robert Louis Stevenson's time among Chinese immigrants in San Francisco. Admission is FREE. Doors open at 5:30pm.",
+    link: 'https://stevensonmuseum.org/events/programs/',
+    linkLabel: 'More Info',
+    previousEvent: 'Robert Louis Stevenson Museum Presents:',
+  },
+  {
     title:
       'BACGG/CHCP Book Reading: "Sojourners to Joke Sings: Tales of Chinatown & Beyond',
     date: 'January 14, 2026 | 6:00 PM - 7:30 PM',
@@ -32,7 +43,7 @@ const events: EventItem[] = [
     location: 'Mitchell Park Public Library',
     address: '700 Middlefield Rd, Palo Alto, CA 94301',
     description:
-      'Ron Lee will be discussing his book, “Sojournors to Joke Sings: Tales of Chinatown and Beyond” at the Mitchell Park Public Library in Palo Alto as part of Asian American History Month',
+      'Ron Lee will be discussing his book, “Sojournors to Joke Sings: Tales of Chinatown and Beyond” at the Mitchell Park Public Library in Palo Alto as part of Asian American History Month.',
     link: 'https://www.youtube.com/watch?v=xzO7vd95imk',
     linkLabel: 'Watch the Recording',
     previousEvent: 'Previous Event:',
