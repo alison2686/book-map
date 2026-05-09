@@ -19,7 +19,7 @@ export default function Hero() {
         alt: 'Sojourners to Joke Sings back book cover',
       },
     ],
-    []
+    [],
   );
 
   const [open, setOpen] = useState(false);
@@ -27,11 +27,11 @@ export default function Hero() {
 
   const onPrev = useCallback(
     () => setIndex((i) => (i - 1 + images.length) % images.length),
-    [images.length]
+    [images.length],
   );
   const onNext = useCallback(
     () => setIndex((i) => (i + 1) % images.length),
-    [images.length]
+    [images.length],
   );
 
   return (
@@ -52,7 +52,7 @@ export default function Hero() {
               <span className='text-2xl sm:text-3xl md:text-4xl'>📖</span>
 
               <Link
-                href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
+                href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
                 className='text-black text-sm sm:text-base md:text-lg font-bold hover:underline'
               >
                 Available for purchase now!
@@ -61,7 +61,7 @@ export default function Hero() {
               <span className='text-black font-bangers'>•</span>
 
               <Link
-                href='https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
+                href='https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5'
                 className='font-bangers inline-flex items-center rounded-lg bg-white text-black border-4 border-black px-2 py-1
                  text-xs sm:text-sm md:text-base tracking-widest hover:underline
                  shadow-[3px_3px_0_0_#000] hover:shadow-[2px_2px_0_0_#000] transition-transform
@@ -72,7 +72,7 @@ export default function Hero() {
             </div>
 
             {/* Donation link on its own line */}
-            <div className='flex justify-center'>
+            {/* <div className='flex justify-center'>
               <Link
                 href='https://pay.odesseytoamerica.com/joke-sings-CHCP'
                 className='flex items-center gap-2 text-black/80 text-xs italic font-medium hover:underline max-w-md'
@@ -90,7 +90,7 @@ export default function Hero() {
                   and Cultural Project, click here
                 </span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ export default function Sidebar({ isOpen, toggle }: Props) {
     (e: KeyboardEvent) => {
       if (e.key === 'Escape' && isOpen) toggle();
     },
-    [isOpen, toggle]
+    [isOpen, toggle],
   );
 
   useEffect(() => {
@@ -155,7 +155,7 @@ export default function Sidebar({ isOpen, toggle }: Props) {
                 onClick={() => {
                   toggle();
                   router.push(
-                    'https://pay.odesseytoamerica.com/sojourners-to-joke-sings'
+                    'https://shop.ingramspark.com/b/084?params=IfEF6JbbUnmtZyoTfDpbXWXVMePOCczXPGojYhjKiX5',
                   );
                 }}
                 className='block w-full hover:underline font-bangers tracking-wide'
